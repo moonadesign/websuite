@@ -1,0 +1,81 @@
+.app-shell {
+  height: 36rem;
+}
+
+#examples {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 var(--space-clamp) var(--space-clamp);
+}
+
+#example-tabs {
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+}
+
+#hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: calc(var(--space-clamp) * 2) var(--space-clamp);
+  text-align: center;
+}
+
+#hero p {
+  color: var(--color-half);
+  max-width: 36rem;
+}
+
+.muted {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}
+
+.panel-list {
+  max-width: 18rem;
+}
+
+.panel-nav {
+  max-width: 12rem;
+}
+
+.panel-stub {
+  height: 36rem;
+}
+
+.reply-bar {
+  align-items: center;
+  display: flex;
+}
+
+.tab {
+  background: none;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--color-half);
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: var(--color-darkest);
+}
+
+.tab.active {
+  background: var(--color-lighter);
+  color: var(--color-darkest);
+  font-weight: 700;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}

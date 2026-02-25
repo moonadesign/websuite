@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2025-11",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1771517557/v25/mattborn-human_2x_zgbjqs.png",
+    "link": "https://9606.ai",
+    "subtitle": "The Human Context Protocol for AI",
+    "tags": ["Branding", "Copywriting", "Development", "Product Design", "Strategy", "Website"],
+    "title": "Human AI"
+  },
+  {
+    "date": "2025-10",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1761671542/v25/mattborn-highwest_2x_znqlr9.png",
+    "link": "https://highwestgroup.com",
+    "subtitle": "Real estate development group",
+    "tags": ["Copywriting", "Development", "Video", "Website"],
+    "title": "High West"
+  },
+  {
+    "date": "2025-09",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326514/v25/mattborn-mask_2x_ptmrjm.png",
+    "link": "https://superwork.ing/mask",
+    "subtitle": "Safe AI for everyone",
+    "tags": ["Branding", "Copywriting", "Development", "Fundraising", "Product Design", "Strategy", "Website"],
+    "title": "Mask"
+  },
+  {
+    "date": "2025-08",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326518/v25/mattborn-aspen_2x_xoital.png",
+    "link": "https://aspencorrections.com",
+    "subtitle": "Correctional telehealth for small jails",
+    "tags": ["Branding", "Copywriting", "Strategy", "Website"],
+    "title": "Aspen"
+  },
+  {
+    "date": "2025-07",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326521/v25/mattborn-novi_2x_m8jyaq.png",
+    "link": "https://usenovi.com",
+    "subtitle": "Your AI cofounder + business idea analysis",
+    "tags": ["Development", "Product Design", "Strategy"],
+    "title": "Novi"
+  },
+  {
+    "date": "2025-06",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326520/v25/mattborn-brandos_2x_loei9a.png",
+    "link": "https://moona.design/brand-os",
+    "subtitle": "The operating system for CPG founders",
+    "tags": ["Branding", "Development", "Fundraising", "Product Design", "Strategy"],
+    "title": "Brand-OS"
+  },
+  {
+    "date": "2025-02",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326517/v25/mattborn-alpyne_2x_hhxsvf.png",
+    "link": "https://getalpyne.com",
+    "subtitle": "Client data management for fractional CFOs",
+    "tags": ["Branding", "Copywriting", "Merch", "Product Design", "Strategy", "Website"],
+    "title": "Alpyne"
+  },
+  {
+    "date": "2025-01",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1761676561/v25/mattborn-focal_2x_e7iorh.png",
+    "link": "https://focalconsulting.co",
+    "subtitle": "Supply chain expert for CPG companies",
+    "tags": ["Design", "Development", "Website"],
+    "title": "Focal"
+  },
+  {
+    "date": "2024-10",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326515/v25/mattborn-humanlayer_2x_mrhp7s.png",
+    "link": "https://humanlayer.dev",
+    "subtitle": "Human in the loop for AI agents",
+    "tags": ["Branding", "Development", "Fundraising", "Merch", "Product Design", "Video", "Website"],
+    "title": "HumanLayer"
+  }
+]

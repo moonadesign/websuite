@@ -1,0 +1,252 @@
+:root {
+  --phone-height: 48rem;
+  --phone-width: 24rem;
+}
+
+#phone-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#phone-sizes .button.active {
+  background: var(--color-lighter);
+  border-color: var(--color-darkest);
+}
+
+.phone-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.phone-island {
+  background: var(--color-fixed-black);
+  border-radius: 18px;
+  height: 36px;
+  width: 124px;
+}
+
+.phone-page {
+  background: var(--color-lightest);
+  flex: 1;
+  min-height: 0;
+}
+
+.phone-call-action {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.phone-call-action i {
+  align-items: center;
+  background: var(--color-lighter);
+  border: 1px solid var(--color-light);
+  border-radius: 50%;
+  display: flex;
+  font-size: 1.25rem;
+  height: 3.5rem;
+  justify-content: center;
+  line-height: 1;
+  width: 3.5rem;
+}
+
+.phone-call-action span {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.phone-call-action.end i {
+  background: #f44;
+  border-color: #f44;
+}
+
+.phone-call-actions {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.5rem;
+}
+
+.phone-call-head {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.phone-shell {
+  background: var(--color-lightest);
+  border-radius: 40px;
+  box-shadow: 0 1.5rem 3rem var(--color-light);
+  display: flex;
+  flex-direction: column;
+  height: var(--phone-height);
+  max-width: 100%;
+  overflow: hidden;
+  width: var(--phone-width);
+}
+
+.phone-shell-bezel {
+  border: 8px solid var(--color-darkest);
+}
+
+.phone-shell-blur {
+  backdrop-filter: blur(2rem);
+  background: var(--color-lighter);
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+}
+
+.phone-shell-call {
+  position: relative;
+}
+
+.phone-shell-call .phone-page,
+.phone-shell-call .phone-status,
+.phone-shell-call .phone-swipe {
+  position: relative;
+  z-index: 1;
+}
+
+.phone-shell-glass {
+  background: url('https://images.unsplash.com/photo-1772424131868-6b9f154b59ce?auto=format&fit=crop&h=1920&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&q=80')
+    center/cover no-repeat;
+}
+
+.phone-shell-glass .phone-page {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-page.phone-page-call {
+  align-items: stretch;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.phone-facetime-video {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.phone-shell-outline {
+  border: 1px solid var(--color-light);
+}
+
+.phone-glass-time {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.phone-status {
+  align-items: center;
+  display: flex;
+  line-height: 1;
+  padding: 1rem;
+}
+
+.phone-status-icons {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: 8px;
+  justify-content: center;
+}
+
+.phone-status-time {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.phone-swipe {
+  align-items: center;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+}
+
+.phone-swipe span {
+  background: var(--color-half);
+  border-radius: 3px;
+  display: block;
+  height: 6px;
+  width: 120px;
+}
+
+.phone-tab {
+  align-items: center;
+  color: var(--color-half);
+  cursor: default;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  text-align: center;
+}
+
+.phone-tab.active {
+  color: var(--color-darkest);
+}
+
+.phone-tab i {
+  font-size: 20px;
+}
+
+.phone-tab span {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.phone-tabs {
+  align-items: center;
+  border-top: 1px solid var(--color-light);
+  display: flex;
+  justify-content: center;
+  min-height: 58px;
+  padding: 0 16px;
+}
+
+.phone-variant {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: var(--phone-width);
+}
+
+.phone-variant h3 {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+@media (min-width: 85rem) {
+  .phone-group {
+    gap: 4rem;
+  }
+
+  .iphone-plus .phone-group {
+    gap: 2.5rem;
+  }
+}

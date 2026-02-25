@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+#macabre-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#macabre-top .button,
+.app-icon,
+#hero .button {
+  mix-blend-mode: screen;
+}
+
+#hero {
+  background:
+    linear-gradient(#0010, #0019),
+    url('https://images.unsplash.com/photo-1630917160344-698dad39758c?auto=format&fit=crop&q=80&w=1920') center/cover
+      no-repeat;
+  position: relative;
+}
+#hero .layer-inset {
+  align-items: center;
+  justify-content: center;
+  max-width: 30rem;
+  min-height: 80vh;
+  text-align: center;
+}
+
+#hero h1 {
+  font-family: 'Pirata One', system-ui;
+  letter-spacing: 0.02em;
+}
+#hero p,
+#hero small {
+  color: var(--color-half);
+}
+
+#hero-fade {
+  background: linear-gradient(transparent, var(--color-lightest));
+  height: 15rem;
+  margin-top: -15rem;
+  pointer-events: none;
+  position: relative;
+}
+
+#applit {
+  margin-top: calc(var(--space-clamp) * -1);
+  padding: 0 var(--space-clamp);
+}
+
+.mac-app {
+  aspect-ratio: 16/10;
+  background: var(--color-lighter);
+  border: 1px solid var(--color-light);
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin: 0 auto;
+  max-width: 60rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.mac-app-lights {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mac-app-lights span {
+  background: var(--color-light);
+  border-radius: 50%;
+  display: block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.mac-app:hover .mac-app-lights span:nth-child(1),
+.mac-app:focus-within .mac-app-lights span:nth-child(1) {
+  background: #ff5f57;
+}
+
+.mac-app:hover .mac-app-lights span:nth-child(2),
+.mac-app:focus-within .mac-app-lights span:nth-child(2) {
+  background: #febc2e;
+}
+
+.mac-app:hover .mac-app-lights span:nth-child(3),
+.mac-app:focus-within .mac-app-lights span:nth-child(3) {
+  background: #28c840;
+}
+
+.mac-app-main {
+  background: var(--color-lightest);
+  border-radius: 0.75rem;
+  flex: 1;
+}
+
+.mac-app-side {
+  opacity: 1;
+  overflow: hidden;
+  padding: 0.5rem;
+  transition:
+    opacity 0.2s ease,
+    padding 0.2s ease,
+    width 0.2s ease;
+  width: 16rem;
+}
+
+.mac-app-collapsed .mac-app-side {
+  opacity: 0;
+  padding: 0;
+  width: 0;
+}
+
+.mac-app-top {
+  align-items: center;
+  color: var(--color-half);
+  display: flex;
+  gap: 0.75rem;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+[data-sidebar-toggle] {
+  cursor: pointer;
+}
+
+footer {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 50vh;
+  padding: 1rem 1.5rem;
+}

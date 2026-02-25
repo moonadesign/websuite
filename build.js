@@ -30,20 +30,35 @@ const build = () => {
     const styles = fs.existsSync(cssPath) ? `<link rel="stylesheet" href="${htmlFileName}.css" />` : ''
     const scripts = fs.existsSync(jsPath) ? `<script defer src="${htmlFileName}.js"></script>` : ''
 
+    const parts = pageName.split('/')
+    const ancestors = parts.slice(0, -1).map((_, i) => parts.slice(0, i + 1).join('/'))
+    const pageMeta = [pages['index'], ...ancestors.map(a => pages[a]), pages[pageName]]
+      .filter(Boolean)
+      .reduce((acc, obj) => ({ ...acc, ...obj }), {})
+
     const replacements = {
       base: basePath,
-      pageBase,
+      bodyClass: '',
       content,
+      pageBase,
       scripts,
       styles,
-      ...(pages['index'] || {}),
-      ...(pages[pageName] || {}),
+      ...pageMeta,
     }
 
     let html = Object.keys(replacements).reduce(
       (acc, key) => acc.replace(new RegExp(`{${key}}`, 'g'), replacements[key]),
       layout,
     )
+
+    if (pageMeta.shell === false) {
+      const headerStart = html.indexOf('<header')
+      const headerEnd = html.indexOf('</header>') + '</header>'.length
+      if (headerStart !== -1) html = html.slice(0, headerStart) + html.slice(headerEnd).trimStart()
+      const footerStart = html.lastIndexOf('<footer')
+      const footerEnd = html.lastIndexOf('</footer>') + '</footer>'.length
+      if (footerStart !== -1) html = html.slice(0, footerStart).trimEnd() + html.slice(footerEnd)
+    }
 
     fs.writeFileSync(outputPath, html)
   }

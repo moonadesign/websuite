@@ -1,0 +1,88 @@
+<video id="glass-video" loop muted>
+  <source
+    src="https://res.cloudinary.com/moona/video/upload/q_auto,f_auto/v1726095538/Hundred/pexels-milkyway-2257259_tahsib.mp4"
+    type="video/mp4"
+  />
+</video>
+
+<section class="layer">
+  <div class="layer-inset">
+    <h1>Mode</h1>
+    <p>Switch between light mode, dark mode, and system.</p>
+  </div>
+</section>
+
+<section class="layer">
+  <div id="variants" class="layer-inset">
+    <div class="example">
+      <h4>Toggle</h4>
+      <button class="button" id="mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    </div>
+    <div class="example">
+      <h4>Cycle</h4>
+      <button class="button" id="mode-cycle"><i class="fa-solid fa-display" data-mode-icon></i></button>
+    </div>
+    <div class="example">
+      <h4>Group</h4>
+      <div class="button-group">
+        <button class="button" data-mode="system"><i class="fa-solid fa-display"></i></button>
+        <button class="button active" data-mode="light"><i class="fa-solid fa-sun-bright"></i></button>
+        <button class="button" data-mode="dark"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </div>
+    <div class="example">
+      <h4>Select</h4>
+      <div class="mode-select">
+        <button class="button" id="mode-select-trigger">
+          <i class="fa-solid fa-display" data-mode-icon></i> <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="mode-menu">
+          <button data-mode="system"><i class="fa-solid fa-display"></i> System</button>
+          <button data-mode="light"><i class="fa-solid fa-sun-bright"></i> Light</button>
+          <button data-mode="dark"><i class="fa-solid fa-moon"></i> Dark</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layer">
+  <div class="layer-inset">
+    <h2>Glass</h2>
+    <p>Toggle a background image or video on and off. Only available in dark mode.</p>
+  </div>
+</section>
+
+<section class="layer">
+  <div id="glass-variants" class="layer-inset">
+    <div class="example">
+      <h4>Toggle</h4>
+      <button class="button" id="glass-toggle" disabled><i class="fa-solid fa-glass-half"></i></button>
+    </div>
+    <div class="example">
+      <h4>Cycle</h4>
+      <button class="button" id="glass-cycle" disabled><i class="fa-solid fa-xmark" data-glass-icon></i></button>
+    </div>
+    <div class="example">
+      <h4>Group</h4>
+      <div class="button-group" id="glass-group">
+        <button class="button active" data-glass="off" disabled><i class="fa-solid fa-xmark"></i></button>
+        <button class="button" data-glass="image" disabled><i class="fa-solid fa-image"></i></button>
+        <button class="button" data-glass="video" disabled><i class="fa-solid fa-video"></i></button>
+      </div>
+    </div>
+    <div class="example">
+      <h4>Select</h4>
+      <div class="glass-select">
+        <button class="button" id="glass-select-trigger" disabled>
+          <i class="fa-solid fa-xmark" data-glass-icon></i> <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="glass-menu">
+          <button data-glass="off"><i class="fa-solid fa-xmark"></i> Off</button>
+          <button data-glass="image"><i class="fa-solid fa-image"></i> Image</button>
+          <button data-glass="video"><i class="fa-solid fa-video"></i> Video</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -4,5 +4,18 @@
     "og-image": "/favicon.svg",
     "og-url": "https://websuite.me",
     "title": "Websuite"
+  },
+  "page": {
+    "shell": false
+  },
+  "page/moona": {
+    "bodyClass": "glass"
+  },
+  "page/revalize": {
+    "bodyClass": "glass"
+  },
+  "page/thirteen": {
+    "description": "Prototype the most common layers of a marketing site as one complete story.",
+    "title": "Thirteen"
   }
 }

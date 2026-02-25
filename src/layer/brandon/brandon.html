@@ -1,0 +1,54 @@
+<section class="layer">
+  <div class="layer-inset">
+    <h1>Brandon</h1>
+    <p>LinkedIn profile optimizer with tabbed import, record, generate, and improve views.</p>
+  </div>
+</section>
+
+<section class="layer">
+  <div class="layer-inset">
+    <div class="app-shell">
+      <div class="brandon-header">
+        <div class="brandon-brand">Brandon</div>
+        <nav class="brandon-nav">
+          <button class="brandon-tab active" data-view="import">Import</button>
+          <button class="brandon-tab" data-view="record">Record</button>
+          <button class="brandon-tab" data-view="generate">Generate</button>
+          <button class="brandon-tab" data-view="improve">Improve</button>
+        </nav>
+      </div>
+      <div class="brandon-body">
+        <div class="brandon-view" id="brandon-import">
+          <div class="brandon-import">
+            <label>LinkedIn Profile URL</label>
+            <div class="url-input">
+              <span class="url-prefix">https://linkedin.com/in/</span>
+              <input placeholder="username" type="text" />
+            </div>
+            <button class="button button-primary">
+              <i class="fa-solid fa-lock"></i> Import Profile <span class="pro-badge">PRO</span>
+            </button>
+          </div>
+        </div>
+        <div class="brandon-view hidden" id="brandon-record">
+          <textarea
+            placeholder="Add context about your professional background, accomplishments, goals, and experiences..."
+          ></textarea>
+          <div class="row">
+            <button class="button"><i class="fa-solid fa-lock"></i> Record <span class="pro-badge">PRO</span></button>
+            <button class="button button-primary">
+              <i class="fa-solid fa-lock"></i> Start Interview <span class="pro-badge">PRO</span>
+            </button>
+          </div>
+        </div>
+        <div class="brandon-view hidden" id="brandon-generate">
+          <h3>Profile Data</h3>
+          <p class="brandon-message">Please add context in the Record view</p>
+        </div>
+        <div class="brandon-view hidden" id="brandon-improve">
+          <p class="brandon-message">Please import or generate a profile first</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

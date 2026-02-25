@@ -1,0 +1,179 @@
+:root {
+  --color-darkest: rgba(255, 255, 255, 0.9);
+  --color-darker: rgba(255, 255, 255, 0.7);
+  --color-half: rgba(255, 255, 255, 0.5);
+  --color-light: rgba(255, 255, 255, 0.1);
+  --color-lighter: rgba(255, 255, 255, 0.05);
+  --color-lightest: rgb(0, 0, 17);
+  --page-max: 68rem;
+  --space-clamp: clamp(1.5rem, 4vw, 3rem);
+}
+
+body {
+  background: url('https://images.unsplash.com/photo-1771814565180-b8e124f12ce1?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+    center / cover no-repeat;
+  color: var(--color-darkest);
+}
+
+.layer-inset {
+  margin: 0 auto;
+  max-width: var(--page-max);
+}
+#hero {
+  padding: 5rem var(--space-clamp) 6rem;
+}
+
+#hero .layer-inset {
+  align-items: center;
+  text-align: center;
+}
+
+#hero-title {
+  font:
+    500 clamp(3rem, 10vw, 6rem) / 1 'DM Serif Text',
+    serif;
+  letter-spacing: -0.02em;
+}
+#hero-title em {
+  /* color: #d86; */
+}
+
+#site-actions {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+#site-footer {
+  padding-top: unset;
+}
+
+#site-footer .layer-inset {
+  border-top: 1px solid var(--color-light);
+  padding-top: var(--space-clamp);
+}
+
+#site-header .layer-inset {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+
+#site-nav {
+  display: none;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#site-actions .button-primary,
+.hero-actions .button-primary {
+  mix-blend-mode: screen;
+}
+
+.hero-copy {
+  color: var(--color-half);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.hero-link {
+  color: var(--color-darkest);
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+#applit .layer-inset {
+  gap: 1.5rem;
+}
+
+.mac-app {
+  aspect-ratio: 16 / 10;
+  background: var(--color-lighter);
+  border: 1px solid var(--color-light);
+  border-radius: 0.75rem;
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.mac-app-lights {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mac-app-lights span {
+  background: var(--color-light);
+  border-radius: 50%;
+  display: block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.mac-app-main {
+  background: var(--color-lightest);
+  border-radius: 0.75rem;
+  flex: 1;
+}
+
+.mac-app-side {
+  padding: 0.5rem;
+  width: 16rem;
+}
+
+.mac-app-top {
+  align-items: center;
+  color: var(--color-half);
+  display: flex;
+  gap: 0.75rem;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  gap: 0.75rem;
+  letter-spacing: -0.03em;
+}
+
+.logo-mark {
+  display: block;
+  fill: var(--color-darkest);
+  height: 1.5rem;
+  width: auto;
+}
+
+.logo-type em {
+  font:
+    italic 400 100% 'DM Serif Text',
+    serif;
+}
+
+.nav-link {
+  color: var(--color-half);
+}
+
+@media (max-width: 720px) {
+  #site-actions {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #site-header .layer-inset {
+    justify-content: center;
+  }
+}

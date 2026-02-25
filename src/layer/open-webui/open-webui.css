@@ -1,0 +1,53 @@
+.mac-app {
+  aspect-ratio: 16/10;
+  background: var(--color-lighter);
+  border: 1px solid var(--color-light);
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.mac-app-lights {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mac-app-lights span {
+  background: var(--color-light);
+  border-radius: 50%;
+  display: block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.mac-app-main {
+  background: var(--color-lightest);
+  border-radius: 0.75rem;
+  flex: 1;
+}
+
+.mac-app-side {
+  opacity: 1;
+  overflow: hidden;
+  padding: 0.5rem;
+  transition:
+    opacity 0.2s ease,
+    padding 0.2s ease,
+    width 0.2s ease;
+  width: 16rem;
+}
+
+.mac-app-top {
+  align-items: center;
+  color: var(--color-half);
+  display: flex;
+  gap: 0.75rem;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

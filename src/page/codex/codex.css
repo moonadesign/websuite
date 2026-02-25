@@ -1,0 +1,244 @@
+:root {
+  --color-accent: #7b5ea7;
+}
+
+.button.pill {
+  border-radius: 1.25rem;
+}
+
+#codex-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.app-icon,
+#codex-top .button,
+#hero .button {
+  mix-blend-mode: screen;
+}
+
+#hero {
+  background: url('https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?auto=format&fit=crop&q=80&w=1920')
+    center/cover no-repeat;
+  position: relative;
+}
+
+#hero .layer-inset {
+  align-items: center;
+  justify-content: center;
+  max-width: 30rem;
+  min-height: 80vh;
+  text-align: center;
+}
+
+#hero p {
+  color: var(--color-half);
+}
+
+#hero-fade {
+  background: linear-gradient(transparent, var(--color-lightest));
+  height: 15rem;
+  margin-top: -15rem;
+  pointer-events: none;
+  position: relative;
+}
+
+#applit {
+  margin-top: calc(var(--space-clamp) * -1);
+  padding: 0 var(--space-clamp);
+}
+
+#applit .mac-app {
+  aspect-ratio: 16/10;
+  background: var(--color-lighter);
+  border: 1px solid var(--color-light);
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin: 0 auto;
+  max-width: 60rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#applit .mac-app-lights {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#applit .mac-app-lights span {
+  background: var(--color-light);
+  border-radius: 50%;
+  display: block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+#applit .mac-app:hover .mac-app-lights span:nth-child(1),
+#applit .mac-app:focus-within .mac-app-lights span:nth-child(1) {
+  background: #ff5f57;
+}
+
+#applit .mac-app:hover .mac-app-lights span:nth-child(2),
+#applit .mac-app:focus-within .mac-app-lights span:nth-child(2) {
+  background: #febc2e;
+}
+
+#applit .mac-app:hover .mac-app-lights span:nth-child(3),
+#applit .mac-app:focus-within .mac-app-lights span:nth-child(3) {
+  background: #28c840;
+}
+
+#applit .mac-app-main {
+  background: var(--color-lightest);
+  flex: 1;
+}
+
+#applit .mac-app-side {
+  display: flex;
+  flex-direction: column;
+  font:
+    14px/1rem 'DM Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  gap: 0.25rem;
+  opacity: 1;
+  overflow: hidden;
+  padding: 3.5rem 0.5rem 0.5rem;
+  transition:
+    opacity 0.2s ease,
+    padding 0.2s ease,
+    width 0.2s ease;
+  width: 20rem;
+}
+
+.codex-empty {
+  color: var(--color-half);
+  padding: 0.75rem 0.75rem 0.75rem 2.75rem;
+}
+
+.codex-thread {
+  padding-left: 2.75rem;
+}
+
+.codex-time {
+  color: var(--color-half);
+}
+
+.codex-threads {
+  align-items: center;
+  color: var(--color-half);
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.75rem;
+}
+
+.codex-threads .button {
+  padding: 0.5rem;
+}
+
+.codex-threads span {
+  margin-right: auto;
+}
+
+#applit .mac-app-collapsed .mac-app-side {
+  opacity: 0;
+  padding: 0;
+  width: 0;
+}
+
+#applit .mac-app-top {
+  align-items: center;
+  color: var(--color-half);
+  display: flex;
+  gap: 0.75rem;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#applit [data-sidebar-toggle] {
+  cursor: pointer;
+}
+
+.feature {
+  align-items: center;
+  display: flex;
+  gap: var(--space-clamp);
+  padding: var(--space-clamp);
+}
+
+.feature.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-text p {
+  color: var(--color-half);
+  line-height: 1.5;
+}
+
+.feature-canvas {
+  aspect-ratio: 4/3;
+  background: var(--color-lighter);
+  border-radius: 0.75rem;
+  flex: 1;
+}
+
+#surfaces {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: var(--space-clamp);
+  text-align: center;
+}
+
+#surfaces .options {
+  justify-content: center;
+}
+
+#surfaces .option {
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#surfaces code {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}
+
+#cta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: calc(var(--space-clamp) * 2) var(--space-clamp);
+  text-align: center;
+}
+
+#cta p {
+  color: var(--color-half);
+}
+
+footer {
+  color: var(--color-half);
+  padding: var(--space-clamp);
+  text-align: center;
+}

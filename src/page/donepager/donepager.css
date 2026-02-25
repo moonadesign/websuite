@@ -1,0 +1,130 @@
+#donepager-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#hero {
+  background: url('https://images.unsplash.com/photo-1771814567353-4be8ac21cfb4?auto=format&fit=crop&q=80&w=1920')
+    center/cover no-repeat;
+  position: relative;
+}
+
+#hero .button,
+#donepager-top .button {
+  mix-blend-mode: screen;
+}
+
+#hero .layer-inset {
+  justify-content: center;
+  min-height: 80vh;
+}
+
+#applit {
+  margin-top: calc(var(--space-clamp) * -1);
+  padding: 0 var(--space-clamp);
+  position: relative;
+}
+
+#applit .browser {
+  margin: 0 auto;
+  max-width: 60rem;
+  width: 100%;
+}
+
+#hero-fade {
+  background: linear-gradient(transparent, var(--color-lightest));
+  height: 15rem;
+  margin-top: -15rem;
+  pointer-events: none;
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-clamp);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 48rem) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.card {
+  border: 1px solid var(--color-light);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+.card p,
+.problem-item p,
+.step p {
+  font-size: 0.875rem;
+}
+
+.problem-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 36rem;
+}
+
+.step {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+}
+
+.step > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.step-number {
+  align-items: center;
+  background: var(--color-lighter);
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  font-weight: 700;
+  height: 2.5rem;
+  justify-content: center;
+  width: 2.5rem;
+}
+
+#cta {
+  border-top: 1px solid var(--color-light);
+  padding-bottom: clamp(4rem, 8vw, 8rem);
+  padding-top: clamp(4rem, 8vw, 8rem);
+}
+
+.fine {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}
+
+footer {
+  border-top: 1px solid var(--color-light);
+}
+
+footer p {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}

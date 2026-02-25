@@ -1,25 +1,27 @@
-#hero,
-#hard-sell {
-  align-items: flex-end;
-  min-height: 50vh;
+#filters a.active {
+  color: var(--color-darkest);
 }
 
-.chip {
-  align-items: center;
-  background: var(--color-lighter);
-  border-radius: 1rem;
-  display: flex;
-  gap: 0.25rem;
-  padding: 0.5rem 0.75rem;
-  white-space: nowrap;
-}
-.dot {
-  background: var(--color-darkest);
-  border-radius: 0.25rem;
-  height: 0.5rem;
-  width: 0.5rem;
+#grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
-#applet .layer-inset {
-  align-items: unset;
+#grid a {
+  background-image: none;
+}
+
+.item:not(a) {
+  opacity: 0.3;
+}
+
+.item h4 {
+  margin: 0.5rem 0 1rem;
+}
+
+.thumb {
+  aspect-ratio: 4/3;
+  background: var(--thumb, var(--color-lighter)) center/cover no-repeat;
+  border-radius: 0.75rem;
 }

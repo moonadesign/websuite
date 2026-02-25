@@ -1,0 +1,189 @@
+:root {
+  --space-clamp: clamp(1.5rem, 3vw, 2rem);
+}
+
+.fill {
+  flex: 1;
+}
+
+.layer-inset {
+  max-width: 80rem;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  gap: 0.5rem;
+  letter-spacing: -0.06em;
+}
+
+.logo i {
+  font-size: 2rem;
+}
+
+header {
+  min-height: 4.5rem;
+}
+
+footer a {
+  color: var(--color-half);
+}
+
+footer a:hover {
+  color: var(--color-darker);
+}
+
+footer .layer-inset > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer p {
+  font-size: inherit;
+}
+
+#hero {
+  height: 50vh;
+  position: relative;
+}
+
+#hero-bg {
+  inset: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+#hero-fade {
+  background: linear-gradient(transparent, var(--color-lightest));
+  bottom: 0;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.know {
+  color: var(--color-half);
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+.dichotomy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.dichotomy + .dichotomy {
+  border-top: 1px solid var(--color-lighter);
+  padding-top: 2rem;
+}
+
+.dichotomy > .word:first-child {
+  color: var(--color-half);
+}
+
+h2 {
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+#hero-bg {
+  background: url('https://images.unsplash.com/photo-1507963901243-ebfaecd5f2f4?auto=format&fit=crop&q=80&w=1920')
+    center/cover no-repeat;
+}
+
+#glossary .layer-inset {
+  flex-direction: unset;
+  gap: 3rem;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-clamp);
+  min-width: 0;
+}
+
+#legend {
+  background: var(--color-lightest);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1.5rem var(--color-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  width: 15rem;
+}
+
+.legend-item {
+  font-size: 14px;
+}
+
+.read-more {
+  font-size: 14px;
+  margin-top: 0.25rem;
+  text-decoration: underline;
+  width: fit-content;
+}
+
+.avoid {
+  color: var(--color-light);
+}
+
+.use {
+  color: var(--color-darker);
+}
+
+.synonyms {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.word {
+  border-radius: 0.5rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 15rem;
+}
+
+.words {
+  column-gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  row-gap: 4rem;
+}
+
+@media (max-width: 70rem) {
+  .dichotomy > .word:first-child {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 48rem) {
+  #glossary .layer-inset {
+    flex-direction: column;
+  }
+
+  #legend {
+    width: 100%;
+  }
+}

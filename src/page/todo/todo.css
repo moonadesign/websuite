@@ -1,0 +1,55 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 100vh;
+  padding: var(--space-clamp);
+}
+
+#kanban {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.kanban-col h3 {
+  border-bottom: 1px solid var(--color-light);
+  margin: 0 0 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.todo-item {
+  border-bottom: 1px solid var(--color-light);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.75rem 0;
+}
+
+.item-header {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.type {
+  background: var(--color-lighter);
+  border-radius: 0.25rem;
+  color: var(--color-half);
+  font-size: 10px;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.week {
+  color: var(--color-half);
+  font-size: 0.75rem;
+}
+
+.todo-item p {
+  color: var(--color-half);
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}

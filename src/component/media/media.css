@@ -1,0 +1,35 @@
+.example {
+  padding: var(--space-clamp);
+  position: relative;
+}
+
+.example-label {
+  background: var(--color-light);
+  border-radius: 0.25rem;
+  bottom: 1rem;
+  color: var(--color-darkest);
+  font-size: 0.75rem;
+  left: 1rem;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.media {
+  aspect-ratio: 16/9;
+  background: var(--color-lighter);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+#media-image {
+  background: center/cover no-repeat
+    url('https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?auto=format&fit=crop&q=80&w=1920');
+}
+
+.media video {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

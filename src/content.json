@@ -1,0 +1,593 @@
+[
+  {
+    "description": "Interactive web app shell with sidebar navigation and document views.",
+    "name": "App",
+    "route": "/app/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639445/Websuite/bqc5xago9imsqzhvc5fi.png)",
+    "type": "page"
+  },
+  {
+    "description": "Prompt library for pruning unnecessary code and reviewing purge requests safely.",
+    "name": "Audit",
+    "route": "/page/audit/",
+    "type": "page"
+  },
+  {
+    "description": "Dark-themed download and preview site. Ghost hero, full-page app preview, feature sections.",
+    "inspo": ["https://openai.com/codex/"],
+    "name": "Codex",
+    "repro": true,
+    "route": "/page/codex/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639453/Websuite/kvzotfw5x7feire4k2pw.png)",
+    "type": "page"
+  },
+  {
+    "description": "Design system documentation with swatches, typography, and component samples.",
+    "name": "Colophon",
+    "route": "/colophon/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639447/Websuite/vqwljnompnlsu8auo8io.png)",
+    "type": "page"
+  },
+  {
+    "description": "Configure, price, quote UI with top-level nav, operating principles, and component docs.",
+    "name": "CPQ UI",
+    "prompt": "Create a website that houses a series of patterns relevant to any web-based configure price quote software for specialty manufacturing. Features include data management via tabular native import, display, filter, and export interfaces, catalog selection and configuration flows, bill of materials and spec sheets, carts, quotes, and orders, dimensional canvas interfaces, as well as AI-accelerated features for search, support, and administration. The site should document each pattern, component, and token and provide a playground for customizing theme, app shell features, navigation, and generating sample data for each pattern.",
+    "route": "/page/cpqui/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639449/Websuite/rwacchhuvhhl3rnwiejj.png)",
+    "type": "page"
+  },
+  {
+    "description": "DonePager helps teams create concise, complete one-pagers for any deliverable. Get aligned, set expectations, move forward.",
+    "name": "DonePager",
+    "ref": ["pando/superworkers/donepager"],
+    "route": "/page/donepager/",
+    "sponsors": ["donepager"],
+    "type": "page"
+  },
+  {
+    "description": "Collaboration with Shane. Scheduling tool that handles the complexity of booking two people at once.",
+    "name": "Doublebook",
+    "sponsors": ["doublebook"],
+    "type": "page"
+  },
+  {
+    "description": "Planned events-focused homepage direction for Matt Born.",
+    "name": "Events",
+    "sponsors": ["mattborn.github.io"],
+    "type": "page"
+  },
+  {
+    "description": "Agency landing page for solo founders. Ghost hero, project portfolio, single CTA.",
+    "name": "Founder Mode",
+    "ref": ["pando/moonadesign/founder"],
+    "route": "/page/founder/",
+    "type": "page"
+  },
+  {
+    "description": "Glossairy clarifies AI language so teams can think clearly, communicate honestly, and make better decisions.",
+    "name": "Glossairy",
+    "ref": ["pando/superworkers/glossairy"],
+    "route": "/page/glossairy/",
+    "sponsors": ["glossairy"],
+    "type": "page"
+  },
+  {
+    "description": "Landing page for a human-AI interface product. Explores the intersection of natural language and UI.",
+    "name": "Human",
+    "ref": ["gethuman"],
+    "route": "/page/human/",
+    "sponsors": ["human"],
+    "type": "page"
+  },
+  {
+    "description": "Component coverage across design systems with Excel-like data grid.",
+    "name": "Inventory",
+    "route": "/page/inventory/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639451/Websuite/bvv60s18sqbjqbxwdmfl.png)",
+    "type": "page"
+  },
+  {
+    "description": "A timeline of AI application launches and updates",
+    "hide": true,
+    "name": "Jenapps",
+    "ref": ["pando/mattborn/jenapps"],
+    "sponsors": ["jenapps"],
+    "type": "page"
+  },
+  {
+    "description": "Reproduction of the current mattborn.github.io homepage.",
+    "inspo": ["https://jordanhughes.co"],
+    "name": "Jordan Hughes",
+    "ref": ["code-2025/mattborn/mattborn.github.io"],
+    "repro": true,
+    "route": "/page/jordanhughes/",
+    "sponsors": ["mattborn.github.io"],
+    "type": "page"
+  },
+  {
+    "ad": ["Our AI agent Macky helps you improve your system health."],
+    "description": "Mac app download landing page. Glass hero with app preview and download CTA.",
+    "inspo": ["https://unsplash.com/collections/vs5dD19P7Io/experiments_photos"],
+    "name": "Macabre",
+    "prompt": "Macabre is a macOS app that generates a health score for every volume (main volume only on the free tier) and tracks disk space over time. It identifies known culprits for storage abuse — especially Apple system files, backups, and caches — and surfaces specific directories where large files are written at a rapid rate exceeding defined thresholds.",
+    "ref": ["code-2025/_LEVELS/mitt-saas/macabre"],
+    "route": "/page/macabre/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639455/Websuite/o8dq9r98gvdexb6v0odz.png)",
+    "type": "page"
+  },
+  {
+    "description": "Personal portfolio and homepage.",
+    "name": "Matt Born",
+    "ref": ["code-2025/mattborn/mattborn.github.io"],
+    "route": "/page/mattborn/",
+    "sponsors": ["mattborn.github.io"],
+    "type": "page",
+    "url": "https://mattborn.com"
+  },
+  {
+    "description": "Minute-by-minute agentic task scheduling for predictable, auditable AI workflows.",
+    "name": "Mingentic",
+    "route": "/page/mingentic/",
+    "sponsors": ["mingentic"],
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639459/Websuite/kfjkxcirlorqlywcuqzj.png)",
+    "type": "page"
+  },
+  {
+    "description": "The lightest UI kit on the planet.",
+    "name": "Minterface",
+    "ref": ["code-2025/mattborn/websuite-march-2025/minterface"],
+    "route": "/page/minterface/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639457/Websuite/z9dyjpot0vh2kyr4eh0q.png)",
+    "type": "page"
+  },
+  {
+    "description": "Cosmic hero landing page for an AI-native design agency.",
+    "name": "Moona",
+    "ref": ["code-2025/start/mattborn/hundred-vanilla"],
+    "route": "/page/moona/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639461/Websuite/ednjtiowsfwll6nd28fl.png)",
+    "type": "page"
+  },
+  {
+    "description": "System overview page that clarifies Websuite features before the next sweeping refactor.",
+    "name": "Nothing",
+    "ref": ["pando/nothing-static"],
+    "route": "/page/nothing/",
+    "type": "page"
+  },
+  {
+    "description": "Quictate turns what you say into structured objects — tasks, contacts, projects — that tools and agents can use immediately. Not transcripts. Data.",
+    "name": "Quictate",
+    "ref": ["pando/superworkers/quictate"],
+    "route": "/page/quictate/",
+    "sponsors": ["quictate"],
+    "type": "page"
+  },
+  {
+    "description": "Access-gated download page with surreal background.",
+    "name": "Revalize",
+    "ref": ["code-2024/moonadesign/revalize", "code-2025/webrulez/revalize"],
+    "route": "/page/revalize/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639465/Websuite/jcoa80nol59badpbfidc.png)",
+    "type": "page"
+  },
+  {
+    "description": "Beautifully designed components rebuilt with minterface.",
+    "inspo": ["https://ui.shadcn.com"],
+    "name": "shadcn",
+    "repro": true,
+    "route": "/page/shadcn/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639466/Websuite/i0fzgc3xowcelv1hmstw.png)",
+    "type": "page"
+  },
+  {
+    "description": "Superwork Developers.",
+    "hide": true,
+    "name": "Superwork.dev",
+    "ref": ["pando/superworkers/superwork.dev"],
+    "sponsors": ["superwork.dev"],
+    "type": "page",
+    "url": "https://superwork.dev"
+  },
+  {
+    "description": "Superwork.ing superworkers.",
+    "hide": true,
+    "name": "Superwork.ing",
+    "ref": ["pando/superworkers/superwork.ing"],
+    "sponsors": ["superwork.ing"],
+    "type": "page",
+    "url": "https://superwork.ing"
+  },
+  {
+    "description": "Become a superworker.",
+    "hide": true,
+    "name": "Superwork.me",
+    "ref": ["pando/superworkers/superwork.me"],
+    "sponsors": ["superwork.me"],
+    "type": "page",
+    "url": "https://superwork.me"
+  },
+  {
+    "description": "Superwork startup studio.",
+    "hide": true,
+    "name": "Superwork.studio",
+    "ref": ["pando/superworkers/superwork.studio"],
+    "sponsors": ["superwork.studio"],
+    "type": "page",
+    "url": "https://superwork.studio"
+  },
+  {
+    "description": "Superwork fund.",
+    "hide": true,
+    "name": "Superwork.vc",
+    "ref": ["pando/superworkers/superwork.vc"],
+    "sponsors": ["superwork.vc"],
+    "type": "page",
+    "url": "https://superwork.vc"
+  },
+  {
+    "description": "Design engineer travelogue with interview transcripts, minute-loop logic, and day-loop allocation.",
+    "name": "That Matt Life",
+    "route": "/page/that-matt-life/",
+    "type": "page"
+  },
+  {
+    "description": "The most common 13 sections on a marketing site.",
+    "name": "Thirteen",
+    "ref": ["code-2025/mattborn/websuite-march-2025/thirteen"],
+    "route": "/page/thirteen/",
+    "type": "page"
+  },
+  {
+    "description": "Automated screenshot and CDN upload utility for generating and caching page thumbnails.",
+    "name": "Thumby",
+    "type": "page"
+  },
+  {
+    "description": "Active punch list for websuite and minterface development.",
+    "name": "Todo",
+    "route": "/page/todo/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639468/Websuite/rtcfwgnkfs0lsslwfn2m.png)",
+    "type": "page"
+  },
+  {
+    "description": "The design system showcase itself. Framer-inspired, minterface-powered, with live dark/light mode.",
+    "name": "Websuite",
+    "route": "/page/websuite/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639470/Websuite/bm2vbse9bqaerz7vc81m.png)",
+    "type": "page"
+  },
+  {
+    "description": "AI agent tool landing page. Dark mode, pricing tiers, expandable FAQ.",
+    "inspo": ["https://withclaw.com"],
+    "name": "Withclaw",
+    "repro": true,
+    "route": "/page/luxury/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639472/Websuite/hx7wjvjpi3pogbqbkriy.png)",
+    "type": "page"
+  },
+  {
+    "description": "List all the things you want to see other people doing.",
+    "name": "Action Hackson",
+    "type": "layer"
+  },
+  {
+    "description": "Sidebar navigation with approvals table inspired by HumanLayer.",
+    "name": "Admin",
+    "ref": ["code-2025/start/mattborn/hundred-vanilla"],
+    "route": "/layer/admin/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639474/Websuite/dpnswcsdo7jxanvbzwdl.png)",
+    "type": "layer"
+  },
+  {
+    "description": "Align interactive browser and Mac app previews on landing pages.",
+    "name": "Applit",
+    "ref": ["code-2025/mattborn/websuite-march-2025/applit"],
+    "route": "/layer/applit/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639475/Websuite/ejt6edvamfebrygmkci4.png)",
+    "type": "layer"
+  },
+  {
+    "description": "Toolbars for navigation, compliance, and announcements.",
+    "name": "Bars",
+    "type": "layer"
+  },
+  {
+    "description": "Used for non-hero info product and hard sell.",
+    "name": "Billboard",
+    "ref": ["code-2025/mattborn/websuite-march-2025/billboard"],
+    "type": "layer"
+  },
+  {
+    "description": "LinkedIn profile optimizer with tabbed import, record, generate, and improve views.",
+    "name": "Brandon",
+    "ref": ["code-2025/start/mattborn/hundred-vanilla", "pando/superworkers/superwork.ing"],
+    "route": "/layer/brandon/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639478/Websuite/kc1uaoux1kq6dqgcqdi7.png)",
+    "type": "layer"
+  },
+  {
+    "description": "The greatest hits of branding accelerated with AI.",
+    "name": "Brandy",
+    "ref": ["code-2025/mattborn/websuite-march-2025/brandy"],
+    "type": "layer"
+  },
+  {
+    "bumblebee": [
+      "Matrix bullet time gif|https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2NuaTFuY2tsbjdjeG5hbjc4dzA3dWhraDJ2MW96YmV2d3JzeWgyayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eIm624c8nnNbiG0V3g/giphy.gif"
+    ],
+    "description": "Minimalist timeline animations for your website.",
+    "name": "Bullettime",
+    "ref": [
+      "code-2024/mattborn/humanlayer",
+      "code-2024/mattborn/humanlayer-ui",
+      "code-2025/mattborn/websuite-march-2025/bullettime",
+      "code-2025/webrulez/alpyne"
+    ],
+    "type": "layer"
+  },
+  {
+    "description": "Form cards, user management, and data display inspired by shadcn/ui.",
+    "name": "Cards",
+    "ref": ["code-2025/start/mattborn/hundred-vanilla"],
+    "route": "/layer/cards/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639479/Websuite/wr92trfeiju4mkuvisue.png)",
+    "type": "layer"
+  },
+  {
+    "description": "Codex-style sidebar shell with folders, threads, and project actions.",
+    "inspo": ["https://openai.com/codex/"],
+    "name": "Codex",
+    "repro": true,
+    "route": "/layer/codex/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639481/Websuite/pf9kpytcwkphpqlbgrgy.png)",
+    "type": "layer"
+  },
+  {
+    "description": "Dope ass color palettes for your website.",
+    "name": "Colorcade",
+    "ref": ["code-2025/mattborn/websuite-march-2025/colorcade"],
+    "type": "layer"
+  },
+  {
+    "description": "Generate structured content from a personalized context window.",
+    "name": "Copykit",
+    "ref": ["code-2025/mattborn/websuite-march-2025/copykit"],
+    "type": "layer"
+  },
+  {
+    "description": "One box to rule them all, and in the dark mode bind them.",
+    "name": "Crazybox",
+    "type": "layer"
+  },
+  {
+    "description": "Frequently asked questions made stupid simple.",
+    "name": "Focker",
+    "ref": ["code-2025/mattborn/websuite-march-2025/focker"],
+    "type": "layer"
+  },
+  {
+    "description": "Dope ass footer templates for your website.",
+    "name": "Footiejams",
+    "ref": ["code-2025/mattborn/websuite-march-2025/footiejams"],
+    "route": "/layer/footiejams/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639483/Websuite/w3dgbao3clnb151i6sib.png)",
+    "type": "layer"
+  },
+  {
+    "ad": ["save the cheerleader save the world"],
+    "description": "Dope ass hero headers with Open Graph previews for your website.",
+    "name": "Hiro",
+    "ref": ["code-2025/mattborn/websuite-march-2025/hiro"],
+    "route": "/layer/hiro/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639487/Websuite/ewmty1fqld95tfsvdi0z.png)",
+    "type": "layer"
+  },
+  {
+    "description": "AI-accelerated social media content strategy.",
+    "name": "Hypemain",
+    "ref": ["code-2025/mattborn/websuite-march-2025/hypemain"],
+    "type": "layer"
+  },
+  {
+    "description": "The public facing microservice for Subsurf.",
+    "name": "Lander",
+    "ref": ["code-2025/mattborn/websuite-march-2025/lander"],
+    "type": "layer"
+  },
+  {
+    "description": "Profile sidebar and feed layout reproduction.",
+    "name": "LinkedIn",
+    "ref": ["code-2025/start/mattborn/hundred-vanilla"],
+    "route": "/layer/linkedin/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639489/Websuite/tvzpihszqzbdrwj6pdvr.png)",
+    "type": "layer"
+  },
+  {
+    "description": "Dope ass SVG logo grids for your website.",
+    "name": "Logogrid",
+    "ref": ["code-2025/mattborn/websuite-march-2025/logogrid"],
+    "type": "layer"
+  },
+  {
+    "description": "Dope ass cards for your website.",
+    "name": "Macardi",
+    "ref": ["code-2025/mattborn/websuite-march-2025/macardi"],
+    "route": "/layer/macardi/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639491/Websuite/lwquns6nw7r1o1ywgahb.png)",
+    "type": "layer"
+  },
+  {
+    "description": "Impressive sleight of hand as you present every element on your website.",
+    "name": "Magic",
+    "type": "layer"
+  },
+  {
+    "description": "Three-panel email client inspired by shadcn/ui.",
+    "name": "Mail",
+    "ref": ["code-2025/start/mattborn/hundred-vanilla"],
+    "route": "/layer/mail/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639492/Websuite/pg15pihftkcawltyweka.png)",
+    "type": "layer"
+  },
+  {
+    "description": "First there was markup, then markdown, and now, Markless.",
+    "name": "Markless",
+    "ref": ["code-2025/mattborn/websuite-march-2025/markless"],
+    "type": "layer"
+  },
+  {
+    "description": "Quick start & two-way sync for HTML & CSS selectors.",
+    "name": "Markonce",
+    "ref": ["code-2025/mattborn/websuite-march-2025/markonce"],
+    "type": "layer"
+  },
+  {
+    "description": "Microcopy because details complete the story.",
+    "name": "Microcop",
+    "type": "layer"
+  },
+  {
+    "description": "Create invoices in seconds with your voice.",
+    "name": "Minvoice",
+    "type": "layer"
+  },
+  {
+    "description": "AI-accelerated motion graphics.",
+    "name": "Mogra",
+    "ref": ["code-2025/mattborn/websuite-march-2025/mogra"],
+    "type": "layer"
+  },
+  {
+    "description": "A place for starters to just start working on UI concepts.",
+    "name": "Notebook",
+    "type": "layer"
+  },
+  {
+    "description": "Open WebUI reproduction layer using the mac app frame component pattern.",
+    "name": "Open WebUI",
+    "repro": true,
+    "route": "/layer/open-webui/",
+    "type": "layer",
+    "url": "https://openwebui.com"
+  },
+  {
+    "description": "A little bit of everything, and it's still nothing.",
+    "name": "Nothing",
+    "ref": ["code-2025/mattborn/websuite-march-2025/nothing"],
+    "type": "layer"
+  },
+  {
+    "description": "AI-accelerated persona development. Know your audience.",
+    "name": "Person A",
+    "ref": ["code-2025/mattborn/websuite-march-2025/person-a"],
+    "type": "layer"
+  },
+  {
+    "description": "Collaborative, conversational roadmapping.",
+    "name": "Playground",
+    "ref": ["code-2025/mattborn/websuite-march-2025/playground"],
+    "type": "layer"
+  },
+  {
+    "description": "Copy pasta from a one page library of static components.",
+    "name": "Samesies",
+    "ref": ["code-2025/mattborn/websuite-march-2025/samesies"],
+    "type": "layer"
+  },
+  {
+    "description": "Simplify grading, ratings, and reviews.",
+    "name": "Sentium",
+    "type": "layer"
+  },
+  {
+    "description": "Dope ass plans and pricing for your website.",
+    "name": "Subplanet",
+    "ref": ["code-2025/mattborn/websuite-march-2025/subplanet"],
+    "type": "layer"
+  },
+  {
+    "description": "The stitcher between all the microservices for a single lander.",
+    "name": "Subsurf",
+    "ref": ["code-2025/mattborn/websuite-march-2025/subsurf"],
+    "type": "layer"
+  },
+  {
+    "description": "Super fast project branding with JSON font settings.",
+    "name": "Typesets",
+    "ref": ["code-2025/mattborn/websuite-march-2025/typesets"],
+    "type": "layer"
+  },
+  {
+    "description": "The first, minimalist HTML & CSS template.",
+    "name": "Vanilla",
+    "ref": ["code-2025/mattborn/websuite-march-2025/vanilla"],
+    "type": "layer"
+  },
+  {
+    "description": "Convert your rough thoughts and data to beautiful white papers.",
+    "name": "Whitey",
+    "type": "layer"
+  },
+  {
+    "description": "Simplified browser chrome for product screens and interactive previews.",
+    "name": "Browser",
+    "route": "/component/browser/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639494/Websuite/aw4lqdvsp3utxuap3hsc.png)",
+    "type": "component"
+  },
+  {
+    "description": "Auto-replaces hard-coded 20xx years with the current year.",
+    "name": "Copyright",
+    "route": "/component/copyright/",
+    "type": "component"
+  },
+  {
+    "description": "Sized icon containers that beat Font Awesome specificity.",
+    "name": "Icon",
+    "route": "/component/icon/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639496/Websuite/ocmu5toag656benwnaog.png)",
+    "type": "component"
+  },
+  {
+    "description": "Codex-inspired desktop shell for task orchestration, chat, and terminal output.",
+    "inspo": ["https://openai.com/codex/"],
+    "name": "Mac app",
+    "repro": true,
+    "route": "/component/mac-app/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639498/Websuite/sp5etpwigxtcvvmvskgv.png)",
+    "type": "component"
+  },
+  {
+    "description": "Responsive media containers for images and video.",
+    "name": "Media",
+    "route": "/component/media/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639500/Websuite/bfbtfwbpzrkcyto7ulkt.png)",
+    "type": "component"
+  },
+  {
+    "description": "Reads system preference on load, lets the user override. Sun and moon swap on click.",
+    "name": "Mode",
+    "route": "/component/mode/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639501/Websuite/qqmqbx0k4m0m93q5cpab.png)",
+    "type": "component"
+  },
+  {
+    "description": "iPhone-inspired mobile app preview shell with tabbed and common-view variants.",
+    "name": "Phone app",
+    "route": "/component/phone-app/",
+    "type": "component"
+  },
+  {
+    "description": "Textarea with send button and optional file attachment. Enter to submit, Shift+Enter for newline.",
+    "name": "Prompt Composer",
+    "type": "component"
+  },
+  {
+    "description": "Excel-like data grid for component inventory and tracking.",
+    "name": "Table",
+    "route": "/component/table/",
+    "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639503/Websuite/juu1hugpovfhq8uh4lg9.png)",
+    "type": "component"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "description": "Apps, brands, and content for startups, oh my!",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326504/v25/mattborn-founder_2x_d9nmxi.png",
+    "link": "https://moona.design/founder",
+    "title": "Founder Mode"
+  },
+  {
+    "description": "We’re developing the Human Context Protocol (HCP) for AI.",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326514/v25/mattborn-mask_2x_ptmrjm.png",
+    "link": "https://9606.ai",
+    "title": "Human"
+  },
+  {
+    "description": "Catch up on AI.",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1761685721/v25/mattborn-jenapps_2x_vgdmu8.png",
+    "link": "https://jenapps.com",
+    "title": "Jen Apps"
+  },
+  {
+    "description": "AI-accelerated workflows for bootstrapped founders.",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1761845549/v25/mattborn-superwork_2x_iozbrr.png",
+    "link": "https://superwork.ing",
+    "title": "Superwork"
+  },
+  {
+    "description": "My latest attempts to clone myself as an AI agent.",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326503/v25/mattborn-mitt_2x_vpdjei.png",
+    "link": "/mitt",
+    "title": "Mitt"
+  },
+  {
+    "description": "Fantasy football.",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326503/v25/mattborn-frank_2x_rqtug0.png",
+    "link": "/frank",
+    "title": "Frank"
+  },
+  {
+    "description": "Anti-frustration tools for Mac.",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326502/v25/mattborn-macabre_2x_jdtjzk.png",
+    "link": "/macabre",
+    "title": "Macabre"
+  },
+  {
+    "description": "Automation for business and personal accounting.",
+    "image": "https://res.cloudinary.com/dlb7hetnl/image/upload/v1759326645/v25/mattborn-spent_2x_jk0vlz.png",
+    "link": "/spent",
+    "title": "Spent"
+  }
+]
