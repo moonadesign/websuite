@@ -1,96 +1,44 @@
-# nothing-static
+# Websuite
 
-A minimal static site build system with clean URLs and template support.
+Websuite is the Moona Design site system for shipping reusable marketing pages, components, and sections from one static codebase.
 
-## Architecture
+## Scope
 
-### Path mapping
+This repo contains:
 
-- `/src/home.html` + `home.css` + `home.js` → `/build/index.html` + `/build/home.css` + `/build/home.js`
-- `/src/faq.html` → `/build/faq/index.html`
-- `/src/faq/faq.html` + `faq.css` + `faq.js` → `/build/faq/index.html` + `/build/faq/faq.css` + `/build/faq/faq.js`
-- `/src/blog/post/post.html` + `post.css` → `/build/blog/post/index.html` + `/build/blog/post/post.css`
+- `src/home.*` - websuite homepage (built from `content.json`)
+- `src/page/*` - full page templates (for client/site rollouts)
+- `src/component/*` - UI component demos and building blocks
+- `src/section/*` - reusable landing page sections
+- `src/minterface.css` - core design system used across all templates
+- `src/updates/bank.md` - working backlog/reference list
 
-### Path rules
-
-- No `index.*` files in src (only generated `index.html` in build)
-- CSS/JS files live as siblings to their HTML file
-- HTML filename must match folder name when folder exists
-- `home.html` at root is special: builds to `/build/index.html` with assets as `home.css`/`home.js`
-- Folderless HTML creates folder with `index.html` inside
-- Base URL is `/` by default, becomes `/repo/` when CNAME absent and `--dev` not passed
-
-## Features
-
-- **Template system**: All HTML files use `layout.html` with `{template}` replacements
-- **Clean URLs**: `page.html` → `index.html`, `colophon.html` → `colophon/index.html`
-- **Next.js-style routing**: `app/page.html` → `app/index.html`
-- **Global assets**: `global.css` and `global.js` on every page
-- **Page-specific assets**: Auto-detect and inject `pagename.css` and `pagename.js`
-- **Base path switching**: Different base paths for dev (`/`) vs production (`/nothing-static/`)
-- **Watch mode**: Auto-rebuild on file changes
-
-## Usage
+## Build commands
 
 ```bash
-npm run build              # Build for production
-npm run dev                # Build for dev with watch mode
-npm run watch              # Build for production with watch mode
-node build.js              # Build for production
-node build.js --dev        # Build for development
-node build.js --watch      # Build with watch mode
+npm run build   # one-time production build
+npm run dev     # dev build + watch
+npm run watch   # production-mode watch
 ```
 
-## File Structure
+Output is written to `build/` with clean URLs (`x/x.html` -> `x/index.html`).
 
-```
-src/
-  layout.html           # Template with {base}, {title}, {content}, {styles}, {scripts}
-  page.html             # Home page → build/index.html
-  colophon.html         # → build/colophon/index.html
-  app/
-    page.html           # → build/app/index.html
-  global.css            # Included on every page
-  global.js             # Included on every page
-  app.css               # Auto-included on app page
-  app.js                # Auto-included on app page
-```
+## Content model
 
-## Template Variables
+- `src/content.json` powers homepage cards and links.
+- `src/pages.json` stores page-level meta (`title`, description, og tags).
+- `src/page/todo/todo.json` is the active execution queue (done/now/next/later).
 
-- `{base}` - Base path (dev: `/`, prod: `/nothing-static/`)
-- `{title}` - Auto-generated from filename
-- `{content}` - Page content
-- `{styles}` - Auto-injected page-specific styles
-- `{scripts}` - Auto-injected page-specific scripts
+## Working conventions
 
-## Build Output
+- Keep custom CSS/JS minimal and lean on `minterface.css` first.
+- Add new full templates under `src/page/<name>/` with matching `<name>.html` and optional `<name>.css` / `<name>.js`.
+- Add reusable sections under `src/section/<name>/`.
+- Use `src/layout.html` for shell pages and `src/app/layout.html` for app-style routes.
 
-- `page.html` becomes `index.html`
-- `name.html` becomes `name/index.html`
-- `app/page.html` becomes `app/index.html`
-- All non-HTML files copied as-is
+## Upstream candidates (`nothing-static`)
 
-## TODO
-
-### Components
-
-- [ ] app
-- [ ] colophon
-- [ ] dark mode
-- [ ] email capture
-- [ ] footer
-- [ ] hero
-- [ ] applet
-
-### minterface.css
-
-- [ ] Rework heading line-heights
-- [ ] Add app vs marketing heading sizes
-- [ ] Standardize button styles
-- [ ] Consolidate border-radius values (0.5rem, 0.375rem, 50%) into CSS variable
-
-Inspiration
-
-- [base ui](https://base-ui.com)
-- [shadcn](https://ui.shadcn.com)
+- `build.js`: `bodyClass` replacement support via `pages.json`.
+- `build.js`: optional `shell: false` mode to omit shared header/footer wrappers.
+- `build.js`: recursive metadata resolution by path segments.
+- `minterface.css`: typography and button normalization before upstreaming tokens/patterns.

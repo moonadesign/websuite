@@ -1,0 +1,40 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 100vh;
+  padding: var(--space-clamp);
+}
+
+#inventory {
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+#inventory td,
+#inventory th {
+  border-bottom: 1px solid var(--color-light);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+#inventory td:not(:last-child),
+#inventory th:not(:last-child) {
+  white-space: nowrap;
+  width: 1%;
+}
+
+#inventory th {
+  background: var(--color-lighter);
+  color: var(--color-half);
+  font-weight: 500;
+}
+
+#inventory i {
+  color: var(--color-half);
+}
+
+.mvp {
+  background: var(--color-lighter);
+}

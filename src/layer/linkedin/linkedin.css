@@ -1,0 +1,46 @@
+.app-shell {
+  height: 36rem;
+}
+
+.li-avatar {
+  border: 2px solid var(--color-lightest);
+  border-radius: 50%;
+}
+
+.li-banner {
+  background: var(--color-lighter);
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 3rem;
+}
+
+.li-body {
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.li-logo {
+  font-size: 1.5rem;
+}
+
+.li-profile {
+  align-items: center;
+  margin-top: -1.5rem;
+  text-align: center;
+}
+
+.li-search {
+  max-width: 16rem;
+}
+
+.li-sidebar {
+  width: 14rem;
+}
+
+.li-stats {
+  font-size: 0.875rem;
+}
+
+.muted {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}

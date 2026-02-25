@@ -1,0 +1,163 @@
+:root {
+  --color-background: #f4efe2;
+  --color-primary: #3cc;
+  --project-gap: clamp(4rem, 6vw, 8rem);
+  --space-clamp: clamp(1rem, 3vw, 3rem);
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+  :root {
+    --color-background: color(display-p3 0.9529 0.9373 0.8902);
+    --color-primary: color(display-p3 0.2 0.8 0.8);
+  }
+}
+
+body {
+  background: var(--color-background);
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.06em;
+}
+
+p {
+  line-height: 1.5;
+  max-width: 40rem;
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Branding */
+.logo {
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  line-height: 0.8;
+  max-width: 8ch;
+}
+
+footer {
+  min-height: 20rem;
+}
+
+footer .layer-inset {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+/* Hero */
+#hero {
+  --color-darkest: var(--color-background);
+  --color-half: color-mix(in srgb, var(--color-background) 50%, transparent);
+  background: var(--color-primary);
+  min-height: 90vh;
+}
+
+#hero .layer-inset {
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+#hero .logo {
+  color: var(--color-darkest);
+  font-size: clamp(6rem, 12vw, 12rem);
+}
+
+footer .logo {
+  font-size: 4rem;
+}
+
+#hero .button {
+  background: var(--color-background);
+  color: var(--color-primary);
+}
+
+.scroll-more {
+  color: var(--color-half);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin: 2rem 0 0;
+  text-transform: uppercase;
+}
+
+/* Projects */
+#projects .layer-inset {
+  align-items: flex-start;
+  gap: var(--project-gap);
+}
+
+#projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--project-gap);
+}
+
+.project {
+  border-bottom: 1px solid var(--color-light);
+  display: grid;
+  gap: 2rem;
+  padding-bottom: var(--project-gap);
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.project-text-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.project-date {
+  color: var(--color-half);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-tags {
+  color: var(--color-half);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-url {
+  font-size: 1.25rem;
+}
+
+.project-url::after {
+  content: ' ↗';
+}
+
+.project-image img {
+  aspect-ratio: 16 / 9;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.project-image:hover img {
+  transform: scale(1.1);
+}
+
+/* Desktop */
+@media (min-width: 48rem) {
+  .project {
+    grid-template-columns: 1fr 1fr;
+  }
+}

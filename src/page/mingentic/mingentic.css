@@ -1,0 +1,53 @@
+#mingentic-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#hero {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=1920')
+    center/cover no-repeat;
+  position: relative;
+}
+
+#hero .layer-inset {
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+#hero p {
+  color: var(--color-half);
+}
+
+#hero-fade {
+  background: linear-gradient(transparent, var(--color-lightest));
+  height: 15rem;
+  margin-top: -15rem;
+  pointer-events: none;
+  position: relative;
+}
+
+#why ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  line-height: 1.6;
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 50vh;
+  padding: 1rem 1.5rem;
+}

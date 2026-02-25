@@ -1,36 +1,36 @@
 /* Colors */
 :root {
   --color-accent: #0bc;
+  --color-fixed-black: #001;
   --color-darkest: rgba(0, 0, 17, 0.9); /* #000011e5 - 90% */
   --color-darker: rgba(0, 0, 17, 0.7); /* #000011b2 - 70% */
+  --color-fixed-white: #fff;
   --color-half: rgba(0, 0, 17, 0.5); /* #00001180 - 50% */
   --color-light: rgba(0, 0, 17, 0.1); /* #0000111a - 10% */
   --color-lighter: rgba(0, 0, 17, 0.05); /* #0000110d - 5% */
   --color-lightest: rgb(255, 255, 255); /* #fff */
   --space-clamp: clamp(1.5rem, 3vw, 4rem);
+  --header-height: calc(var(--space-clamp) * 2 + 2.25rem);
 }
 .ghost {
-  --color-darkest: rgba(255, 255, 255, 0.9); /* e5 - 90% */
+  --color-darkest: rgb(255, 255, 255); /* e5 - 90% */
   --color-darker: rgba(255, 255, 255, 0.7); /* b2 - 70% */
   --color-half: rgba(255, 255, 255, 0.5); /* 80 - 50% */
   --color-light: rgba(255, 255, 255, 0.1); /* 1a - 10% */
   --color-lighter: rgba(255, 255, 255, 0.05); /* 0d - 5% */
   --color-lightest: rgb(0, 0, 17); /* #001 */
+  color: var(--color-darkest);
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
-    /* copied from .ghost */
-    --color-darkest: rgba(255, 255, 255, 0.9);
+    --color-darkest: rgb(255, 255, 255);
     --color-darker: rgba(255, 255, 255, 0.7);
     --color-half: rgba(255, 255, 255, 0.5);
     --color-light: rgba(255, 255, 255, 0.1);
     --color-lighter: rgba(255, 255, 255, 0.05);
     --color-lightest: rgb(0, 0, 17);
   }
-
   .ghost {
-    /* copied from :root */
     --color-darkest: rgba(0, 0, 17, 0.9);
     --color-darker: rgba(0, 0, 17, 0.7);
     --color-half: rgba(0, 0, 17, 0.5);
@@ -38,6 +38,15 @@
     --color-lighter: rgba(0, 0, 17, 0.05);
     --color-lightest: rgb(255, 255, 255);
   }
+}
+.glass {
+  --color-darkest: rgb(255, 255, 255);
+  --color-darker: rgba(255, 255, 255, 0.7);
+  --color-half: rgba(255, 255, 255, 0.5);
+  --color-light: rgba(255, 255, 255, 0.1);
+  --color-lighter: rgba(255, 255, 255, 0.05);
+  --color-lightest: rgb(0, 0, 17);
+  color: var(--color-darkest);
 }
 
 /* Reset */
@@ -50,6 +59,7 @@ button {
   border: none;
   color: inherit;
   cursor: pointer;
+  padding: unset;
   font: inherit;
 }
 
@@ -82,31 +92,42 @@ h1 {
   line-height: 1;
 }
 
+h2,
+h3,
+h4 {
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+
 h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1;
+  font-size: clamp(2.5rem, 7vw, 4rem);
 }
 
 h3 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 h4 {
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  line-height: 1.25rem;
+  font-size: 1.5rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.small-caps {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 h1 + p,
 h2 + p,
 .lede {
   color: var(--color-half);
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.5rem;
+  line-height: 1.3;
   max-width: 60rem;
 }
 
@@ -140,19 +161,25 @@ body {
   align-items: flex-start;
   flex: 1;
   max-width: 80rem;
+  min-width: 0;
 }
 
 section .layer-inset {
   display: flex;
   flex-direction: column;
-  gap: var(--space-clamp);
+  gap: 1.5rem;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Components */
 
 /* Card */
 .card {
-  background: var(--color-lightest);
   border: 1px solid var(--color-light);
   border-radius: 0.5rem;
 }
@@ -184,6 +211,14 @@ section .layer-inset {
   padding: 9px 0.75rem;
 }
 
+button:disabled,
+.button:disabled,
+input:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 .button:hover {
   background: var(--color-light);
 }
@@ -195,7 +230,6 @@ section .layer-inset {
 }
 
 .button-outline {
-  background: var(--color-lightest);
   border: 1px solid var(--color-light);
 }
 
@@ -304,6 +338,19 @@ hr {
   border-radius: 50%;
   height: 2rem;
   width: 2rem;
+}
+
+/* App Icon */
+.app-icon {
+  align-items: center;
+  background: var(--color-darkest);
+  border-radius: 1.25rem;
+  color: var(--color-lightest);
+  display: flex;
+  font-size: 3rem;
+  height: 5.5rem;
+  justify-content: center;
+  width: 5.5rem;
 }
 
 /* Icons */
@@ -459,8 +506,8 @@ hr {
   background: var(--color-light);
   border-radius: 50%;
   box-shadow:
-    1rem 0 0 var(--color-light),
-    2rem 0 0 var(--color-light);
+    1.25rem 0 0 var(--color-light),
+    2.5rem 0 0 var(--color-light);
   content: '';
   height: 0.75rem;
   width: 0.75rem;

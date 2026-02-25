@@ -1,0 +1,35 @@
+#grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.card p {
+  color: var(--color-half);
+}
+
+.option {
+  border: none;
+  padding: 0.75rem;
+}
+
+.switch-item {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+}
+
+.switch-item label {
+  cursor: pointer;
+  flex: 1;
+  flex-direction: column;
+}
+
+.switch-item p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.card-actions {
+  justify-content: flex-end;
+}

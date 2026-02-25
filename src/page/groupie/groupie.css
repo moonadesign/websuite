@@ -1,0 +1,119 @@
+:root {
+  --page-background: #34d;
+}
+
+body {
+  background: var(--page-background);
+}
+
+#footer {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  min-height: 20rem;
+  padding: 1rem 1.5rem;
+}
+
+#footer p {
+  color: var(--color-half);
+}
+
+#groupie-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#hero {
+  background:
+    linear-gradient(rgba(56, 67, 208, 0.72), rgba(56, 67, 208, 0.88)),
+    url('https://images.unsplash.com/photo-1621112904887-419379ce6824?auto=format&fit=crop&q=80&w=1920') center / cover
+      no-repeat;
+  position: relative;
+}
+
+#hero .button,
+#groupie-top .button {
+  mix-blend-mode: screen;
+}
+
+#hero .layer-inset {
+  gap: 1rem;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+#hero-fade {
+  background: linear-gradient(transparent, var(--page-background));
+  height: 15rem;
+  margin-top: -15rem;
+  pointer-events: none;
+  position: relative;
+}
+
+#timeline {
+  margin-top: -4rem;
+  padding-top: 0;
+  position: relative;
+}
+
+#timeline-note {
+  background: linear-gradient(180deg, rgba(56, 67, 208, 0.3), transparent);
+}
+
+.metric {
+  background: var(--color-lighter);
+  border: 1px solid var(--color-light);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+
+.metric-list {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 1rem;
+}
+
+.story-grid {
+  align-items: stretch;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.story-media {
+  background: var(--color-lightest);
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.timeline-list {
+  gap: 0.75rem;
+}
+
+@media (max-width: 48rem) {
+  .metric-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 48rem) {
+  .story-grid {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  }
+}

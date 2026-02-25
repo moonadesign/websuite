@@ -1,0 +1,705 @@
+[
+  {
+    "name": "Revalize",
+    "type": "page",
+    "route": "/page/revalize/",
+    "week": "W8 2026",
+    "when": "past",
+    "sponsored_by": ["revalize.design"]
+  },
+  {
+    "name": "Mode",
+    "type": "component",
+    "route": "/component/mode/",
+    "week": "W9 2026",
+    "when": "past"
+  },
+  {
+    "name": "Glossairy",
+    "note": "card view component, docs page template with TOC",
+    "route": "/page/glossairy/",
+    "type": "page",
+    "week": "W4 2026",
+    "when": "deconstruct",
+    "sponsored_by": ["glossairy.com"]
+  },
+  {
+    "name": "Jenapps",
+    "type": "page",
+    "week": "W43 2025",
+    "when": "deconstruct",
+    "sponsored_by": ["jenapps.com"]
+  },
+  {
+    "name": "Mac app",
+    "note": "needs variants, codex-inspired baseline now usable",
+    "type": "component",
+    "route": "/component/mac-app/",
+    "when": "past",
+    "sponsored_by": ["Macabre"]
+  },
+  {
+    "name": "Phone app",
+    "note": "iPhone-inspired mobile shell + tabs + common-view stubs",
+    "route": "/component/phone-app/",
+    "type": "component",
+    "when": "past"
+  },
+  {
+    "name": "Codex",
+    "note": "repro of openai.com/codex, renamed from Macabre",
+    "type": "page",
+    "route": "/page/codex/",
+    "week": "W33 2025",
+    "when": "past"
+  },
+  {
+    "name": "Macabre",
+    "note": "glass hero + footer (Footiejams)",
+    "type": "page",
+    "route": "/page/macabre/",
+    "week": "W33 2025",
+    "when": "extend",
+    "sponsors": ["Mac app"],
+    "sponsored_by": ["mattborn.com/macabre", "gethuman", "quictate"]
+  },
+  {
+    "name": "Moona",
+    "note": "uses .glass and full-width header like macabre",
+    "type": "page",
+    "route": "/page/moona/",
+    "when": "extend"
+  },
+  {
+    "name": "Applit",
+    "note": "Align interactive browser and Mac app previews on landing pages.",
+    "type": "layer",
+    "route": "/layer/applit/",
+    "when": "extend",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Footiejams",
+    "type": "layer",
+    "route": "/layer/footiejams/",
+    "week": "W9 2026",
+    "when": "past",
+    "sponsored_by": ["macabre", "moona", "mingentic", "thirteen"]
+  },
+  {
+    "name": "Placeholder",
+    "route": "/layer/placeholder/",
+    "type": "layer",
+    "when": "past",
+    "sponsored_by": ["human"]
+  },
+  {
+    "name": "Copyright",
+    "route": "/component/copyright/",
+    "type": "component",
+    "week": "W10 2026",
+    "when": "past",
+    "sponsored_by": ["footiejams"]
+  },
+  {
+    "name": "That Matt Life",
+    "note": "needs to sponsor dictate v1 template",
+    "type": "page",
+    "route": "/page/that-matt-life/",
+    "when": "deconstruct"
+  },
+  {
+    "name": "Jordan Hughes",
+    "route": "/page/jordanhughes/",
+    "type": "page",
+    "when": "deconstruct",
+    "sponsored_by": ["mattborn.github.io"]
+  },
+  {
+    "name": "Human",
+    "route": "/page/human/",
+    "type": "page",
+    "week": "W51 2025",
+    "when": "extend",
+    "sponsors": ["Open WebUI"],
+    "sponsored_by": ["gethuman"]
+  },
+  {
+    "name": "DonePager",
+    "route": "/page/donepager/",
+    "type": "page",
+    "week": "W2 2026",
+    "when": "now",
+    "sponsored_by": ["donepager.com"]
+  },
+  {
+    "name": "Events",
+    "type": "page",
+    "when": "now",
+    "sponsored_by": ["mattborn.github.io"]
+  },
+  {
+    "name": "Quictate",
+    "note": "rich header + interactive landing demo",
+    "route": "/page/quictate/",
+    "type": "page",
+    "week": "W5 2026",
+    "when": "deconstruct",
+    "sponsors": ["Macabre"],
+    "sponsored_by": ["quictate.com"]
+  },
+  {
+    "name": "Matt Born",
+    "note": "needs refactor, catalogue current template, create new homepage",
+    "type": "page",
+    "when": "now",
+    "sponsored_by": ["mattborn.github.io"]
+  },
+  {
+    "name": "Mingentic",
+    "note": "needs repo",
+    "type": "page",
+    "route": "/page/mingentic/",
+    "week": "W7 2026",
+    "when": "extend",
+    "sponsored_by": ["mingentic.com"]
+  },
+  {
+    "name": "Groupie",
+    "note": "timeline-first private updates landing page scaffold",
+    "route": "/page/groupie/",
+    "sponsored_by": ["groupie.dev"],
+    "type": "page",
+    "when": "extend"
+  },
+  {
+    "name": "Doublebook",
+    "route": "/page/doublebook/",
+    "sponsored_by": ["doublebook.me"],
+    "type": "page",
+    "week": "W3 2026",
+    "when": "extend"
+  },
+  {
+    "name": "CPQ UI",
+    "note": "features, docs, playground nav; operating principles",
+    "type": "page",
+    "route": "/page/cpqui/",
+    "when": "now"
+  },
+  {
+    "name": "Colorcade",
+    "type": "layer",
+    "when": "now"
+  },
+  {
+    "name": "Hiro",
+    "type": "layer",
+    "when": "now",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Websuite",
+    "type": "page",
+    "route": "/page/websuite/",
+    "when": "now",
+    "sponsored_by": ["websuite.me"]
+  },
+  {
+    "name": "shadcn",
+    "type": "page",
+    "route": "/page/shadcn/",
+    "when": "next",
+    "sponsors": ["Form Controls", "Selection & Toggle", "Overlays", "Navigation & Layout", "Content & Display"]
+  },
+  {
+    "name": "Minterface",
+    "type": "page",
+    "route": "/page/minterface/",
+    "when": "next"
+  },
+  {
+    "name": "Open WebUI",
+    "note": "mac app frame repro layer",
+    "route": "/layer/open-webui/",
+    "type": "layer",
+    "when": "next",
+    "sponsored_by": ["gethuman"]
+  },
+  {
+    "items": [
+      "Checkbox",
+      "Combobox",
+      "Form",
+      "Input OTP",
+      "Meter",
+      "Number Field",
+      "Radio",
+      "Radio Cards",
+      "Radio Group",
+      "Slider"
+    ],
+    "name": "Form Controls",
+    "type": "component",
+    "when": "next",
+    "sponsored_by": ["shadcn"]
+  },
+  {
+    "items": [
+      "Accordion",
+      "Calendar",
+      "Checkbox Cards",
+      "Checkbox Group",
+      "Collapsible",
+      "Date Picker",
+      "Table",
+      "Tabs",
+      "Toggle",
+      "Toggle Group"
+    ],
+    "name": "Selection & Toggle",
+    "type": "component",
+    "when": "next",
+    "sponsored_by": ["shadcn"]
+  },
+  {
+    "items": [
+      "Alert Dialog",
+      "Command",
+      "Context Menu",
+      "Dialog",
+      "Drawer",
+      "Dropdown Menu",
+      "Hover Card",
+      "Popover",
+      "Sheet",
+      "Toast"
+    ],
+    "name": "Overlays",
+    "type": "component",
+    "when": "next",
+    "sponsored_by": ["shadcn"]
+  },
+  {
+    "items": [
+      "Breadcrumb",
+      "Menubar",
+      "Navigation Menu",
+      "Pagination",
+      "Resizable",
+      "Scroll Area",
+      "Sidebar",
+      "Spinner",
+      "Toolbar",
+      "Tooltip"
+    ],
+    "name": "Navigation & Layout",
+    "type": "component",
+    "when": "next",
+    "sponsored_by": ["shadcn"]
+  },
+  {
+    "items": [
+      "Alert",
+      "Aspect Ratio",
+      "Button Group",
+      "Carousel",
+      "Chart",
+      "Data List",
+      "Data Table",
+      "Icon Button",
+      "Kbd",
+      "Progress"
+    ],
+    "name": "Content & Display",
+    "type": "component",
+    "when": "next",
+    "sponsored_by": ["shadcn"]
+  },
+  {
+    "name": "Pastor.bot",
+    "note": "needs refactor, no minterface",
+    "type": "page",
+    "week": "W45 2025",
+    "when": "later",
+    "sponsored_by": ["pastor.bot"]
+  },
+  {
+    "name": "Skipist",
+    "note": "needs repo",
+    "type": "page",
+    "week": "W10 2025",
+    "when": "later",
+    "sponsored_by": ["skipist.com"]
+  },
+  {
+    "name": "Spent",
+    "note": "needs repo",
+    "type": "page",
+    "week": "W1 2026",
+    "when": "later",
+    "sponsored_by": ["mattborn.com/spent"]
+  },
+  {
+    "name": "Sportsball",
+    "note": "needs repo",
+    "type": "page",
+    "week": "W6 2025",
+    "when": "later",
+    "sponsored_by": ["mattborn.com/sportsball"]
+  },
+  {
+    "name": "Aspen",
+    "note": "needs full refactor",
+    "type": "page",
+    "week": "W31 2025",
+    "when": "later",
+    "sponsored_by": ["aspencorrections.com"]
+  },
+  {
+    "name": "Highwest",
+    "type": "page",
+    "week": "W40 2025",
+    "when": "later",
+    "sponsored_by": ["highwestgroup.com"]
+  },
+  {
+    "name": "Pastor.tools",
+    "type": "page",
+    "week": "W46 2025",
+    "when": "later",
+    "sponsored_by": ["pastor.tools"]
+  },
+  {
+    "name": "Brand OS",
+    "type": "page",
+    "week": "W25 2025",
+    "when": "later",
+    "sponsored_by": ["moona.design/brand-os"]
+  },
+  {
+    "name": "nothing-static foundation",
+    "type": "system",
+    "week": "W30 2025",
+    "when": "later"
+  },
+  {
+    "name": "Frank",
+    "type": "page",
+    "week": "W32 2025",
+    "when": "later",
+    "sponsored_by": ["mattborn.com/frank"]
+  },
+  {
+    "name": "Hatch",
+    "type": "page",
+    "week": "W35 2025",
+    "when": "later",
+    "sponsored_by": ["mattborn.com/hatch"]
+  },
+  {
+    "name": "Mask",
+    "type": "page",
+    "week": "W36 2025",
+    "when": "later",
+    "sponsored_by": ["superwork.ing/mask"]
+  },
+  {
+    "name": "Jory",
+    "type": "page",
+    "week": "W37 2025",
+    "when": "later",
+    "sponsored_by": ["superwork.ing/jory"]
+  },
+  {
+    "name": "Darrin",
+    "type": "page",
+    "week": "W38 2025",
+    "when": "later",
+    "sponsored_by": ["superwork.ing/darrin"]
+  },
+  {
+    "name": "Superwork.ing",
+    "type": "page",
+    "week": "W39 2025",
+    "when": "later",
+    "sponsored_by": ["superworkers.github.io"]
+  },
+  {
+    "name": "Code archive",
+    "type": "system",
+    "week": "W41 2025",
+    "when": "later"
+  },
+  {
+    "name": "nothing-cli init",
+    "type": "system",
+    "week": "W42 2025",
+    "when": "later"
+  },
+  {
+    "name": "Founder Mode",
+    "note": "close to finish line, most work already done",
+    "route": "/page/founder/",
+    "type": "page",
+    "week": "W44 2025",
+    "when": "later",
+    "sponsored_by": ["founder"]
+  },
+  {
+    "name": "Superwork.dev",
+    "type": "page",
+    "week": "W47 2025",
+    "when": "later",
+    "sponsored_by": ["superwork.dev"]
+  },
+  {
+    "name": "Superwork.me",
+    "type": "page",
+    "week": "W48 2025",
+    "when": "later",
+    "sponsored_by": ["superwork.me"]
+  },
+  {
+    "name": "Superwork.studio",
+    "type": "page",
+    "week": "W49 2025",
+    "when": "later",
+    "sponsored_by": ["superwork.studio"]
+  },
+  {
+    "name": "Superwork.vc",
+    "type": "page",
+    "week": "W50 2025",
+    "when": "later",
+    "sponsored_by": ["superwork.vc"]
+  },
+  {
+    "name": "Lectionary",
+    "type": "page",
+    "week": "W52 2025",
+    "when": "later",
+    "sponsored_by": ["mattborn.com/lectionary"]
+  },
+  {
+    "name": "Action Hackson",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Admin",
+    "type": "layer",
+    "route": "/layer/admin/",
+    "when": "later"
+  },
+  {
+    "name": "Bars",
+    "type": "layer",
+    "when": "next",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Billboard",
+    "type": "layer",
+    "when": "next",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Brandon",
+    "type": "layer",
+    "route": "/layer/brandon/",
+    "when": "later"
+  },
+  {
+    "name": "Brandy",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Bullettime",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Cards",
+    "type": "layer",
+    "route": "/layer/cards/",
+    "when": "later"
+  },
+  {
+    "name": "Copykit",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Crazybox",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Focker",
+    "type": "layer",
+    "when": "next",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Hypemain",
+    "type": "layer",
+    "when": "next",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Lander",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "LinkedIn",
+    "type": "layer",
+    "route": "/layer/linkedin/",
+    "when": "later"
+  },
+  {
+    "name": "Logogrid",
+    "type": "layer",
+    "when": "next",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Macardi",
+    "type": "layer",
+    "route": "/layer/macardi/",
+    "when": "next",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Magic",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Mail",
+    "type": "layer",
+    "route": "/layer/mail/",
+    "when": "later"
+  },
+  {
+    "name": "Markless",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Markonce",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Microcop",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Minvoice",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Mogra",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Notebook",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Nothing",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Person A",
+    "type": "layer",
+    "when": "next",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Playground",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Samesies",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Sentium",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Subplanet",
+    "type": "layer",
+    "when": "next",
+    "sponsored_by": ["thirteen"]
+  },
+  {
+    "name": "Subsurf",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Thirteen",
+    "note": "header, hero, applit, and footer are live; remaining sections are scaffolded as placeholders",
+    "route": "/page/thirteen/",
+    "sponsors": [
+      "Bars",
+      "Hiro",
+      "Person A",
+      "Applit",
+      "Logogrid",
+      "Macardi",
+      "Hypemain",
+      "Subplanet",
+      "Focker",
+      "Billboard",
+      "Footiejams",
+      "Compliance"
+    ],
+    "type": "page",
+    "when": "now"
+  },
+  {
+    "name": "Typesets",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Vanilla",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "name": "Whitey",
+    "type": "layer",
+    "when": "later"
+  },
+  {
+    "items": [
+      "Fix minterface markup and styling issues",
+      "bodyClass in pages.json",
+      "shell: false support",
+      "recursive meta resolution",
+      "Rework heading line-heights",
+      "App vs marketing heading sizes",
+      "Standardize button styles",
+      "Consolidate border-radius values"
+    ],
+    "name": "nothing-static updates",
+    "note": "recurring, frequency TBD based on velocity",
+    "type": "system",
+    "when": "later"
+  }
+]

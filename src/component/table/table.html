@@ -1,0 +1,80 @@
+<section class="layer">
+  <div class="layer-inset">
+    <h1>Table</h1>
+    <p>Excel-like data grid for component inventory and tracking.</p>
+  </div>
+</section>
+
+<section class="layer">
+  <div class="layer-inset">
+    <h2>Placeholder</h2>
+    <p>Evaluating lightweight grid libraries for static HTML. The table component will power the inventory page.</p>
+    <table id="table-demo">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Minterface</th>
+          <th>shadcn</th>
+          <th>Radix</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Button</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td>Done</td>
+        </tr>
+        <tr>
+          <td>Card</td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td></td>
+          <td>Done</td>
+        </tr>
+        <tr>
+          <td>Dialog</td>
+          <td></td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td>Todo</td>
+        </tr>
+        <tr>
+          <td>Switch</td>
+          <td></td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td><i class="fa-solid fa-check"></i></td>
+          <td>Todo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!--
+  Grid library options under evaluation:
+
+  AG Grid (https://www.ag-grid.com)
+  - Most feature-rich, enterprise-grade
+  - Heavy bundle size, commercial license for advanced features
+
+  Handsontable (https://handsontable.com)
+  - Spreadsheet-like UX, closest to Excel
+  - Commercial license required for production
+
+  RevoGrid (https://rv-grid.com)
+  - Virtual DOM, lightweight, good performance
+  - Smaller community
+
+  Jspreadsheet (https://jspreadsheet.com)
+  - Lightweight spreadsheet component
+  - Free tier available
+
+  Key concerns:
+  - Performance at scale (https://dev.to/revolist/battle-of-the-rows-the-limits-of-data-performance-4mcn)
+  - Static HTML vs React compatibility
+  - License cost
+  - Bundle size — must stay lightweight
+-->

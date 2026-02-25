@@ -1,0 +1,26 @@
+body {
+  background: var(--color-lightest)
+    url('https://res.cloudinary.com/moona/image/upload/v1771953695/Revalize/revalize-abstract-surreal_okl8kp.png')
+    center / cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+}
+
+#copyright {
+  color: var(--color-half);
+}
+#error {
+  color: #f90;
+}
+
+main {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100vh;
+  justify-content: center;
+  max-width: 80rem;
+  padding: var(--space-clamp);
+  width: 100%;
+}

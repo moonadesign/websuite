@@ -1,0 +1,25 @@
+.brand .fa-copy {
+  transform: rotate(45deg);
+}
+
+.placeholder .layer-inset {
+  min-height: 60vh;
+}
+
+.placeholder-cards {
+  align-self: stretch;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.placeholder-cards .card {
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+@media (max-width: 720px) {
+  .placeholder-cards {
+    grid-template-columns: 1fr;
+  }
+}

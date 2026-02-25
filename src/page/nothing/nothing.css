@@ -1,0 +1,25 @@
+#hero,
+#hard-sell {
+  align-items: flex-end;
+  min-height: 50vh;
+}
+
+.chip {
+  align-items: center;
+  background: var(--color-lighter);
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  white-space: nowrap;
+}
+.dot {
+  background: var(--color-darkest);
+  border-radius: 0.25rem;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+#applet .layer-inset {
+  align-items: unset;
+}

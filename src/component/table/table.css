@@ -1,0 +1,22 @@
+#table-demo {
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+#table-demo td,
+#table-demo th {
+  border-bottom: 1px solid var(--color-light);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+#table-demo th {
+  background: var(--color-lighter);
+  color: var(--color-half);
+  font-weight: 500;
+}
+
+#table-demo .fa-check {
+  color: var(--color-half);
+}
