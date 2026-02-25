@@ -1,6 +1,6 @@
 :root {
-  --closing-bg: url('https://images.unsplash.com/photo-1554629947-334ff61d85dc?fit=crop&q=80&w=1920');
-  --hero-bg: url('https://images.unsplash.com/photo-1554629947-334ff61d85dc?fit=crop&q=80&w=1920');
+  --closing-bg: url('https://images.unsplash.com/photo-1554629947-334ff61d85dc?auto=format&fit=crop&q=80&w=1920');
+  --hero-bg: url('https://images.unsplash.com/photo-1554629947-334ff61d85dc?auto=format&fit=crop&q=80&w=1920');
 }
 
 em {

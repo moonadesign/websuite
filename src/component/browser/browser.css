@@ -1,0 +1,85 @@
+.example .browser {
+  width: 100%;
+}
+
+.example .layer-inset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.frosted.layer {
+  background: center/cover no-repeat
+    url('https://plus.unsplash.com/premium_photo-1664438942574-e56510dc5ce5?auto=format&fit=crop&q=80&w=1920');
+}
+
+.alpyne.layer {
+  background: center/cover no-repeat
+    url('https://images.unsplash.com/photo-1556801325-3e2816420feb?auto=format&fit=crop&q=80&w=1920');
+}
+
+.frosted .browser-bar {
+  backdrop-filter: blur(8px);
+  background: #fff6;
+  border-bottom: none;
+  gap: 1rem;
+  height: auto;
+  padding: 1rem;
+}
+
+.frosted .browser-bar::before {
+  content: none;
+}
+
+.alpyne .browser {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.alpyne .browser-address {
+  align-items: center;
+  background: var(--color-lightest);
+  border-radius: 1rem;
+  color: inherit;
+  display: flex;
+  font:
+    14px/1rem 'DM Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  flex: 1;
+  gap: 0.5rem;
+  min-width: 0;
+  padding: 0.5rem 0.75rem;
+}
+
+.alpyne .browser-address .fa-lock {
+  color: var(--color-half);
+}
+
+.alpyne .browser-bar {
+  align-items: center;
+  backdrop-filter: blur(8px);
+  background: #fff6;
+  border-bottom: none;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.alpyne .browser-bar::before {
+  content: none;
+}
+
+.browser-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.browser-dots span {
+  background: var(--color-lightest);
+  border-radius: 50%;
+  height: 0.75rem;
+  width: 0.75rem;
+}

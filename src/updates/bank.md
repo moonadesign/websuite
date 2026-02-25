@@ -122,7 +122,7 @@
 
 ### Thursday, January 8, 2026
 
-**DonePager** — Marketing site for a one-pager creation tool. Hero, audience fit, problem/solution, how-it-works steps, and CTA. Shipped as a refactored nothing-static project. [Template]
+**Donepager** — Marketing site for a one-pager creation tool. Hero, audience fit, problem/solution, how-it-works steps, and CTA. Shipped as a refactored nothing-static project. [Template]
 
 ### Thursday, January 15, 2026
 
@@ -168,7 +168,7 @@
 
 **Step indicators** — Numbered steps for how-it-works sequences. Stay centered, stay circular, never stretch. [Component]
 
-**Browser mockup** — Simplified browser chrome for showing product screenshots or live previews without a real browser frame. [Component]
+**Browser** — Simplified browser chrome for showing product screens and interactive previews without a real browser frame. [Component]
 
 **Audio player** — Play, pause, and scrub. Minimal controls that fit the minterface type scale and respond to dark mode. [Component]
 

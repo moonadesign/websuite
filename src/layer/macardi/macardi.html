@@ -1,0 +1,224 @@
+<section class="layer">
+  <div class="layer-inset">
+    <h1>Macardi</h1>
+    <p>Card layout variants for forms, teams, and share flows.</p>
+  </div>
+</section>
+
+<section id="cards" class="layer">
+  <div id="grid" class="layer-inset">
+    <div class="card">
+      <div class="card-header">
+        <h3>Create account</h3>
+        <p>Enter your email below to create your account.</p>
+      </div>
+      <div class="card-section">
+        <div class="row">
+          <div class="button button-outline"><i class="fa-brands fa-github"></i> GitHub</div>
+          <div class="button button-outline"><i class="fa-brands fa-google"></i> Google</div>
+        </div>
+        <div class="stack">
+          <label>Email</label>
+          <input placeholder="m@example.com" />
+        </div>
+        <div class="stack">
+          <label>Password</label>
+          <input type="password" />
+        </div>
+        <div class="button button-primary">Create account</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>Payment Method</h3>
+        <p>Add a new payment method to your account.</p>
+      </div>
+      <div class="card-section">
+        <div class="row">
+          <div class="button button-outline"><i class="fa-regular fa-credit-card"></i> Card</div>
+          <div class="button button-outline"><i class="fa-brands fa-paypal"></i> Paypal</div>
+          <div class="button button-outline"><i class="fa-brands fa-apple"></i> Apple</div>
+        </div>
+        <div class="stack">
+          <label>Name</label>
+          <input placeholder="First Last" />
+        </div>
+        <div class="stack">
+          <label>Card number</label>
+          <input inputmode="numeric" placeholder="xxxx xxxx xxxx xxxx" />
+        </div>
+        <div class="row">
+          <div class="stack">
+            <label>Expires</label>
+            <select>
+              <option>Month</option>
+            </select>
+          </div>
+          <div class="stack">
+            <label>Year</label>
+            <select>
+              <option>Year</option>
+            </select>
+          </div>
+          <div class="stack">
+            <label>CVV</label>
+            <input maxlength="4" />
+          </div>
+        </div>
+        <div class="button button-primary">Continue</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>Team Members</h3>
+        <p>Invite your team members to collaborate.</p>
+      </div>
+      <div class="card-section">
+        <div class="user-item">
+          <img alt="Sofia Davis" src="https://i.pravatar.cc/40?u=sofia" />
+          <div class="fill">
+            <h4>Sofia Davis</h4>
+            <p>m@example.com</p>
+          </div>
+          <div class="button button-outline">Owner <i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <div class="user-item">
+          <img alt="Jackson Lee" src="https://i.pravatar.cc/40?u=jackson" />
+          <div class="fill">
+            <h4>Jackson Lee</h4>
+            <p>p@example.com</p>
+          </div>
+          <div class="button button-outline">Member <i class="fa-solid fa-angle-down"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>Share this document</h3>
+        <p>Anyone with the link can view this document.</p>
+      </div>
+      <div class="card-section">
+        <div class="row">
+          <input class="fill" value="http://example.com/link/to/document" />
+          <div class="button button-outline">Copy Link</div>
+        </div>
+        <h4>People with access</h4>
+        <div class="user-item">
+          <img alt="Olivia Martin" src="https://i.pravatar.cc/40?u=olivia" />
+          <div class="fill">
+            <h4>Olivia Martin</h4>
+            <p>m@example.com</p>
+          </div>
+          <div class="button button-outline">Can edit <i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <div class="user-item">
+          <img alt="Isabella Nguyen" src="https://i.pravatar.cc/40?u=isabella" />
+          <div class="fill">
+            <h4>Isabella Nguyen</h4>
+            <p>b@example.com</p>
+          </div>
+          <div class="button button-outline">Can view <i class="fa-solid fa-angle-down"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>Notifications</h3>
+        <p>Choose what you want to be notified about.</p>
+      </div>
+      <div class="card-section">
+        <div class="option">
+          <i class="fa-regular fa-bell"></i>
+          <div>
+            <h4>Everything</h4>
+            <p>Email digest, mentions & all activity.</p>
+          </div>
+        </div>
+        <div class="option">
+          <i class="fa-regular fa-at"></i>
+          <div>
+            <h4>Available</h4>
+            <p>Only mentions and comments.</p>
+          </div>
+        </div>
+        <div class="option">
+          <i class="fa-regular fa-bell-slash"></i>
+          <div>
+            <h4>Ignoring</h4>
+            <p>Turn off all notifications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>Report an issue</h3>
+        <p>What area are you having problems with?</p>
+      </div>
+      <div class="card-section">
+        <div class="row">
+          <div class="stack">
+            <label>Area</label>
+            <select>
+              <option>Billing</option>
+            </select>
+          </div>
+          <div class="stack">
+            <label>Security Level</label>
+            <select>
+              <option>Severity 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="stack">
+          <label>Subject</label>
+          <input placeholder="I need help with…" />
+        </div>
+        <div class="stack">
+          <label>Description</label>
+          <textarea placeholder="Please include all information relevant to your issue."></textarea>
+        </div>
+        <div class="row card-actions">
+          <div class="button">Cancel</div>
+          <div class="button button-primary">Submit</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>Cookie Settings</h3>
+        <p>Manage your cookie settings here.</p>
+      </div>
+      <div class="card-section">
+        <div class="switch-item">
+          <label>
+            <h4>Strictly Necessary</h4>
+            <p>These cookies are essential in order to use the website and use its features.</p>
+          </label>
+          <button class="switch" aria-checked="true"></button>
+        </div>
+        <div class="switch-item">
+          <label>
+            <h4>Functional Cookies</h4>
+            <p>These cookies allow the website to provide personalized functionality.</p>
+          </label>
+          <button class="switch"></button>
+        </div>
+        <div class="switch-item">
+          <label>
+            <h4>Performance Cookies</h4>
+            <p>These cookies help to improve the performance of the website.</p>
+          </label>
+          <button class="switch"></button>
+        </div>
+        <div class="button button-outline">Save preferences</div>
+      </div>
+    </div>
+  </div>
+</section>

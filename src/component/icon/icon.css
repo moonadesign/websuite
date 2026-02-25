@@ -1,0 +1,10 @@
+.example {
+  display: flex;
+  gap: 1rem;
+  padding: var(--space-clamp);
+  position: relative;
+}
+
+#ghost {
+  background: var(--color-lightest);
+}

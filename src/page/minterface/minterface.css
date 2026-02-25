@@ -1,0 +1,160 @@
+.minterface-panel {
+  border: 1px solid var(--color-light);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 30rem;
+}
+
+#minterface-cancel {
+  color: var(--color-darkest);
+}
+
+#minterface-chat {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-area: chat;
+  justify-self: end;
+}
+
+#minterface-chat .row {
+  align-items: center;
+}
+
+#minterface-link-row {
+  align-items: center;
+  border-bottom: 1px solid var(--color-light);
+  display: flex;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+#minterface-link-row input {
+  flex: 1;
+}
+
+#minterface-mark {
+  font-size: clamp(3rem, 8vw, 6rem);
+  grid-area: mark;
+  justify-self: center;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  margin: 0;
+  text-align: center;
+}
+
+#minterface-member p {
+  color: var(--color-half);
+}
+
+#minterface-owner {
+  width: 11rem;
+}
+
+#minterface-page {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    'type . share'
+    '. mark .'
+    'pay . chat';
+  grid-template-columns: minmax(16rem, 1fr) auto minmax(24rem, 1fr);
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+#minterface-pay {
+  align-items: center;
+  align-self: end;
+  display: flex;
+  gap: 0.5rem;
+  grid-area: pay;
+  height: 5.5rem;
+  justify-self: start;
+}
+
+#minterface-share {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-area: share;
+  justify-self: end;
+}
+
+#minterface-share h4 {
+  border-top: 1px solid var(--color-light);
+  padding-top: 1rem;
+}
+
+#minterface-share p {
+  color: var(--color-half);
+}
+
+#minterface-swatches {
+  display: flex;
+  gap: 0;
+}
+
+#minterface-swatches .swatch {
+  border-radius: 50%;
+  height: 2rem;
+  margin-right: -0.5rem;
+  width: 2rem;
+}
+
+#minterface-tools {
+  display: flex;
+  gap: 0.75rem;
+}
+
+#minterface-tools button {
+  color: var(--color-darkest);
+  padding: 0;
+}
+
+#minterface-type {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  grid-area: type;
+}
+
+#minterface-type h1 {
+  font-size: 3rem;
+}
+
+#minterface-type h2 {
+  font-size: 2rem;
+}
+
+#minterface-type h3 {
+  font-size: 1.5rem;
+}
+
+#minterface-type h4 {
+  font-size: 1.25rem;
+}
+
+#minterface-underline {
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  #minterface-chat,
+  #minterface-share {
+    width: 100%;
+  }
+
+  #minterface-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #minterface-pay {
+    height: auto;
+  }
+}

@@ -1,0 +1,99 @@
+.codex-empty {
+  color: var(--color-half);
+  padding: 0.75rem 0.75rem 0.75rem 2.75rem;
+}
+
+.codex-thread {
+  padding-left: 2.75rem;
+}
+
+.codex-time {
+  color: var(--color-half);
+}
+
+.codex-threads {
+  align-items: center;
+  color: var(--color-half);
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.75rem;
+}
+
+.codex-threads .button {
+  padding: 0.5rem;
+}
+
+.codex-threads span {
+  margin-right: auto;
+}
+
+.mac-app {
+  aspect-ratio: 16/10;
+  background: var(--color-lighter);
+  border: 1px solid var(--color-light);
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.mac-app-lights {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mac-app-lights span {
+  background: var(--color-light);
+  border-radius: 50%;
+  display: block;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.mac-app-main {
+  background: var(--color-lightest);
+  border-radius: 0.75rem;
+  flex: 1;
+}
+
+.mac-app-side {
+  display: flex;
+  font:
+    14px/1rem 'DM Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  flex-direction: column;
+  gap: 0.25rem;
+  overflow: hidden;
+  padding: 3.5rem 0.5rem 0.5rem;
+  transition:
+    opacity 0.2s ease,
+    padding 0.2s ease,
+    width 0.2s ease;
+  width: 20rem;
+}
+
+.mac-app-top {
+  align-items: center;
+  color: var(--color-half);
+  display: flex;
+  gap: 0.75rem;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.mac-app-collapsed .mac-app-side {
+  opacity: 0;
+  padding: 0;
+  width: 0;
+}
+
+[data-sidebar-toggle] {
+  cursor: pointer;
+}

@@ -4,6 +4,13 @@
   "scripts": {
     "build": "node build",
     "dev": "node dev",
+    "thumb": "node thumb",
     "watch": "node build --watch"
+  },
+  "dependencies": {
+    "cloudinary": "^2.6.1",
+    "dotenv": "^16.4.7",
+    "puppeteer": "^24.38.0",
+    "sharp": "^0.34.5"
   }
 }

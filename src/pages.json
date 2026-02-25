@@ -4,5 +4,32 @@
     "og-image": "/favicon.svg",
     "og-url": "https://websuite.me",
     "title": "Websuite"
+  },
+  "page": {
+    "shell": false
+  },
+  "page/doublebook": {
+    "bodyClass": "glass",
+    "description": "Timeline-first follow-through for scheduling workflows involving two people.",
+    "og-image": "/favicon.svg",
+    "og-url": "https://doublebook.me",
+    "title": "Doublebook"
+  },
+  "page/groupie": {
+    "bodyClass": "glass",
+    "description": "Private AI-written updates for trusted people following along.",
+    "og-image": "/favicon.svg",
+    "og-url": "https://groupie.dev",
+    "title": "groupie.dev"
+  },
+  "page/moona": {
+    "bodyClass": "glass"
+  },
+  "page/revalize": {
+    "bodyClass": "glass"
+  },
+  "page/thirteen": {
+    "description": "Prototype the most common layers of a marketing site as one complete story.",
+    "title": "Thirteen"
   }
 }

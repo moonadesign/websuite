@@ -1,0 +1,132 @@
+.brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+em {
+  font:
+    italic 1em Georgia,
+    serif;
+}
+
+.hero {
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero.inset {
+  border-radius: 1.5rem;
+  margin: var(--space-clamp);
+  min-height: calc(100vh - var(--space-clamp) * 2);
+}
+
+.hero-bg {
+  background: center/cover no-repeat;
+  inset: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-clamp);
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: var(--space-clamp);
+}
+
+.hero-fade {
+  background: linear-gradient(transparent, var(--color-lightest));
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-label {
+  background: var(--color-light);
+  border-radius: 0.25rem;
+  bottom: 1rem;
+  color: var(--color-darkest);
+  font-size: 0.75rem;
+  left: 1rem;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.hero-media {
+  aspect-ratio: 4/3;
+  background: var(--color-lighter);
+  border-radius: 0.75rem;
+  flex: 1;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero p {
+  max-width: 30rem;
+}
+
+.hero video {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+
+.pill {
+  border-radius: 1.25rem;
+}
+
+#betch {
+  color: #fcf;
+}
+
+#glass .layer-inset {
+  gap: 1.5rem;
+  max-width: 30rem;
+  min-height: 80vh;
+}
+
+#moona .hero-content {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#whimsical .browser {
+  max-width: 50rem;
+  width: 100%;
+}
+
+#untitled .hero-content {
+  align-items: center;
+  flex-direction: row;
+}
+
+.hero-actions {
+  gap: 1rem;
+}
+
+.hero-copy {
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 35rem;
+}

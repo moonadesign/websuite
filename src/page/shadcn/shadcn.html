@@ -1,0 +1,1533 @@
+<section id="hero">
+  <h1>Build your component library.</h1>
+  <p>Beautifully designed components rebuilt with minterface. Copy and paste into your apps. Open source.</p>
+  <div class="row">
+    <a class="button button-primary" href="/page/inventory/">Get Started</a>
+    <a class="button button-outline" href="/colophon/">View Components</a>
+  </div>
+</section>
+
+<section id="examples" class="layer">
+  <div class="layer-inset">
+    <nav id="example-tabs">
+      <button class="tab" data-tab="examples">Examples</button>
+      <button class="tab active" data-tab="mail">Mail</button>
+      <button class="tab" data-tab="dashboard">Dashboard</button>
+      <button class="tab" data-tab="cards">Cards</button>
+      <button class="tab" data-tab="tasks">Tasks</button>
+      <button class="tab" data-tab="playground">Playground</button>
+      <button class="tab" data-tab="forms">Forms</button>
+      <button class="tab" data-tab="music">Music</button>
+      <button class="tab" data-tab="authentication">Authentication</button>
+    </nav>
+
+    <div class="tab-panel" data-panel="examples">
+      <div class="examples-grid">
+        <!-- Column 1: Payment Method -->
+        <div class="examples-col">
+          <div class="card">
+            <div class="card-section">
+              <fieldset>
+                <legend>Payment Method</legend>
+                <p class="muted">All transactions are secure and encrypted</p>
+                <div class="field">
+                  <label>Name on Card</label>
+                  <input placeholder="John Doe" required />
+                </div>
+                <div class="payment-number-row">
+                  <div class="field">
+                    <label>Card Number</label>
+                    <input placeholder="1234 5678 9012 3456" inputmode="numeric" required />
+                    <small class="muted">Enter your 16-digit number.</small>
+                  </div>
+                  <div class="field">
+                    <label>CVV</label>
+                    <input placeholder="123" maxlength="4" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="field fill">
+                    <label>Month</label>
+                    <select>
+                      <option value="">MM</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                  </div>
+                  <div class="field fill">
+                    <label>Year</label>
+                    <select>
+                      <option value="">YYYY</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+              <hr />
+              <fieldset>
+                <legend>Billing Address</legend>
+                <p class="muted">The billing address associated with your payment method</p>
+                <label><input type="checkbox" checked /> Same as shipping address</label>
+              </fieldset>
+              <hr />
+              <div class="field">
+                <label>Comments</label>
+                <textarea placeholder="Add any additional comments"></textarea>
+              </div>
+              <div class="row">
+                <button class="button button-primary">Submit</button>
+                <button class="button button-outline">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Team Members, Status, Inputs -->
+        <div class="examples-col">
+          <div class="empty-state">
+            <div class="avatar-group">
+              <img src="https://github.com/shadcn.png" class="avatar" alt="@shadcn" />
+              <img src="https://github.com/maxleiter.png" class="avatar" alt="@maxleiter" />
+              <img src="https://github.com/evilrabbit.png" class="avatar" alt="@evilrabbit" />
+            </div>
+            <b>No Team Members</b>
+            <p class="muted">Invite your team to collaborate on this project.</p>
+            <button class="button button-primary"><i class="fa-solid fa-plus"></i> Invite Members</button>
+          </div>
+          <div class="row">
+            <span class="badge badge-primary"
+              ><div class="spinner"></div>
+              Syncing</span
+            >
+            <span class="badge badge-secondary"
+              ><div class="spinner"></div>
+              Updating</span
+            >
+            <span class="badge badge-outline"
+              ><div class="spinner"></div>
+              Loading</span
+            >
+          </div>
+          <div class="row">
+            <button class="button button-outline icon-button"><i class="fa-solid fa-plus"></i></button>
+            <div class="input-group fill">
+              <input placeholder="Send a message..." />
+              <button class="button icon-button"><i class="fa-solid fa-waveform-lines"></i></button>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="field">
+              <label>Price Range</label>
+              <p class="muted">Set your budget range ($200 – $800).</p>
+              <input type="range" min="0" max="1000" />
+            </div>
+            <div class="input-group">
+              <i class="fa-regular fa-search"></i>
+              <input placeholder="Search..." />
+              <span class="muted">12 results</span>
+            </div>
+            <div class="input-group">
+              <span class="input-prefix">https://</span>
+              <input placeholder="example.com" />
+              <button class="button icon-button"><i class="fa-regular fa-circle-info"></i></button>
+            </div>
+            <div class="chat-input">
+              <textarea placeholder="Ask, Search or Chat..."></textarea>
+              <div class="chat-toolbar">
+                <button class="button button-outline icon-button"><i class="fa-solid fa-plus"></i></button>
+                <button class="button">Auto</button>
+                <span class="muted">52% used</span>
+                <div class="fill"></div>
+                <button class="button button-primary icon-button"><i class="fa-solid fa-arrow-up"></i></button>
+              </div>
+            </div>
+            <div class="input-group">
+              <input placeholder="@shadcn" />
+              <span class="verified-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Secure Input, 2FA, Appearance -->
+        <div class="examples-col">
+          <div class="input-group input-pill">
+            <button class="button button-secondary icon-button"><i class="fa-regular fa-circle-info"></i></button>
+            <span class="input-prefix">https://</span>
+            <input />
+            <button class="button icon-button"><i class="fa-regular fa-star"></i></button>
+          </div>
+          <div class="stack">
+            <div class="list-item">
+              <div class="stack fill">
+                <b>Two-factor authentication</b>
+                <small class="muted">Verify via email or phone number.</small>
+              </div>
+              <button class="button button-primary">Enable</button>
+            </div>
+            <a class="list-item" href="#">
+              <i class="fa-solid fa-badge-check"></i>
+              <div class="fill"><b>Your profile has been verified.</b></div>
+              <i class="fa-regular fa-chevron-right"></i>
+            </a>
+          </div>
+          <div class="stack">
+            <div class="divider-label">
+              <hr />
+              <span>Appearance Settings</span>
+              <hr />
+            </div>
+            <fieldset>
+              <legend>Compute Environment</legend>
+              <p class="muted">Select the compute environment for your cluster.</p>
+              <div class="stack">
+                <label class="radio-option">
+                  <div class="stack fill">
+                    <b>Kubernetes</b>
+                    <small class="muted">Run GPU workloads on a K8s configured cluster. This is the default.</small>
+                  </div>
+                  <input type="radio" name="compute" checked />
+                </label>
+                <label class="radio-option">
+                  <div class="stack fill">
+                    <b>Virtual Machine</b>
+                    <small class="muted">Access a VM configured cluster to run workloads. (Coming soon)</small>
+                  </div>
+                  <input type="radio" name="compute" />
+                </label>
+              </div>
+            </fieldset>
+            <hr />
+            <div class="list-item">
+              <div class="stack fill">
+                <label for="gpu-count">Number of GPUs</label>
+                <small class="muted">You can add more later.</small>
+              </div>
+              <div class="stepper">
+                <input id="gpu-count" type="number" value="8" class="number-input" />
+                <div class="button-group">
+                  <button class="button button-outline">-</button>
+                  <button class="button button-outline">+</button>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="switch-item">
+              <div class="stack fill">
+                <b>Wallpaper Tinting</b>
+                <small class="muted">Allow the wallpaper to be tinted.</small>
+              </div>
+              <button class="switch" role="switch" aria-checked="true"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 4: AI Prompt, Button Groups, How did you hear, Processing -->
+        <div class="examples-col">
+          <div class="chat-input">
+            <div class="chat-toolbar-top">
+              <button class="button button-outline"><i class="fa-regular fa-at"></i> Add context</button>
+            </div>
+            <textarea placeholder="Ask, search, or make anything..."></textarea>
+            <div class="chat-toolbar">
+              <button class="button icon-button"><i class="fa-regular fa-paperclip"></i></button>
+              <button class="button">Auto</button>
+              <button class="button"><i class="fa-regular fa-globe"></i> All Sources</button>
+              <div class="fill"></div>
+              <button class="button button-primary icon-button"><i class="fa-solid fa-arrow-up"></i></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="button-group">
+              <button class="button button-outline"><i class="fa-regular fa-arrow-left"></i></button>
+            </div>
+            <div class="button-group">
+              <button class="button button-outline">Archive</button>
+              <button class="button button-outline">Report</button>
+            </div>
+            <div class="button-group">
+              <button class="button button-outline">Snooze</button>
+              <button class="button button-outline icon-button"><i class="fa-regular fa-ellipsis"></i></button>
+            </div>
+          </div>
+          <label><input type="checkbox" checked /> I agree to the terms and conditions</label>
+          <div class="row">
+            <div class="button-group">
+              <button class="button button-outline">1</button>
+              <button class="button button-outline">2</button>
+              <button class="button button-outline">3</button>
+            </div>
+            <div class="button-group">
+              <button class="button button-outline icon-button"><i class="fa-regular fa-arrow-left"></i></button>
+              <button class="button button-outline icon-button"><i class="fa-regular fa-arrow-right"></i></button>
+            </div>
+            <div class="button-group">
+              <button class="button button-outline"><i class="fa-regular fa-robot"></i> Copilot</button>
+              <button class="button button-outline icon-button"><i class="fa-regular fa-chevron-down"></i></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-section">
+              <fieldset>
+                <legend>How did you hear about us?</legend>
+                <p class="muted">Select the option that best describes how you heard about us.</p>
+                <div class="checkbox-tags">
+                  <label class="checkbox-tag"><input type="checkbox" checked /> Social Media</label>
+                  <label class="checkbox-tag"><input type="checkbox" /> Search Engine</label>
+                  <label class="checkbox-tag"><input type="checkbox" /> Referral</label>
+                  <label class="checkbox-tag"><input type="checkbox" /> Other</label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="empty-state">
+            <div class="empty-state-icon"><div class="spinner"></div></div>
+            <b>Processing your request</b>
+            <p class="muted">Please wait while we process your request. Do not refresh the page.</p>
+            <button class="button button-outline">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel active" data-panel="mail">
+      <div id="shadcn-mail" class="app">
+        <div id="shadcn-mail-left">
+          <div class="top">
+            <div class="button button-outline fill">
+              <i class="fa-solid fa-triangle"></i>
+              <span class="fill">Alicia Koch</span>
+              <i class="fa-solid fa-sort"></i>
+            </div>
+          </div>
+          <nav class="nav-group">
+            <div class="nav-button active"><i class="fa-regular fa-inbox"></i><span class="fill">Inbox</span>128</div>
+            <div class="nav-button"><i class="fa-regular fa-file"></i><span class="fill">Drafts</span>9</div>
+            <div class="nav-button"><i class="fa-regular fa-paper-plane"></i>Sent</div>
+            <div class="nav-button"><i class="fa-regular fa-trash-alt"></i>Trash</div>
+          </nav>
+        </div>
+        <div id="shadcn-mail-list">
+          <div class="top">
+            <h3>Inbox</h3>
+            <div class="fill"></div>
+            <div class="tab-bar">
+              <div class="tab active">All mail</div>
+              <div class="tab">Unread</div>
+            </div>
+          </div>
+          <div class="inset">
+            <div class="search">
+              <i class="fa-regular fa-search"></i>
+              <input placeholder="Search" />
+            </div>
+            <div class="skeleton fill"></div>
+          </div>
+        </div>
+        <div id="shadcn-mail-main">
+          <div class="top">
+            <button class="button icon-button"><i class="fa-regular fa-archive"></i></button>
+            <button class="button icon-button"><i class="fa-regular fa-folder-xmark"></i></button>
+            <button class="button icon-button"><i class="fa-regular fa-trash-alt"></i></button>
+            <div class="toolbar-divider"></div>
+            <button class="button icon-button"><i class="fa-regular fa-clock"></i></button>
+            <div class="fill"></div>
+            <button class="button icon-button"><i class="fa-regular fa-reply"></i></button>
+            <button class="button icon-button"><i class="fa-regular fa-reply-all"></i></button>
+            <button class="button icon-button"><i class="fa-regular fa-share"></i></button>
+          </div>
+          <div class="email-header">
+            <div></div>
+            <div class="stack">
+              <p>William Smith</p>
+              <p>Meeting Tomorrow</p>
+              <p>Reply-To: williamsmith@example.com</p>
+            </div>
+            <div></div>
+          </div>
+          <div class="email-body">
+            <p>
+              Hi, let's have a meeting tomorrow to discuss the project. I've been reviewing the project details and have
+              some ideas I'd like to share.
+            </p>
+            <p>Please come prepared with any questions or insights you may have. Looking forward to our meeting!</p>
+            <p>Best regards, William</p>
+          </div>
+          <div class="email-reply">
+            <textarea placeholder="Reply to William Smith…"></textarea>
+            <div class="reply-bar">
+              <div class="fill">Mute this thread</div>
+              <div class="button button-primary">Send</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="dashboard">
+      <div class="app app-shell app-shell-padded">
+        <div class="row dashboard-title">
+          <h4>Dashboard</h4>
+          <div class="row">
+            <div class="button button-outline"><i class="fa-regular fa-calendar"></i> Jan 20, 2024 – Feb 09, 2024</div>
+            <div class="button button-primary">Download</div>
+          </div>
+        </div>
+        <nav class="tab-bar">
+          <button class="tab active">Overview</button>
+          <button class="tab">Analytics</button>
+          <button class="tab">Reports</button>
+          <button class="tab">Notifications</button>
+        </nav>
+        <div class="row dashboard-stats">
+          <div class="card fill">
+            <div class="card-header">
+              <small class="muted">Total Revenue</small>
+              <h3>$45,231.89</h3>
+              <small class="muted">+20.1% from last month</small>
+            </div>
+          </div>
+          <div class="card fill">
+            <div class="card-header">
+              <small class="muted">Subscriptions</small>
+              <h3>+2,350</h3>
+              <small class="muted">+180.1% from last month</small>
+            </div>
+          </div>
+          <div class="card fill">
+            <div class="card-header">
+              <small class="muted">Sales</small>
+              <h3>+12,234</h3>
+              <small class="muted">+19% from last month</small>
+            </div>
+          </div>
+          <div class="card fill">
+            <div class="card-header">
+              <small class="muted">Active Now</small>
+              <h3>+573</h3>
+              <small class="muted">+201 since last hour</small>
+            </div>
+          </div>
+        </div>
+        <div class="row dashboard-stats">
+          <div class="card dashboard-overview">
+            <div class="card-header"><h4>Overview</h4></div>
+            <div class="card-section">
+              <div class="chart-bars">
+                <div class="chart-bar" style="height: 40%"></div>
+                <div class="chart-bar" style="height: 65%"></div>
+                <div class="chart-bar" style="height: 30%"></div>
+                <div class="chart-bar" style="height: 80%"></div>
+                <div class="chart-bar" style="height: 45%"></div>
+                <div class="chart-bar" style="height: 90%"></div>
+                <div class="chart-bar" style="height: 55%"></div>
+                <div class="chart-bar" style="height: 70%"></div>
+                <div class="chart-bar" style="height: 35%"></div>
+                <div class="chart-bar" style="height: 60%"></div>
+                <div class="chart-bar" style="height: 75%"></div>
+                <div class="chart-bar" style="height: 50%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card fill">
+            <div class="card-header">
+              <h4>Recent Sales</h4>
+              <small class="muted">You made 265 sales this month.</small>
+            </div>
+            <div class="card-section">
+              <div class="user-item">
+                <img src="https://i.pravatar.cc/40?u=om" class="avatar" />
+                <div class="fill stack"><b>Olivia Martin</b><small class="muted">olivia@email.com</small></div>
+                <b>+$1,999.00</b>
+              </div>
+              <div class="user-item">
+                <img src="https://i.pravatar.cc/40?u=jl" class="avatar" />
+                <div class="fill stack"><b>Jackson Lee</b><small class="muted">jackson@email.com</small></div>
+                <b>+$39.00</b>
+              </div>
+              <div class="user-item">
+                <img src="https://i.pravatar.cc/40?u=in" class="avatar" />
+                <div class="fill stack"><b>Isabella Nguyen</b><small class="muted">isabella@email.com</small></div>
+                <b>+$299.00</b>
+              </div>
+              <div class="user-item">
+                <img src="https://i.pravatar.cc/40?u=wk" class="avatar" />
+                <div class="fill stack"><b>William Kim</b><small class="muted">will@email.com</small></div>
+                <b>+$99.00</b>
+              </div>
+              <div class="user-item">
+                <img src="https://i.pravatar.cc/40?u=sd" class="avatar" />
+                <div class="fill stack"><b>Sofia Davis</b><small class="muted">sofia@email.com</small></div>
+                <b>+$39.00</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="cards">
+      <div class="app cards-grid">
+        <div class="card">
+          <div class="card-header">
+            <h4>Create an account</h4>
+            <p class="muted">Enter your email below to create your account.</p>
+          </div>
+          <div class="card-section">
+            <div class="row">
+              <div class="button button-outline fill"><i class="fa-brands fa-github"></i> GitHub</div>
+              <div class="button button-outline fill"><i class="fa-brands fa-google"></i> Google</div>
+            </div>
+            <div class="divider-label">
+              <hr />
+              <small class="muted">OR CONTINUE WITH</small>
+              <hr />
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input placeholder="m@example.com" />
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" />
+            </div>
+            <div class="button button-primary">Create account</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>Payment Method</h4>
+            <p class="muted">Add a new payment method to your account.</p>
+          </div>
+          <div class="card-section">
+            <div class="row">
+              <div class="button button-outline fill"><i class="fa-regular fa-credit-card"></i> Card</div>
+              <div class="button button-outline fill"><i class="fa-brands fa-paypal"></i> Paypal</div>
+              <div class="button button-outline fill"><i class="fa-brands fa-apple"></i> Apple</div>
+            </div>
+            <div class="field">
+              <label>Name</label>
+              <input placeholder="First Last" />
+            </div>
+            <div class="field">
+              <label>Card number</label>
+              <input placeholder="xxxx xxxx xxxx xxxx" inputmode="numeric" />
+            </div>
+            <div class="row">
+              <div class="field fill">
+                <label>Expires</label>
+                <select>
+                  <option>Month</option>
+                </select>
+              </div>
+              <div class="field fill">
+                <label>Year</label>
+                <select>
+                  <option>Year</option>
+                </select>
+              </div>
+              <div class="field fill">
+                <label>CVC</label>
+                <input maxlength="4" />
+              </div>
+            </div>
+            <div class="button button-primary">Continue</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>Team Members</h4>
+            <p class="muted">Invite your team members to collaborate.</p>
+          </div>
+          <div class="card-section">
+            <div class="user-item">
+              <img src="https://i.pravatar.cc/40?u=sofia" class="avatar" />
+              <div class="fill stack">
+                <b>Sofia Davis</b>
+                <small class="muted">m@example.com</small>
+              </div>
+              <div class="button button-outline">Owner <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="user-item">
+              <img src="https://i.pravatar.cc/40?u=jackson" class="avatar" />
+              <div class="fill stack">
+                <b>Jackson Lee</b>
+                <small class="muted">p@example.com</small>
+              </div>
+              <div class="button button-outline">Member <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="user-item">
+              <img src="https://i.pravatar.cc/40?u=isabella" class="avatar" />
+              <div class="fill stack">
+                <b>Isabella Nguyen</b>
+                <small class="muted">i@example.com</small>
+              </div>
+              <div class="button button-outline">Member <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>Share this document</h4>
+            <p class="muted">Anyone with the link can view this document.</p>
+          </div>
+          <div class="card-section">
+            <div class="row">
+              <input class="fill" value="http://example.com/link/to/document" readonly />
+              <div class="button button-secondary">Copy Link</div>
+            </div>
+            <h5>People with access</h5>
+            <div class="user-item">
+              <img src="https://i.pravatar.cc/40?u=olivia" class="avatar" />
+              <div class="fill stack">
+                <b>Olivia Martin</b>
+                <small class="muted">m@example.com</small>
+              </div>
+              <div class="button button-outline">Can edit <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="user-item">
+              <img src="https://i.pravatar.cc/40?u=isabella2" class="avatar" />
+              <div class="fill stack">
+                <b>Isabella Nguyen</b>
+                <small class="muted">b@example.com</small>
+              </div>
+              <div class="button button-outline">Can view <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="user-item">
+              <img src="https://i.pravatar.cc/40?u=sofia2" class="avatar" />
+              <div class="fill stack">
+                <b>Sofia Davis</b>
+                <small class="muted">p@example.com</small>
+              </div>
+              <div class="button button-outline">Can view <i class="fa-solid fa-angle-down"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>Notifications</h4>
+            <p class="muted">Choose what you want to be notified about.</p>
+          </div>
+          <div class="card-section">
+            <div class="icon-item">
+              <i class="fa-regular fa-bell"></i>
+              <div class="stack">
+                <b>Everything</b>
+                <small class="muted">Email digest, mentions & all activity.</small>
+              </div>
+            </div>
+            <div class="icon-item">
+              <i class="fa-regular fa-at"></i>
+              <div class="stack">
+                <b>Available</b>
+                <small class="muted">Only mentions and comments.</small>
+              </div>
+            </div>
+            <div class="icon-item">
+              <i class="fa-regular fa-bell-slash"></i>
+              <div class="stack">
+                <b>Ignoring</b>
+                <small class="muted">Turn off all notifications.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>Report an issue</h4>
+            <p class="muted">What area are you having problems with?</p>
+          </div>
+          <div class="card-section">
+            <div class="row">
+              <div class="field fill">
+                <label>Area</label>
+                <select>
+                  <option>Billing</option>
+                  <option>Account</option>
+                  <option>Deployments</option>
+                </select>
+              </div>
+              <div class="field fill">
+                <label>Security Level</label>
+                <select>
+                  <option>Severity 2</option>
+                  <option>Severity 1</option>
+                  <option>Severity 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label>Subject</label>
+              <input placeholder="I need help with…" />
+            </div>
+            <div class="field">
+              <label>Description</label>
+              <textarea placeholder="Please include all information relevant to your issue." rows="3"></textarea>
+            </div>
+            <div class="row issue-actions">
+              <div class="button button-outline">Cancel</div>
+              <div class="button button-primary">Submit</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header row repo-header">
+            <div class="fill stack">
+              <h4>shadcn/ui</h4>
+              <p class="muted">Beautifully designed components built with Radix UI and Tailwind CSS.</p>
+            </div>
+            <div class="button button-outline"><i class="fa-regular fa-star"></i> Star</div>
+          </div>
+          <div class="card-footer row muted card-meta">
+            <span>TypeScript</span>
+            <span><i class="fa-regular fa-star"></i> 10k</span>
+            <span>Updated April 2023</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h4>Cookie Settings</h4>
+            <p class="muted">Manage your cookie settings here.</p>
+          </div>
+          <div class="card-section">
+            <div class="switch-item">
+              <div class="stack fill">
+                <b>Strictly Necessary</b>
+                <small class="muted"
+                  >These cookies are essential in order to use the website and use its features.</small
+                >
+              </div>
+              <button class="switch" role="switch" aria-checked="true"></button>
+            </div>
+            <div class="switch-item">
+              <div class="stack fill">
+                <b>Functional Cookies</b>
+                <small class="muted">These cookies allow the website to provide personalized functionality.</small>
+              </div>
+              <button class="switch" role="switch"></button>
+            </div>
+            <div class="switch-item">
+              <div class="stack fill">
+                <b>Performance Cookies</b>
+                <small class="muted">These cookies help to improve the performance of the website.</small>
+              </div>
+              <button class="switch" role="switch"></button>
+            </div>
+            <div class="button button-outline">Save preferences</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="tasks">
+      <div class="app app-shell app-shell-padded">
+        <div class="stack task-welcome">
+          <h4>Welcome back!</h4>
+          <p class="muted">Here's a list of your tasks for this month!</p>
+        </div>
+        <div class="row">
+          <div class="search fill">
+            <i class="fa-regular fa-search"></i>
+            <input placeholder="Filter tasks…" />
+          </div>
+          <div class="button button-outline">Status <i class="fa-solid fa-angle-down"></i></div>
+          <div class="button button-outline">Priority <i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th class="col-narrow"><input type="checkbox" /></th>
+              <th>Task</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Priority</th>
+              <th class="col-narrow"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td class="muted">TASK-8782</td>
+              <td>You can't compress the program without quantifying the open-source SSD…</td>
+              <td><span class="badge">In Progress</span></td>
+              <td><i class="fa-regular fa-arrow-up"></i> High</td>
+              <td>
+                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td class="muted">TASK-7878</td>
+              <td>Try to calculate the EXE feed, maybe it will index the multi-byte pixel!</td>
+              <td><span class="badge">Backlog</span></td>
+              <td><i class="fa-regular fa-arrow-right"></i> Medium</td>
+              <td>
+                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td class="muted">TASK-7839</td>
+              <td>We need to bypass the neural TCP card!</td>
+              <td><span class="badge">Todo</span></td>
+              <td><i class="fa-regular fa-arrow-up"></i> High</td>
+              <td>
+                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td class="muted">TASK-5562</td>
+              <td>The SAS interface is down, bypass the open-source sensor so we can…</td>
+              <td><span class="badge">Backlog</span></td>
+              <td><i class="fa-regular fa-arrow-right"></i> Medium</td>
+              <td>
+                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td class="muted">TASK-8686</td>
+              <td>I'll parse the wireless SSL protocol, that should driver the API panel!</td>
+              <td><span class="badge">Canceled</span></td>
+              <td><i class="fa-regular fa-arrow-down"></i> Low</td>
+              <td>
+                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row task-footer">
+          <small class="muted">0 of 5 row(s) selected.</small>
+          <div class="row task-pagination">
+            <small class="muted">Page 1 of 10</small>
+            <div class="row">
+              <button class="button button-outline" disabled><i class="fa-regular fa-angles-left"></i></button>
+              <button class="button button-outline" disabled><i class="fa-regular fa-angle-left"></i></button>
+              <button class="button button-outline"><i class="fa-regular fa-angle-right"></i></button>
+              <button class="button button-outline"><i class="fa-regular fa-angles-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="playground">
+      <div class="app app-shell">
+        <div class="app-header playground-header">
+          <div class="row">
+            <div class="button button-outline">Grammatical Standard English <i class="fa-solid fa-angle-down"></i></div>
+            <div class="button button-outline">Save</div>
+            <div class="button button-outline">View code</div>
+            <div class="button button-outline">Share</div>
+          </div>
+          <div class="button button-outline"><i class="fa-regular fa-ellipsis"></i></div>
+        </div>
+        <div class="app-body">
+          <div class="app-panel fill playground-editor">
+            <nav class="tab-bar">
+              <button class="tab active">Complete</button>
+              <button class="tab">Insert</button>
+              <button class="tab">Edit</button>
+            </nav>
+            <textarea class="fill" placeholder="Write a tagline for an ice cream shop."></textarea>
+            <div class="button button-primary playground-submit">Submit</div>
+          </div>
+          <div class="app-panel sidebar-narrow">
+            <div class="field">
+              <label>Model</label>
+              <select>
+                <option>text-davinci-003</option>
+                <option>text-curie-001</option>
+                <option>text-babbage-001</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Temperature</label>
+              <input type="range" min="0" max="100" value="56" />
+            </div>
+            <div class="field">
+              <label>Maximum Length</label>
+              <input type="range" min="0" max="4096" value="256" />
+            </div>
+            <div class="field">
+              <label>Top P</label>
+              <input type="range" min="0" max="100" value="90" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="forms">
+      <div class="app app-shell">
+        <div class="app-body">
+          <div class="app-panel panel-nav">
+            <div class="nav-button active">Profile</div>
+            <div class="nav-button">Account</div>
+            <div class="nav-button">Appearance</div>
+            <div class="nav-button">Notifications</div>
+            <div class="nav-button">Display</div>
+          </div>
+          <div class="app-panel">
+            <h4>Profile</h4>
+            <p class="muted">This is how others will see you on the site.</p>
+            <hr />
+            <div class="field">
+              <label>Username</label>
+              <input value="shadcn" />
+              <small class="muted"
+                >This is your public display name. You can only change this once every 30 days.</small
+              >
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <select>
+                <option>Select a verified email to display</option>
+                <option>m@example.com</option>
+                <option>m@google.com</option>
+              </select>
+              <small class="muted">You can manage verified email addresses in your email settings.</small>
+            </div>
+            <div class="field">
+              <label>Bio</label>
+              <textarea rows="3">I own a computer.</textarea>
+              <small class="muted">You can @mention other users and organizations.</small>
+            </div>
+            <div class="field">
+              <label>URLs</label>
+              <small class="muted">Add links to your website, blog, or social media profiles.</small>
+              <input value="https://shadcn.com" />
+              <input value="https://twitter.com/shadcn" />
+              <button class="button button-outline">Add URL</button>
+            </div>
+            <button class="button button-primary">Update profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="music">
+      <div class="app app-shell app-shell-flush">
+        <div class="menubar">
+          <button class="menu-trigger">Music</button>
+          <button class="menu-trigger">File</button>
+          <button class="menu-trigger">Edit</button>
+          <button class="menu-trigger">View</button>
+          <button class="menu-trigger">Account</button>
+        </div>
+        <div class="app-body">
+          <div class="app-panel music-sidebar">
+            <small class="muted sidebar-label">Discover</small>
+            <div class="nav-button active"><i class="fa-regular fa-play"></i> Listen Now</div>
+            <div class="nav-button"><i class="fa-regular fa-compass"></i> Browse</div>
+            <div class="nav-button"><i class="fa-regular fa-radio"></i> Radio</div>
+            <hr />
+            <small class="muted sidebar-label">Library</small>
+            <div class="nav-button"><i class="fa-regular fa-list-music"></i> Playlists</div>
+            <div class="nav-button"><i class="fa-regular fa-music"></i> Songs</div>
+            <div class="nav-button"><i class="fa-regular fa-user"></i> Made for You</div>
+            <div class="nav-button"><i class="fa-regular fa-microphone"></i> Artists</div>
+            <div class="nav-button"><i class="fa-regular fa-album"></i> Albums</div>
+            <hr />
+            <small class="muted sidebar-label">Playlists</small>
+            <div class="nav-button"><i class="fa-regular fa-list"></i> Recently Added</div>
+            <div class="nav-button"><i class="fa-regular fa-list"></i> Recently Played</div>
+            <div class="nav-button"><i class="fa-regular fa-list"></i> Top Songs</div>
+          </div>
+          <div class="app-panel music-main">
+            <nav class="tab-bar">
+              <button class="tab active">Music</button>
+              <button class="tab">Podcasts</button>
+              <button class="tab">Live</button>
+            </nav>
+            <div class="row music-header">
+              <h4>Listen Now</h4>
+              <div class="button button-outline">Add music</div>
+            </div>
+            <p class="muted">Top picks for you. Updated daily.</p>
+            <div class="row scroll-row">
+              <div class="album-card">
+                <div class="album-art" style="background: linear-gradient(135deg, #667eea, #764ba2)"></div>
+                <b>React Rendezvous</b>
+                <small class="muted">Ethan Byte</small>
+              </div>
+              <div class="album-card">
+                <div class="album-art" style="background: linear-gradient(135deg, #f093fb, #f5576c)"></div>
+                <b>Async Awakenings</b>
+                <small class="muted">Nina Netcode</small>
+              </div>
+              <div class="album-card">
+                <div class="album-art" style="background: linear-gradient(135deg, #4facfe, #00f2fe)"></div>
+                <b>The Art of Reusability</b>
+                <small class="muted">Lena Logic</small>
+              </div>
+              <div class="album-card">
+                <div class="album-art" style="background: linear-gradient(135deg, #43e97b, #38f9d7)"></div>
+                <b>Stateful Symphony</b>
+                <small class="muted">Beth Binary</small>
+              </div>
+            </div>
+            <h4>Made for You</h4>
+            <p class="muted">Your personal playlists. Updated daily.</p>
+            <div class="row scroll-row">
+              <div class="album-card small">
+                <div class="album-art small" style="background: linear-gradient(135deg, #fa709a, #fee140)"></div>
+                <b>Thinking Components</b>
+                <small class="muted">Lena Logic</small>
+              </div>
+              <div class="album-card small">
+                <div class="album-art small" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb)"></div>
+                <b>Functional Fury</b>
+                <small class="muted">Beth Binary</small>
+              </div>
+              <div class="album-card small">
+                <div class="album-art small" style="background: linear-gradient(135deg, #ffecd2, #fcb69f)"></div>
+                <b>React Rendezvous</b>
+                <small class="muted">Ethan Byte</small>
+              </div>
+              <div class="album-card small">
+                <div class="album-art small" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb)"></div>
+                <b>Stateful Symphony</b>
+                <small class="muted">Beth Binary</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-panel" data-panel="authentication">
+      <div class="app auth-split">
+        <div class="auth-brand glass">
+          <div class="row"><i class="fa-solid fa-triangle"></i> Acme Inc</div>
+          <div class="fill"></div>
+          <blockquote class="stack">
+            <p>
+              "This library has saved me countless hours of work and helped me deliver stunning designs to my clients
+              faster than ever before."
+            </p>
+            <cite>Sofia Davis</cite>
+          </blockquote>
+        </div>
+        <div class="auth-form">
+          <div class="stack center auth-form-inner">
+            <h4>Create an account</h4>
+            <p class="muted">Enter your email below to create your account</p>
+            <input placeholder="name@example.com" type="email" />
+            <div class="button button-primary">Sign In with Email</div>
+            <div class="divider-label">
+              <hr />
+              <small class="muted">OR CONTINUE WITH</small>
+              <hr />
+            </div>
+            <div class="button button-outline"><i class="fa-brands fa-github"></i> GitHub</div>
+            <small class="muted">By clicking continue, you agree to our Terms of Service and Privacy Policy.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="audit" class="layer">
+  <div class="layer-inset">
+    <h3>Component Audit</h3>
+    <p class="muted">
+      Coverage map: which shadcn components appear in each example, and whether minterface can render them.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Ex</th>
+          <th>Mail</th>
+          <th>Dash</th>
+          <th>Cards</th>
+          <th>Tasks</th>
+          <th>Play</th>
+          <th>Forms</th>
+          <th>Music</th>
+          <th>Auth</th>
+          <th>Minterface</th>
+        </tr>
+      </thead>
+      <tbody id="audit-body"></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="components" class="layer">
+  <div class="layer-inset">
+    <h3>Component Showcase</h3>
+    <p class="muted">Standalone examples for components not fully exercised in the examples above.</p>
+
+    <h4>Form Controls</h4>
+    <div class="showcase-grid">
+      <div class="showcase">
+        <small class="muted">Slider</small>
+        <input type="range" min="0" max="100" value="50" />
+      </div>
+      <div class="showcase">
+        <small class="muted">Input OTP</small>
+        <div class="otp-group">
+          <input class="otp-input" maxlength="1" /><input class="otp-input" maxlength="1" /><input
+            class="otp-input"
+            maxlength="1"
+          />
+          <span class="muted">-</span>
+          <input class="otp-input" maxlength="1" /><input class="otp-input" maxlength="1" /><input
+            class="otp-input"
+            maxlength="1"
+          />
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Checkbox Group</small>
+        <div class="stack">
+          <label><input type="checkbox" checked /> Use animations</label>
+          <label><input type="checkbox" /> Send notifications</label>
+          <label><input type="checkbox" checked /> Enable sounds</label>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Radio Cards</small>
+        <div class="stack">
+          <label class="radio-card"
+            ><input type="radio" name="plan" checked />
+            <div class="stack"><b>Startup</b><small class="muted">$29/mo</small></div></label
+          >
+          <label class="radio-card"
+            ><input type="radio" name="plan" />
+            <div class="stack"><b>Business</b><small class="muted">$99/mo</small></div></label
+          >
+          <label class="radio-card"
+            ><input type="radio" name="plan" />
+            <div class="stack"><b>Enterprise</b><small class="muted">$249/mo</small></div></label
+          >
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Combobox</small>
+        <div class="search">
+          <i class="fa-regular fa-search"></i>
+          <input placeholder="Search framework…" list="frameworks" />
+        </div>
+        <datalist id="frameworks">
+          <option value="Next.js"></option>
+          <option value="Remix"></option>
+          <option value="Astro"></option>
+        </datalist>
+      </div>
+      <div class="showcase">
+        <small class="muted">Meter</small>
+        <meter min="0" max="100" value="65">65%</meter>
+      </div>
+      <div class="showcase">
+        <small class="muted">Number Field</small>
+        <div class="row">
+          <button class="button button-outline">-</button>
+          <input type="number" value="3" class="number-input" />
+          <button class="button button-outline">+</button>
+        </div>
+      </div>
+    </div>
+
+    <h4>Selection & Toggle</h4>
+    <div class="showcase-grid">
+      <div class="showcase">
+        <small class="muted">Accordion</small>
+        <div class="stack accordion-list">
+          <div class="nav-section">
+            <div class="nav-section-header">Is it accessible? <i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-section-content">
+              <p class="accordion-body">Yes. It adheres to the WAI-ARIA design pattern.</p>
+            </div>
+          </div>
+          <div class="nav-section collapsed">
+            <div class="nav-section-header">Is it styled? <i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-section-content">
+              <p class="accordion-body">Yes. It comes with default styles matching the other components.</p>
+            </div>
+          </div>
+          <div class="nav-section collapsed">
+            <div class="nav-section-header">Is it animated? <i class="fa-solid fa-chevron-right"></i></div>
+            <div class="nav-section-content">
+              <p class="accordion-body">Yes. It's animated by default with CSS transitions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Toggle</small>
+        <div class="row">
+          <button class="toggle" aria-pressed="false"><i class="fa-regular fa-bold"></i></button>
+          <button class="toggle" aria-pressed="true"><i class="fa-regular fa-italic"></i></button>
+          <button class="toggle" aria-pressed="false"><i class="fa-regular fa-underline"></i></button>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Toggle Group</small>
+        <div class="toggle-group">
+          <button class="toggle active"><i class="fa-regular fa-align-left"></i></button>
+          <button class="toggle"><i class="fa-regular fa-align-center"></i></button>
+          <button class="toggle"><i class="fa-regular fa-align-right"></i></button>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Calendar</small>
+        <div class="calendar card">
+          <div class="row calendar-header">
+            <button class="button"><i class="fa-regular fa-angle-left"></i></button>
+            <b>March 2026</b>
+            <button class="button"><i class="fa-regular fa-angle-right"></i></button>
+          </div>
+          <div class="calendar-grid">
+            <small class="muted">Su</small><small class="muted">Mo</small><small class="muted">Tu</small
+            ><small class="muted">We</small><small class="muted">Th</small><small class="muted">Fr</small
+            ><small class="muted">Sa</small> <span></span><span></span><span></span><span></span><span></span
+            ><span></span><span>1</span> <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span
+            ><span>7</span><span>8</span> <span class="active">9</span><span>10</span><span>11</span><span>12</span
+            ><span>13</span><span>14</span><span>15</span> <span>16</span><span>17</span><span>18</span><span>19</span
+            ><span>20</span><span>21</span><span>22</span> <span>23</span><span>24</span><span>25</span><span>26</span
+            ><span>27</span><span>28</span><span>29</span> <span>30</span><span>31</span><span></span><span></span
+            ><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Date Picker</small>
+        <div class="button button-outline"><i class="fa-regular fa-calendar"></i> Pick a date</div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Checkbox Cards</small>
+        <div class="stack">
+          <label class="radio-card"
+            ><input type="checkbox" checked />
+            <div class="stack"><b>Recents</b><small class="muted">Last 7 days</small></div></label
+          >
+          <label class="radio-card"
+            ><input type="checkbox" />
+            <div class="stack"><b>Favorites</b><small class="muted">Starred items</small></div></label
+          >
+        </div>
+      </div>
+    </div>
+
+    <h4>Overlays</h4>
+    <div class="showcase-grid">
+      <div class="showcase">
+        <small class="muted">Dialog</small>
+        <button class="button button-outline" data-open="demo-dialog">Open Dialog</button>
+        <dialog id="demo-dialog" class="dialog">
+          <div class="card">
+            <div class="card-header">
+              <h4>Edit profile</h4>
+              <p class="muted">Make changes to your profile here.</p>
+            </div>
+            <div class="card-section">
+              <div class="field"><label>Name</label><input value="Pedro Duarte" /></div>
+              <div class="field"><label>Username</label><input value="@peduarte" /></div>
+            </div>
+            <div class="card-footer row">
+              <button class="button button-primary" data-close="demo-dialog">Save changes</button>
+            </div>
+          </div>
+        </dialog>
+      </div>
+      <div class="showcase">
+        <small class="muted">Alert Dialog</small>
+        <button class="button button-outline" data-open="demo-alert">Open Alert</button>
+        <dialog id="demo-alert" class="dialog">
+          <div class="card">
+            <div class="card-header">
+              <h4>Are you absolutely sure?</h4>
+              <p class="muted">This action cannot be undone.</p>
+            </div>
+            <div class="card-footer row">
+              <button class="button button-outline" data-close="demo-alert">Cancel</button>
+              <button class="button button-primary" data-close="demo-alert">Continue</button>
+            </div>
+          </div>
+        </dialog>
+      </div>
+      <div class="showcase">
+        <small class="muted">Sheet</small>
+        <button class="button button-outline" data-open="demo-sheet">Open Sheet</button>
+        <dialog id="demo-sheet" class="sheet">
+          <div class="card sheet-panel">
+            <div class="card-header">
+              <h4>Edit profile</h4>
+              <p class="muted">Make changes to your profile.</p>
+            </div>
+            <div class="card-section fill">
+              <div class="field"><label>Name</label><input value="Pedro Duarte" /></div>
+              <div class="field"><label>Username</label><input value="@peduarte" /></div>
+            </div>
+            <div class="card-footer row">
+              <button class="button button-primary" data-close="demo-sheet">Save changes</button>
+            </div>
+          </div>
+        </dialog>
+      </div>
+      <div class="showcase">
+        <small class="muted">Drawer</small>
+        <button class="button button-outline" data-open="demo-drawer">Open Drawer</button>
+        <dialog id="demo-drawer" class="drawer">
+          <div class="card drawer-panel">
+            <div class="drawer-handle"></div>
+            <div class="card-header center">
+              <h4>Move Goal</h4>
+              <p class="muted">Set your daily activity goal.</p>
+            </div>
+            <div class="card-section center">
+              <div class="row drawer-goal">
+                <button class="button button-outline">-</button>
+                <div class="stack center drawer-counter">
+                  <span class="display">350</span><small class="muted">CALORIES/DAY</small>
+                </div>
+                <button class="button button-outline">+</button>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="button button-primary" data-close="demo-drawer">Submit</button>
+            </div>
+          </div>
+        </dialog>
+      </div>
+      <div class="showcase">
+        <small class="muted">Dropdown Menu</small>
+        <div class="dropdown">
+          <button class="button button-outline dropdown-trigger">Open <i class="fa-solid fa-angle-down"></i></button>
+          <div class="dropdown-content">
+            <div class="nav-button">Profile</div>
+            <div class="nav-button">Billing</div>
+            <div class="nav-button">Settings</div>
+            <hr />
+            <div class="nav-button">Log out</div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Popover</small>
+        <div class="dropdown">
+          <button class="button button-outline dropdown-trigger">Open popover</button>
+          <div class="dropdown-content dropdown-wide">
+            <div class="stack">
+              <div class="field"><label>Width</label><input value="100%" /></div>
+              <div class="field"><label>Height</label><input value="25px" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Hover Card</small>
+        <span class="hover-trigger"
+          >@nextjs
+          <div class="hover-card card">
+            <div class="card-section">
+              <b>nextjs</b>
+              <p class="muted">The React Framework – created and maintained by @vercel.</p>
+              <small class="muted">Joined December 2021</small>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="showcase">
+        <small class="muted">Tooltip</small>
+        <span class="tooltip-trigger">
+          <button class="button button-outline">Hover me</button>
+          <span class="tooltip">Add to library</span>
+        </span>
+      </div>
+      <div class="showcase">
+        <small class="muted">Context Menu</small>
+        <div class="context-area">
+          <span class="muted">Right click here</span>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Toast</small>
+        <button class="button button-outline" id="toast-trigger">Show Toast</button>
+        <div id="toast-container"></div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Command</small>
+        <div class="card command-card">
+          <div class="search search-flush">
+            <i class="fa-regular fa-search"></i>
+            <input placeholder="Type a command or search…" />
+          </div>
+          <div class="stack">
+            <small class="muted command-label">Suggestions</small>
+            <div class="nav-button"><i class="fa-regular fa-calendar"></i> Calendar</div>
+            <div class="nav-button"><i class="fa-regular fa-face-smile"></i> Search Emoji</div>
+            <div class="nav-button"><i class="fa-regular fa-calculator"></i> Calculator</div>
+            <small class="muted command-label">Settings</small>
+            <div class="nav-button"><i class="fa-regular fa-user"></i> Profile</div>
+            <div class="nav-button"><i class="fa-regular fa-credit-card"></i> Billing</div>
+            <div class="nav-button"><i class="fa-regular fa-gear"></i> Settings</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>Navigation & Layout</h4>
+    <div class="showcase-grid">
+      <div class="showcase">
+        <small class="muted">Breadcrumb</small>
+        <nav class="breadcrumb">
+          <a href="#">Home</a><i class="fa-regular fa-angle-right"></i> <a href="#">Components</a
+          ><i class="fa-regular fa-angle-right"></i>
+          <span class="muted">Breadcrumb</span>
+        </nav>
+      </div>
+      <div class="showcase">
+        <small class="muted">Pagination</small>
+        <nav class="row pagination">
+          <button class="button button-outline"><i class="fa-regular fa-angle-left"></i> Previous</button>
+          <button class="button button-outline">1</button>
+          <button class="button button-primary">2</button>
+          <button class="button button-outline">3</button>
+          <button class="button button-outline">Next <i class="fa-regular fa-angle-right"></i></button>
+        </nav>
+      </div>
+      <div class="showcase">
+        <small class="muted">Spinner</small>
+        <div class="row spinner-demo">
+          <div class="spinner"></div>
+          <div class="spinner spinner-lg"></div>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Toolbar</small>
+        <div class="toolbar">
+          <button class="toggle" aria-pressed="true"><i class="fa-regular fa-bold"></i></button>
+          <button class="toggle"><i class="fa-regular fa-italic"></i></button>
+          <button class="toggle"><i class="fa-regular fa-strikethrough"></i></button>
+          <hr class="toolbar-divider" />
+          <button class="toggle active"><i class="fa-regular fa-align-left"></i></button>
+          <button class="toggle"><i class="fa-regular fa-align-center"></i></button>
+          <button class="toggle"><i class="fa-regular fa-align-right"></i></button>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Scroll Area</small>
+        <div class="scroll-area">
+          <div class="nav-button">v4.6.0</div>
+          <div class="nav-button">v4.5.0</div>
+          <div class="nav-button">v4.4.0</div>
+          <div class="nav-button">v4.3.0</div>
+          <div class="nav-button">v4.2.0</div>
+          <div class="nav-button">v4.1.0</div>
+          <div class="nav-button">v4.0.0</div>
+          <div class="nav-button">v3.9.0</div>
+          <div class="nav-button">v3.8.0</div>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Resizable</small>
+        <div class="card row resizable-demo">
+          <div class="fill center">One</div>
+          <div style="width: 2px; background: var(--color-light); cursor: col-resize"></div>
+          <div class="stack fill">
+            <div class="fill center">Two</div>
+            <div style="height: 2px; background: var(--color-light); cursor: row-resize"></div>
+            <div class="fill center">Three</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>Content & Display</h4>
+    <div class="showcase-grid">
+      <div class="showcase">
+        <small class="muted">Alert</small>
+        <div class="alert">
+          <i class="fa-regular fa-terminal"></i>
+          <div class="stack"><b>Heads up!</b><small class="muted">You can add components using the CLI.</small></div>
+        </div>
+        <div class="alert alert-destructive">
+          <i class="fa-regular fa-circle-exclamation"></i>
+          <div class="stack"><b>Error</b><small>Your session has expired.</small></div>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Progress</small>
+        <progress value="60" max="100">60%</progress>
+      </div>
+      <div class="showcase">
+        <small class="muted">Kbd</small>
+        <div class="row kbd-demo"><kbd>Ctrl</kbd> + <kbd>K</kbd></div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Button Group</small>
+        <div class="button-group">
+          <button class="button button-outline">Day</button>
+          <button class="button button-primary">Month</button>
+          <button class="button button-outline">Year</button>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Aspect Ratio</small>
+        <div class="aspect-ratio"></div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Icon Button</small>
+        <div class="row">
+          <button class="button button-outline icon-button"><i class="fa-regular fa-bold"></i></button>
+          <button class="button button-outline icon-button"><i class="fa-regular fa-italic"></i></button>
+          <button class="button button-outline icon-button"><i class="fa-regular fa-underline"></i></button>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Data List</small>
+        <dl class="data-list">
+          <dt class="muted">Status</dt>
+          <dd>Active</dd>
+          <dt class="muted">Plan</dt>
+          <dd>Pro</dd>
+          <dt class="muted">Members</dt>
+          <dd>5</dd>
+        </dl>
+      </div>
+      <div class="showcase">
+        <small class="muted">Carousel</small>
+        <div class="carousel">
+          <button class="button button-outline carousel-prev"><i class="fa-regular fa-angle-left"></i></button>
+          <div class="carousel-track">
+            <div class="carousel-slide card center">Slide 1</div>
+            <div class="carousel-slide card center">Slide 2</div>
+            <div class="carousel-slide card center">Slide 3</div>
+          </div>
+          <button class="button button-outline carousel-next"><i class="fa-regular fa-angle-right"></i></button>
+        </div>
+      </div>
+      <div class="showcase">
+        <small class="muted">Chart</small>
+        <div class="chart-bars chart-bars-sm">
+          <div class="chart-bar" style="height: 40%"></div>
+          <div class="chart-bar" style="height: 80%"></div>
+          <div class="chart-bar" style="height: 55%"></div>
+          <div class="chart-bar" style="height: 70%"></div>
+          <div class="chart-bar" style="height: 30%"></div>
+          <div class="chart-bar" style="height: 90%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,399 @@
+<section id="that-matt-life" class="layer">
+  <div class="layer-inset">
+    <h1>That Matt Life</h1>
+  </div>
+</section>
+
+<section id="fidelity-of-desire" class="layer">
+  <div class="layer-inset">
+    <h2>Fidelity of desire</h2>
+    <p>I want to take a moment to express what makes this project unique.</p>
+    <p>
+      This is redundant with an entry in the glossary that I shipped with what I refer to as fidelity of desire, which
+      is inspired by a <a href="https://dcurt.is/the-future">Dustin Curtis post</a> where he hypothesized that the best
+      way to predict the future is to think about desire.
+    </p>
+    <p>
+      It was called <a href="https://dcurt.is/the-future">I want</a>, and he basically did 20 phrases all starting with
+      I want, and it was optimizations to his current life.
+    </p>
+    <p>For example, he wanted gigabit internet anywhere in the world for less than $100 a month.</p>
+    <p>
+      Then he said for anything that he might need, without spending much time, the best balance of price and function
+      and aesthetic, for a toaster or socks or deodorant or whatever it is, would be available for him to order at one
+      click without having to spend a bunch of time researching and cost comparing and all of that.
+    </p>
+    <p>
+      So those are a couple examples, but the idea is he's saying <a href="https://dcurt.is/the-future">I want</a>, and
+      putting that into words.
+    </p>
+    <p>
+      Where he did 20 examples that were kind of abstract and could involve any number of technologies, this kind of
+      takes that same concept and it increases fidelity to say, if I have an AI doing work on my behalf, A, let me
+      define the work worth doing, but B, let me do it again for every minute of every day and to do that forever,
+      potentially, right?
+    </p>
+    <p>
+      And if it's worth doing, how would you know? All this got to be tested and iterated, of course, but this is the
+      idea that's increasing the fidelity of desire, and I think what makes this project unique and special is, I tend
+      to have a rare perspective on things because of my background in computer science and my degree in art and just my
+      sheer uncommon gumption and will to exert this level of clarity and awareness and control over answering all these
+      questions, getting them answered and doing them at a depth that feels worthwhile.
+    </p>
+    <p>My career coach, Kuda, likes to say, how you do anything is how you do everything.</p>
+    <p>
+      I feel like this is the next manifestation of creating an artifact that represents all the things I believe are
+      worth caring about and being thoughtful about and being creative with and executing on to bring about a greater
+      quality of life, which is dependent on access to resources, deep, warm, rich relationships with people, and a
+      sense of accomplishment and time well spent every single day.
+    </p>
+    <p>
+      I would love for this to help offset some of that and get me further ahead when I'm getting started every single
+      morning, and if I can do those things, it's the gains will not only be outsized, it'll be, it'll change my life.
+    </p>
+    <p>
+      That's the belief. How can I change someone else's life if I can't change my own? And how can I change a day
+      unless I can change an hour? And how can I change an hour unless I can change a minute? Every minute matters.
+      Let's make this thing.
+    </p>
+    <p>That’s it.</p>
+  </div>
+</section>
+
+<section id="minute-loop" class="layer">
+  <div class="layer-inset">
+    <h2>Minimum viable minute loop</h2>
+    <ol>
+      <li>Trigger: the minute is now (this minute, not the other 1,439).</li>
+      <li>
+        Check planning status for the active bucket; create plan if missing (can defer execution up to 20 minutes).
+      </li>
+      <li>Load required data for this minute's target.</li>
+      <li>Run Matt-grade reasoning subflow: review content, generate options, make decision, proceed.</li>
+      <li>Execute the selected action for now (private, collaborative, or public), or explicitly defer.</li>
+      <li>Write results and queue any optional follow-on tasks only if selected by the minute's plan.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="day-loop" class="layer">
+  <div class="layer-inset">
+    <h2>Minimum viable day loop (1,440 triggers)</h2>
+    <ul>
+      <li>250 minutes: Rotango people auto dials, pings, birthdays (mixes with 364).</li>
+      <li>364 minutes: Bigfoot planning, MB-influenced, one LLM-decided research thread per day.</li>
+      <li>100 minutes: Topical expertise across theology, nutrition, fitness, sports, technology, and business.</li>
+      <li>480 minutes: Standard work day minutes.</li>
+    </ul>
+    <p>Minute check: 250 + 364 + 100 + 480 = 1,194, leaving a 246-minute buffer in a 1,440-minute day.</p>
+  </div>
+</section>
+
+<section id="rotango-example" class="layer">
+  <div class="layer-inset">
+    <h2>Rotango example (two zoom levels)</h2>
+    <div id="rotango-grid">
+      <article id="rotango-zoom-1">
+        <h3>Zoom 1: 250-minute Rotango slot</h3>
+        <p>
+          Rotango is one person per minute for up to 250 minutes. Each minute decides the next best action for that
+          person, not a generic batch split.
+        </p>
+        <ul>
+          <li>Start with contact inventory questions: do we have all contacts and are there new contacts.</li>
+          <li>Run source checks for new contacts (notes, email, Slack, and other data sources).</li>
+          <li>Treat each source-check as a minute-level operation in the same daily sequence.</li>
+          <li>Keep selection explicit: who belongs in today's 250-minute pass.</li>
+          <li>Do not separate enrichment into a pre-pass; enrichment is part of the pass.</li>
+          <li>
+            Next-best action can vary by person/minute: research, enrichment, invitation, encouragement, voice session,
+            gift idea capture, or social behavior analysis.
+          </li>
+          <li>
+            Scheduling logic is primarily frequency-based cadence (when), with contact type (personal/professional) as a
+            secondary constraint.
+          </li>
+          <li>
+            Planning phases: up to 20 minutes per major bucket, plus optional up to 20-minute meta planning from the
+            daily buffer.
+          </li>
+          <li>Use steady-drip execution: do some work daily, then iterate and re-run.</li>
+        </ul>
+      </article>
+      <article id="rotango-zoom-2">
+        <h3>Zoom 2: Single-contact loop (Aaron)</h3>
+        <p>
+          Example reasoning chain for one person: last conversation recency, current life/work context, support needs,
+          meeting invitations, schedule availability, best send mechanism, contact preference/defaults, and missing data
+          resolution.
+        </p>
+        <ol>
+          <li>Load known data from existing sources (or mark unknown).</li>
+          <li>Ask tight Q/A loops for missing intelligence (email, phone, work/home context, timing).</li>
+          <li>Decide next-best action with Matt-grade reasoning.</li>
+          <li>Choose execute-now vs queue-later based on time and schedule constraints.</li>
+          <li>Track outcomes for both person-level and batch-level optimization.</li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="interview-timeline" class="layer">
+  <div class="layer-inset">
+    <h2>Input transcript timeline</h2>
+    <article id="transcript-1">
+      <h3><time datetime="2026-03-04T11:25:00-07:00">2026-03-04 11:25 MST · Transcript 1</time></h3>
+      <p>
+        One-sentence outcome is to document concepts in a way that makes it easier to think when it comes time to build
+        and invite people into it. That outcome applies to most of these pages.
+      </p>
+      <p>
+        Superwork projects had an about-page style design engineer travelogue/notebook: talk through what is being done
+        and thought through, organize it linearly, then build a demo that represents as much of that as possible.
+      </p>
+      <p>
+        Core method: create a textual version of what is in your head, then use that to inspire interactive software or
+        browser experience.
+      </p>
+      <p>
+        Audience is AI agents. Action is to operate and think like Matt. This is the purpose of Websuite: help agents
+        understand how Matt works, preferences, process, and standards.
+      </p>
+      <p>
+        Domain framing includes MVP for agentics as extension of Mingentic, classes of work that must happen daily, and
+        itemization of those classes.
+      </p>
+      <p>
+        Must-have v1 sections named: outline, MVP loop, Matt-grade reasoning definition + relevance, and broad summary
+        of relation and outcomes.
+      </p>
+      <p>
+        Day allocation draft: 250 Rotango minutes, 364 Bigfoot planning/research minutes, 100 topical expertise minutes,
+        480 standard work-day minutes, leaving a 246-minute buffer.
+      </p>
+    </article>
+    <article id="transcript-2">
+      <h3><time datetime="2026-03-04T11:35:00-07:00">2026-03-04 11:35 MST · Transcript 2</time></h3>
+      <p>
+        Clarification: minimum viable minute loop and minimum viable day loop are separate. Day loop shows grouped
+        classes that make up all 1,440 minute triggers.
+      </p>
+      <p>
+        Constraint noted: some tasks have time restrictions, so schedule intelligence is required. Example: outreach
+        tasks cannot run at midnight.
+      </p>
+      <p>New requirement set: planning/research work and execution work must both be represented.</p>
+      <p>
+        Time intelligence should answer: can this execute now, should it queue for later, and does it require review.
+      </p>
+      <p>
+        Minute loop is the high-frequency sequence that runs over a thousand times per day. Not every operation must
+        complete inside one minute, but operations should still be represented by minute triggers.
+      </p>
+      <p>
+        Core sequence candidate: input data and output data, structured/unstructured possibilities, internal/external
+        flow, prepare and send to LLM in loop, then share outward to person/channel/audience as primary execution step.
+      </p>
+      <p>
+        Follow-on analytics child instances should measure outcomes like opens, traffic lift, reactions, and replies.
+      </p>
+      <p>
+        System framing includes proactive events (controllable) and reactive events (uncontrolled) with clear triggers
+        and actions.
+      </p>
+      <p>Initial success condition: define, illustrate, and make trigger/action behavior clear on this page.</p>
+    </article>
+    <article id="transcript-3">
+      <h3><time datetime="2026-03-04T11:45:00-07:00">2026-03-04 11:45 MST · Transcript 3</time></h3>
+      <p>Direction update: if content was not explicitly requested by Matt, it should not be in primary content.</p>
+      <p>
+        Rule reminder: descriptions of the thing are not the thing; primary content should focus on making the thing.
+      </p>
+      <p>FAQ usage clarified: move non-primary interview artifacts there, not invented additions.</p>
+      <p>
+        New requirement: keep a timestamped timeline of interview/input transcripts because this intelligence is
+        high-value and otherwise lossy in LLM workflows.
+      </p>
+    </article>
+    <article id="transcript-4">
+      <h3><time datetime="2026-03-04T12:08:00-07:00">2026-03-04 12:08 MST · Transcript 4</time></h3>
+      <p>
+        Okay, this will be the fourth transcript we wanna capture verbatim. Now that we've gotten to this point, and as
+        I'm reviewing, I'm realizing this is already past the point where it's too much text. It needs to become more
+        visual. It needs to become more graphical. And not that the text is bad, but it needs to be laid out in a
+        different way to become more comprehensible.
+      </p>
+      <p>
+        And perhaps what's missing most is examples. So I'm just gonna talk through how I'm thinking about this and try
+        to get as low level on at least one for now, just so we capture that and have a mutual understanding.
+      </p>
+      <p>
+        So, and again, the idea here is, okay, take something specific from the minimum viable day loop. We'll start
+        with Rotengo. And since that's at the top, and then put it in the context of the minimum viable minute loop.
+      </p>
+      <p>
+        So Rotengo, what is it? It's basically treating, we're using, I forget the number. There's a name of a number
+        that talks about how many relationships you can manage in a given day. Or sorry, in a given life. I think it's
+        150 to 250. I'll have to look up the Dunbar. Dunbar's number suggests that it's not arbitrary, that somewhere
+        between 150 to 250 relationships, after that you lose the ability to benefit mutually or something.
+      </p>
+      <p>
+        And so that number is not arbitrary. And so basically, it's this idea that some of the most successful people
+        I've ever seen just do a really good job staying in touch with people. I know I met with this guy who's top
+        three of a top five financial firm. And he was top of his class at Wharton. And he does 30 to 60 dials a day. I
+        interviewed a real estate agent who does 100 to 400 dials a day.
+      </p>
+      <p>
+        And so, you know, that form of outreach is its own form of invitation. You're inviting someone into a
+        conversation. You're reaching out to them. You're not expecting them to call you. And so it really becomes a
+        question of, for each person, what's the intelligence for each? And gathering intelligence and using these
+        agentic tools to do that work.
+      </p>
+      <p>
+        So, you know, for up to 250 minutes, one person per minute, who are the people? It's kind of like an automated
+        CRM where it's constantly reasoning about and iterating through a list of contacts and trying to answer
+        questions about them. One of those questions might be when was the last time you spoke to this person. Others
+        are details: work/personal email, work/personal phone, home/work address, employer, birthday.
+      </p>
+      <p>
+        For any given person, you're going to have more or less data. So the agent is responsible for enriching people
+        and deciding who those 250 people are, because the list will likely be longer than that, and this runs every
+        day. Then you optimize: less enrichment, more selection quality, and decide who are the best people to attempt
+        to contact today. Maybe that's only 30, and that becomes part of the execution plan for later.
+      </p>
+      <p>
+        You have to sequentially go through these blitzes and then re-go through them. For parsimony, you're not trying
+        to do everything all at once. You're trying to do some amount of work every single day on a steady drip.
+      </p>
+      <p>
+        Zooming in: Aaron. You met with him a couple weeks ago. You texted him. His wife said he had an interview and
+        he's trying to get a job. You're in that cycle and asking: how can I support him, should I invite him this week,
+        do I have availability, what's the right send mechanism, what was used last time, do we have email, what's
+        preferred contact, and if none, what's system default or Matt's default.
+      </p>
+      <p>
+        These are tight question/answer loops. For each person, the LLM should evaluate the full question set against
+        currently available data, decide what to fetch next, and track outcome both person-level and batch-level.
+      </p>
+      <p>
+        Batch exceptions become candidates for escalation: couldn't find phone/email, uncertain identity because
+        duplicate names, ask Matt or someone who knows the person for missing info.
+      </p>
+      <p>
+        Data in can come from existing sources, web search (less trusted), and your own brain/voice in constrained
+        windows (for example 9:15-9:20 a.m. for a rapid 5-10 person monologue). Then run the next cycle tomorrow and
+        keep strengthening the model.
+      </p>
+      <p>
+        Additional optimization for the 250 minutes is balance across personal, work, leads/prospects, and nurturing.
+        The 150-250 relationship envelope gets more constrained as you allocate slots by relationship type.
+      </p>
+      <p>
+        Related Websuite framing: this behaves like a million-piece puzzle. Contacts multiplied by questions becomes
+        thousands of discrete computational operations quickly. Add a meta-reasoning layer daily and point-by-point
+        intelligence can become exponential.
+      </p>
+      <p>Ask: can we capture this transcript and add Rotango + Aaron examples at both zoom levels of detail.</p>
+    </article>
+    <article id="transcript-5">
+      <h3><time datetime="2026-03-04T12:57:00-07:00">2026-03-04 12:57 MST · Transcript 5</time></h3>
+      <p>
+        Okay, once again, you are getting some fundamental things wrong even in your questions. So the 250 minutes
+        represents one person per minute.
+      </p>
+      <p>
+        And I think it is important that as part of that process, perhaps either early on in the minute or as part of a
+        earlier planning process, figuring out what the next best action is, whether it should be research, whether
+        it's, you know, enrichment, whether it should be inviting to something, sending an encouragement, even just
+        having a session with me to talk about what I know, what we could do, you know, capturing a gift idea, like
+        learning what this person likes, analyzing their social media behavior.
+      </p>
+      <p>
+        I don't know. This is, these are all things that could happen during the minute, but the split, like I said, has
+        to do with the type of contact, whether it's personal, professional, right? Whether it's like more immediate, or
+        like it could be based on frequency, like, you know, people to people that I communicate with daily versus
+        weekly versus monthly versus quarterly versus annual, right? You could, that could be the initial basis,
+      </p>
+      <p>and again, I would expect personal to pretty much always fall into daily, weekly, monthly.</p>
+      <p>
+        And professional to be a more of a broader range, right? Maybe, you know, someone I work with like Joey and
+        Shane, it could be multiple times per day, not necessarily hourly, but certainly completing loops more
+        frequently. And then with, but with like a, with like a warm prospect, you know, wouldn't want to bug them too
+        heavily, you know, maybe initially it's frequent, but then after a certain threshold, changes to monthly,
+        something like that.
+      </p>
+      <p>I'm not exactly sure, but that's, again, these are all details we have to work out.</p>
+      <p>
+        But regardless of that higher-level strategy, I think it's clear we do need, let's call it up to 20 minutes
+        planning phases for each of these broader buckets. So rotatingo, Bigfoot, standard workday, topical expertise.
+      </p>
+      <p>
+        Like all of these deserve a sort of very, like before, before the execution, before the agentic execution,
+        internal, like private execution, we could call it. There's private execution, there's collaborative execution,
+        and then there's public execution.
+      </p>
+      <p>
+        Before all this, there needs to be sort of like a planning phase for each of these, and again, up to 20 minutes,
+        which will use a good chunk of that buffer. And then we probably need the rest of that buffer for, or maybe we
+        just keep it fixed at 20 minutes, up to 20 minutes for just a, like a meta planning across all of these first
+        thing in the day to kind of, you know, Provide that light layer of detail. Again, those sort of like more
+        general, broader housekeeping questions and getting those answered first.
+      </p>
+      <p>
+        Does that make sense? I think I answered question three. Question two is too, that's too detailed for now. We're
+        not getting into those implementation details yet. And same thing with number four. We're not, we're not
+        figuring all that out. Um But I did kind of answer it in a different way with those, you know, that escalation
+        that I just described. lets add this to the transcript as well
+      </p>
+    </article>
+  </div>
+</section>
+
+<section id="faq" class="layer">
+  <div class="layer-inset">
+    <h2>Interview FAQ</h2>
+    <article id="faq-1">
+      <h3>What is the one-sentence outcome for this page?</h3>
+      <p>
+        Document concepts in a way that makes it easier to think when it is time to build and invite people into it. The
+        same pattern applies broadly: a design engineer travelogue/notebook first, then an interactive representation in
+        the browser.
+      </p>
+      <p>
+        This is the text-first method: create a textual version of what is in your head and use that as the source for
+        the software experience.
+      </p>
+    </article>
+    <article id="faq-2">
+      <h3>Who is the audience and what action should they take?</h3>
+      <p>
+        The primary audience is AI agents. The action is to operate and think like Matt so they can execute work with
+        the same process standards, decision logic, and quality expectations.
+      </p>
+      <p>
+        This is framed as a core Websuite purpose: capturing how Matt works so agentic systems can align to that
+        operating model.
+      </p>
+    </article>
+    <article id="faq-3">
+      <h3>What tone words define v1?</h3>
+      <p>Explicit, precise, usable.</p>
+    </article>
+    <article id="faq-4">
+      <h3>What has to be clear for v1 to be successful?</h3>
+      <p>
+        Define and illustrate minute-triggered automation clearly: what the trigger is, what action is taken, what gets
+        reviewed, what gets queued, and what gets executed now.
+      </p>
+      <p>
+        Clarify the separation between minimum viable minute loop and minimum viable day loop; represent both planning
+        and execution work; and include time intelligence gates (execute now vs queue later) and review gates.
+      </p>
+      <p>
+        Show the operational sequence from input to output (structured and unstructured), LLM preparation/decision,
+        outward sharing to person/channel/audience, and child analytics tasks for measurement and feedback.
+      </p>
+    </article>
+  </div>
+</section>

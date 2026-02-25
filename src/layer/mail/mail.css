@@ -1,0 +1,21 @@
+.app-shell {
+  height: 36rem;
+}
+
+.mail-list {
+  max-width: 18rem;
+}
+
+.mail-nav {
+  max-width: 12rem;
+}
+
+.mail-reply-bar {
+  align-items: center;
+  display: flex;
+}
+
+.muted {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}

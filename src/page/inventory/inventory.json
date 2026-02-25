@@ -1,0 +1,534 @@
+[
+  {
+    "minterface": false,
+    "minterface_class": ".nav-section",
+    "mvp": true,
+    "name": "Accordion",
+    "route": "/component/nav/",
+    "sources": ["baseui", "radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Alert",
+    "route": "/component/feedback/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Alert Dialog",
+    "route": "/component/overlay/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Aspect Ratio",
+    "route": "/component/layout/",
+    "sources": ["radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "prefer Combobox",
+    "mvp": false,
+    "name": "Autocomplete",
+    "note": "prefer Combobox",
+    "route": "/component/field/",
+    "sources": ["baseui"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": ".avatar",
+    "mvp": true,
+    "name": "Avatar",
+    "route": "/component/info/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": ".badge",
+    "mvp": true,
+    "name": "Badge",
+    "route": "/component/info/",
+    "sources": ["shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Breadcrumb",
+    "route": "/component/nav/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": ".button",
+    "mvp": true,
+    "name": "Button",
+    "route": "/component/field/",
+    "sources": ["baseui", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Button Group",
+    "route": "/component/action/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Calendar",
+    "route": "/component/data/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "prefer Alert",
+    "mvp": false,
+    "name": "Callout",
+    "note": "prefer Alert",
+    "route": "/component/feedback/",
+    "sources": ["themes"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": ".card",
+    "mvp": true,
+    "name": "Card",
+    "route": "/component/info/",
+    "sources": ["shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Carousel",
+    "route": "/component/data/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Chart",
+    "route": "/component/data/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "native",
+    "mvp": true,
+    "name": "Checkbox",
+    "route": "/component/field/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Checkbox Cards",
+    "route": "/component/configure/",
+    "sources": ["themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Checkbox Group",
+    "route": "/component/field/",
+    "sources": ["baseui", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": ".nav-section",
+    "mvp": true,
+    "name": "Collapsible",
+    "route": "/component/nav/",
+    "sources": ["baseui", "radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Combobox",
+    "route": "/component/field/",
+    "sources": ["baseui", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Command",
+    "route": "/component/overlay/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Context Menu",
+    "route": "/component/overlay/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Data List",
+    "route": "/component/data/",
+    "sources": ["themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Data Table",
+    "route": "/component/data/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Date Picker",
+    "route": "/component/data/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Dialog",
+    "route": "/component/overlay/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Drawer",
+    "route": "/component/overlay/",
+    "sources": ["baseui", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Dropdown Menu",
+    "route": "/component/overlay/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": ".field",
+    "mvp": true,
+    "name": "Form",
+    "route": "/component/field/",
+    "sources": ["baseui", "radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Hover Card",
+    "route": "/component/overlay/",
+    "sources": ["radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Icon Button",
+    "route": "/component/action/",
+    "sources": ["themes"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": "native",
+    "mvp": true,
+    "name": "Input",
+    "route": "/component/field/",
+    "sources": ["baseui", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Input OTP",
+    "route": "/component/field/",
+    "sources": ["radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Kbd",
+    "route": "/component/action/",
+    "sources": ["shadcn", "themes"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": "native",
+    "mvp": true,
+    "name": "Label",
+    "route": "/component/field/",
+    "sources": ["radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Menubar",
+    "route": "/component/nav/",
+    "sources": ["baseui", "radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "native",
+    "mvp": true,
+    "name": "Meter",
+    "route": "/component/field/",
+    "sources": ["baseui"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Navigation Menu",
+    "route": "/component/nav/",
+    "sources": ["baseui", "radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Number Field",
+    "route": "/component/field/",
+    "sources": ["baseui"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Pagination",
+    "route": "/component/nav/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Popover",
+    "route": "/component/overlay/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": false,
+    "name": "Preview Card",
+    "route": "/component/info/",
+    "sources": ["baseui"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Progress",
+    "route": "/component/feedback/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "native",
+    "mvp": true,
+    "name": "Radio",
+    "route": "/component/field/",
+    "sources": ["baseui", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Radio Cards",
+    "route": "/component/configure/",
+    "sources": ["themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "native",
+    "mvp": true,
+    "name": "Radio Group",
+    "route": "/component/field/",
+    "sources": ["radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Resizable",
+    "route": "/component/layout/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Scroll Area",
+    "route": "/component/layout/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "prefer Button Group",
+    "mvp": false,
+    "name": "Segmented Control",
+    "note": "prefer Button Group",
+    "route": "/component/action/",
+    "sources": ["themes"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": "native",
+    "mvp": true,
+    "name": "Select",
+    "route": "/component/field/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": "hr",
+    "mvp": true,
+    "name": "Separator",
+    "route": "/component/info/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Sheet",
+    "route": "/component/overlay/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": ".app-panel",
+    "mvp": true,
+    "name": "Sidebar",
+    "route": "/component/layout/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": ".skeleton",
+    "mvp": true,
+    "name": "Skeleton",
+    "route": "/component/info/",
+    "sources": ["shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Slider",
+    "route": "/component/field/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "prefer Toast",
+    "mvp": false,
+    "name": "Sonner",
+    "note": "prefer Toast",
+    "route": "/component/overlay/",
+    "sources": ["shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Spinner",
+    "route": "/component/feedback/",
+    "sources": ["shadcn", "themes"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": ".switch",
+    "mvp": true,
+    "name": "Switch",
+    "route": "/component/field/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Table",
+    "route": "/component/data/",
+    "sources": ["shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": ".tab",
+    "mvp": true,
+    "name": "Tabs",
+    "route": "/component/nav/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  },
+  {
+    "minterface": true,
+    "minterface_class": "native",
+    "mvp": true,
+    "name": "Textarea",
+    "route": "/component/field/",
+    "sources": ["shadcn", "themes"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Toast",
+    "route": "/component/overlay/",
+    "sources": ["baseui", "radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Toggle",
+    "route": "/component/action/",
+    "sources": ["baseui", "radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Toggle Group",
+    "route": "/component/action/",
+    "sources": ["baseui", "radix", "shadcn"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Toolbar",
+    "route": "/component/action/",
+    "sources": ["baseui", "radix"]
+  },
+  {
+    "minterface": false,
+    "minterface_class": "new",
+    "mvp": true,
+    "name": "Tooltip",
+    "route": "/component/overlay/",
+    "sources": ["baseui", "radix", "shadcn", "themes"]
+  }
+]

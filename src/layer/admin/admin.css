@@ -1,0 +1,37 @@
+.admin-nav {
+  max-width: 12rem;
+}
+
+.app-shell {
+  height: 36rem;
+}
+
+code {
+  background: var(--color-lighter);
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.status-done {
+  color: green;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid var(--color-light);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: var(--color-lighter);
+  color: var(--color-half);
+  font-weight: 500;
+}

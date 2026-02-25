@@ -1,0 +1,234 @@
+<section id="hero" class="layer glass">
+  <div class="layer-inset">
+    <h1>One page is enough.</h1>
+    <p>
+      Every meaningful initiative can and should be clearly summarized on a single page. Donepager helps you craft that
+      one-pager.
+    </p>
+    <a class="button button-primary" href="#formula">Get started</a>
+  </div>
+</section>
+<div id="hero-fade"></div>
+
+<header id="donepager-top" class="glass">
+  <a class="brand" href="/"><i class="fa-solid fa-file-check"></i> Donepager</a>
+  <div id="donepager-actions">
+    <button class="button" id="mode" type="button"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    <a class="button button-primary" href="#formula">Get started</a>
+  </div>
+</header>
+
+<section id="formula" class="layer">
+  <div class="layer-inset">
+    <div id="preset-list"></div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport">
+        <nav id="stage-tabs">
+          <button class="tab active" data-stage="input" type="button">
+            <i class="fa-regular fa-square-1"></i><span>Input</span>
+          </button>
+          <button class="tab" data-stage="templates" type="button">
+            <i class="fa-regular fa-square-2"></i><span>Template</span>
+          </button>
+          <button class="tab" data-stage="output" type="button">
+            <i class="fa-regular fa-square-3"></i><span>Output</span>
+          </button>
+        </nav>
+        <div class="story-ui">
+          <div id="input" class="story-panel stage-panel active" data-panel="input">
+            <div class="panel-top">
+              <div class="panel-copy">
+                <small class="small-caps">Input</small>
+                <p class="story-copy">Drop, paste, or record.</p>
+              </div>
+              <button class="button button-outline" type="button">
+                <i class="fa-regular fa-microphone"></i> Record
+              </button>
+            </div>
+            <div id="input-field">
+              <textarea placeholder="Or drop file anywhere" rows="12"></textarea>
+            </div>
+            <button class="button button-primary stage-cta" data-next-stage="templates" type="button">
+              Choose template <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div id="templates" class="story-panel stage-panel" data-panel="templates">
+            <div class="panel-top">
+              <div class="panel-copy">
+                <small class="small-caps">Template</small>
+                <p class="story-copy">Choose a one-pager.</p>
+              </div>
+              <button class="button button-primary upgrade" type="button">
+                <i class="fa-solid fa-mushroom"></i> Upgrade
+              </button>
+            </div>
+            <div id="template-list"></div>
+            <div id="template-footer">
+              <button class="button button-primary stage-cta" data-next-stage="output" type="button">
+                Preview template <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div id="output" class="story-panel stage-panel" data-panel="output">
+            <div class="panel-top">
+              <div class="panel-copy">
+                <small class="small-caps">Output</small>
+                <p class="story-copy">Preview then generate.</p>
+              </div>
+              <button class="button button-primary" type="button">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Generate
+              </button>
+            </div>
+            <article id="pager" class="card">
+              <div class="card-header">
+                <div class="template-top">
+                  <p id="pager-kicker" class="small-caps">Project one-pager</p>
+                  <span class="chip">Preview</span>
+                </div>
+                <h3 id="pager-title">Client Site Relaunch</h3>
+                <p id="summary">A clear launch brief for the external client and internal delivery team.</p>
+              </div>
+              <div class="card-section">
+                <div class="story-row">
+                  <div class="story-label">Audience</div>
+                  <div id="pager-audience">Client team, design, engineering</div>
+                </div>
+                <div class="story-row">
+                  <div class="story-label">Outcome</div>
+                  <div id="pager-outcome">Ship the relaunch with aligned scope and review expectations</div>
+                </div>
+                <div class="story-row">
+                  <div class="story-label">Scope</div>
+                  <div id="pager-scope">Homepage, navigation, CMS content migration, QA</div>
+                </div>
+                <div class="story-row">
+                  <div class="story-label">Done</div>
+                  <div id="pager-done">Approved launch, signed-off content, stable post-launch handoff</div>
+                </div>
+              </div>
+            </article>
+            <div id="output-actions">
+              <button class="button button-outline" type="button">
+                <i class="fa-solid fa-u-turn-down-left"></i> Parlay
+              </button>
+              <button class="button button-primary" type="button">
+                <i class="fa-regular fa-file-pdf"></i> Download PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layer placeholder" id="slop">
+  <div class="layer-inset">
+    <small class="small-caps">Placeholder</small>
+    <h2>Stop the slop!</h2>
+    <p>
+      Especially when serving an external audience with an internal team, sloppy context turns into sloppy execution.
+    </p>
+    <div class="placeholder-cards">
+      <article class="card">Who is this for?</article>
+      <article class="card">What problem does it solve?</article>
+      <article class="card">How do we know we solved it?</article>
+    </div>
+  </div>
+</section>
+
+<section class="layer" id="who">
+  <div class="layer-inset">
+    <h2>For people who ship</h2>
+    <p>If you're responsible for delivering something to someone, Donepager is for you.</p>
+    <div class="grid">
+      <div class="card">
+        <h4>Founders & operators</h4>
+        <p>Align your team around what you're building, for whom, and by when.</p>
+      </div>
+      <div class="card">
+        <h4>Product teams</h4>
+        <p>Replace sprawling specs with a single page that everyone actually reads.</p>
+      </div>
+      <div class="card">
+        <h4>Consultants & agencies</h4>
+        <p>Set expectations with clients before work begins — not after it goes sideways.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layer" id="problem">
+  <div class="layer-inset">
+    <h2>The real problem</h2>
+    <p>
+      Teams don't fail because they lack documentation. They fail because the context is scattered, the expectations are
+      unclear, and no one reads the 30-page deck anyway.
+    </p>
+    <div class="grid">
+      <div class="problem-item">
+        <h4>Scattered context</h4>
+        <p>The goal is in Slack, the scope is in a doc, the timeline is in someone's head.</p>
+      </div>
+      <div class="problem-item">
+        <h4>Misalignment</h4>
+        <p>Everyone thinks they agree until the first deliverable lands and nobody's happy.</p>
+      </div>
+      <div class="problem-item">
+        <h4>Overlong docs</h4>
+        <p>More pages don't mean more clarity. They mean less chance anyone reads it at all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layer" id="how">
+  <div class="layer-inset">
+    <h2>What you get</h2>
+    <p>
+      A structured one-pager for any SMART deliverable — specific, measurable, achievable, relevant, and time-bound —
+      tailored to a specific audience.
+    </p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div>
+          <h4>Define the deliverable</h4>
+          <p>What are you making, who is it for, and what does done look like?</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div>
+          <h4>Set the boundaries</h4>
+          <p>Scope, timeline, owners, and the one thing that will make or break it.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div>
+          <h4>Share and ship</h4>
+          <p>One page. Complete story. No excess detail. Everyone aligned before work begins.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="layer" id="cta">
+  <div class="layer-inset">
+    <h2>Get aligned. Set expectations. Move forward.</h2>
+    <p>The fastest way to turn a vague initiative into a clear commitment. Done and done.</p>
+    <a class="button" href="#">Create your first one-pager</a>
+    <p class="fine">Free to start. No account required.</p>
+  </div>
+</section>
+
+<footer class="layer">
+  <div class="layer-inset row">
+    <a class="brand" href="/"><i class="fa-solid fa-file-check"></i> Donepager</a>
+    <div class="fill"></div>
+    <p>&copy; 2026</p>
+  </div>
+</footer>

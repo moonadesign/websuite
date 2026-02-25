@@ -1,0 +1,17 @@
+#cpqui-top {
+  align-items: center;
+  border-bottom: 1px solid var(--color-light);
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem var(--space-clamp);
+}
+
+#cpqui-top nav {
+  display: flex;
+  flex: 1;
+  gap: 1.5rem;
+}
+
+#hero .layer-inset {
+  min-height: 60vh;
+}

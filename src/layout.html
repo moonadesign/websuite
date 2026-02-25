@@ -15,7 +15,10 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&family=DM+Sans:wght@500;700&display=swap"
+    />
     <link rel="stylesheet" href="{base}minterface.css" />
     <link rel="stylesheet" href="{base}global.css" />
     <link rel="stylesheet" href="{base}doc.css" />
@@ -25,23 +28,19 @@
     <script defer src="{base}doc.js"></script>
     {scripts}
   </head>
-  <body>
+  <body class="{bodyClass}">
     <header class="layer">
       <div class="layer-inset">
-        <a class="brand" href="/"><i class="fa-solid fa-browser"></i> Websuite</a>
-        <nav>
-          <a href="/#features">Features</a>
-          <a href="/#docs">Docs</a>
-          <a href="/colophon/">Colophon</a>
-        </nav>
-        <a class="button button-primary" href="/app/">Get started</a>
+        <a class="brand" href="/"><i class="fa-solid fa-copy"></i> Websuite</a>
+        <nav id="filters"></nav>
+        <button class="button" id="mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
       </div>
     </header>
     {content}
     <footer class="layer">
       <div class="layer-inset">
-        <a class="brand" href="/"><i class="fa-solid fa-browser"></i> Websuite</a>
-        <p>&copy; 2026</p>
+        <a class="brand" href="/"><i class="fa-solid fa-copy"></i> Websuite</a>
+        <p>&copy; 2025&ndash;2026 Moona LLC</p>
       </div>
     </footer>
   </body>

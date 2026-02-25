@@ -1,0 +1,7 @@
+#logic .layer-inset {
+  gap: 0.5rem;
+}
+
+.copyright {
+  font-family: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}

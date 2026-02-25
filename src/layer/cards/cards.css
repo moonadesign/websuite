@@ -1,0 +1,83 @@
+#card-grid {
+  display: grid;
+  gap: var(--space-clamp);
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.icon-item {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.icon-item i {
+  margin-top: 0.25rem;
+}
+
+.icon-item p {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}
+
+.switch {
+  background: var(--color-light);
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  height: 1.5rem;
+  position: relative;
+  width: 2.75rem;
+}
+
+.switch::after {
+  background: var(--color-lightest);
+  border-radius: 50%;
+  content: '';
+  height: 1.25rem;
+  left: 0.125rem;
+  position: absolute;
+  top: 0.125rem;
+  transition: transform 0.2s;
+  width: 1.25rem;
+}
+
+.switch[aria-checked='true'] {
+  background: var(--color-darkest);
+}
+
+.switch[aria-checked='true']::after {
+  transform: translateX(1.25rem);
+}
+
+.switch-item {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.switch-item label {
+  flex: 1;
+}
+
+.switch-item p {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}
+
+.user-row {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.user-row p {
+  color: var(--color-half);
+  font-size: 0.875rem;
+}

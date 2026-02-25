@@ -1,0 +1,104 @@
+{
+  "presets": [
+    {
+      "input": "We need a one-page kickoff brief for a new client website. Clarify goals, deliverables, exclusions, approvals, and launch timing before design starts.",
+      "subtitle": "Scope the engagement.",
+      "templateId": "client",
+      "title": "Client kickoff"
+    },
+    {
+      "input": "We need a short memo for leadership on whether to merge the pricing and plans pages. Summarize tradeoffs, recommendation, risks, and what changes next.",
+      "subtitle": "Frame the recommendation.",
+      "templateId": "decision",
+      "title": "Leadership decision"
+    },
+    {
+      "input": "We just launched the customer portal. Capture what shipped, known issues, support notes, and who owns the follow-up work.",
+      "subtitle": "Wrap the release cleanly.",
+      "templateId": "launch",
+      "title": "Launch handoff"
+    },
+    {
+      "input": "",
+      "subtitle": "We’ll do it live! Thing works!",
+      "templateId": "project",
+      "title": "Try it for yourself"
+    }
+  ],
+  "templates": [
+    {
+      "audience": "Client stakeholders, design, delivery",
+      "done": "Deliverables accepted, review loop confirmed, timeline agreed",
+      "id": "client",
+      "kicker": "Client brief",
+      "outcome": "Align the engagement before the work spreads",
+      "scope": "Goals, deliverables, exclusions, approvals",
+      "summary": "A one-pager that sets expectations before design or development begins.",
+      "superlative": "Newest staff pick.",
+      "tier": "Free",
+      "title": "Spring Campaign Brief"
+    },
+    {
+      "audience": "Leadership, design, engineering",
+      "done": "Decision recorded, owners aligned, next review scheduled",
+      "id": "decision",
+      "kicker": "Decision memo",
+      "outcome": "Document the choice, tradeoffs, and immediate follow-through",
+      "scope": "Context, recommendation, consequences, next step",
+      "summary": "A concise memo that explains the call and what changes because of it.",
+      "superlative": "Trending today.",
+      "tier": "Free",
+      "title": "Navigation Restructure"
+    },
+    {
+      "audience": "Internal team, support, stakeholders",
+      "done": "Launch shipped, risks closed, handoff notes captured",
+      "id": "launch",
+      "kicker": "Launch recap",
+      "outcome": "Summarize what shipped and what still needs watching",
+      "scope": "Release notes, issues, follow-up owners, support handoff",
+      "summary": "A quick post-launch page for handoff, support, and follow-through.",
+      "superlative": "Best for quick handoff.",
+      "tier": "Free",
+      "title": "Portal Launch Recap"
+    },
+    {
+      "audience": "Designers, founders, writers",
+      "done": "Core idea clarified, weak language cut, sharper phrasing chosen",
+      "id": "wittgenstein",
+      "kicker": "Ludwig Wittgenstein",
+      "outcome": "Tighten the language until the thinking is obvious",
+      "scope": "Claims, phrasing, assumptions, ambiguity",
+      "summary": "A language-first pass for sharpening what the page is actually trying to say.",
+      "superlative": "Most popular style this week.",
+      "tag": "Parlay",
+      "tier": "Free",
+      "title": "Language Clarity Pass"
+    },
+    {
+      "audience": "Founders, operators, reviewers",
+      "done": "Weak spots exposed, vague claims challenged, revision priorities obvious",
+      "id": "brutal",
+      "kicker": "Brutal feedback",
+      "outcome": "Pressure-test the draft and surface what still is not good enough",
+      "scope": "Positioning, clarity, trust, evidence",
+      "summary": "A harsher review template for improving the quality of the page before it ships.",
+      "superlative": "Best for improving quality.",
+      "tag": "Parlay",
+      "tier": "Free",
+      "title": "Uncomfortable Review"
+    },
+    {
+      "audience": "Client team, design, engineering",
+      "done": "Approved launch, signed-off content, stable post-launch handoff",
+      "id": "project",
+      "kicker": "Project one-pager",
+      "outcome": "Ship the relaunch with aligned scope and review expectations",
+      "scope": "Homepage, navigation, CMS content migration, QA",
+      "summary": "A clear launch brief for the external client and internal delivery team.",
+      "superlative": "Most popular this month.",
+      "tier": "Free",
+      "title": "Client Site Relaunch"
+    }
+  ]
+}
