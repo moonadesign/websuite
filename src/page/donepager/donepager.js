@@ -19,8 +19,8 @@ const pager = document.querySelector('#pager')
 const parlay = document.querySelector('#output-actions .button-outline')
 const presetList = document.querySelector('#preset-list')
 const stageOrder = ['input', 'templates', 'output']
-const stagePanels = [...document.querySelectorAll('.stage-panel')]
-const stageTabs = [...document.querySelectorAll('#stage-tabs .tab')]
+const stagePanels = [...q('.stage-panel')]
+const stageTabs = [...q('#stage-tabs .tab')]
 const templateList = document.querySelector('#template-list')
 const textarea = document.querySelector('textarea')
 let presets = []
@@ -98,13 +98,11 @@ fetch('donepager.json')
   .then(({ presets: presetData, templates: templateData }) => {
     templateData.forEach(template => templateList.appendChild(makeTemplate(template)))
     presetData.forEach(preset => presetList.appendChild(makePreset(preset)))
-    presets = [...document.querySelectorAll('.preset')]
-    templates = [...document.querySelectorAll('.template')]
+    presets = [...q('.preset')]
+    templates = [...q('.template')]
     if (presets[0]) setPreset(presets[0])
   })
 
 stageTabs.forEach(tab => tab.addEventListener('click', () => setStage(tab.dataset.stage)))
 if (parlay) parlay.addEventListener('click', () => (syncThumb(), setStage('input')))
-document
-  .querySelectorAll('[data-next-stage]')
-  .forEach(btn => btn.addEventListener('click', () => setStage(btn.dataset.nextStage)))
+q('[data-next-stage]').forEach(btn => btn.addEventListener('click', () => setStage(btn.dataset.nextStage)))

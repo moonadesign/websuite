@@ -46,21 +46,21 @@
               Nothing
             </div>
             <nav>
-              <div class="button">
+              <button class="button">
                 <i class="fa-regular fa-building"></i>
                 <span>Workspace</span>
                 <i class="fa-solid fa-angle-down"></i>
-              </div>
-              <div class="button">
+              </button>
+              <button class="button">
                 <i class="fa-regular fa-briefcase"></i>
                 <span>Client</span>
                 <i class="fa-solid fa-angle-down"></i>
-              </div>
-              <div class="button">
+              </button>
+              <button class="button">
                 <i class="fa-regular fa-folder"></i>
                 <span>Project</span>
                 <i class="fa-solid fa-angle-down"></i>
-              </div>
+              </button>
             </nav>
             <div class="fill"></div>
             <div class="search">
@@ -72,60 +72,85 @@
           <div class="app-body">
             <aside class="app-sidebar">
               <div class="nav-group">
-                <div class="button invert">
+                <button class="button invert">
                   <i class="fa-regular fa-house"></i>
                   <span class="fill">Dashboard</span>
-                </div>
-                <div class="button">
+                </button>
+                <button class="button">
                   <i class="fa-regular fa-gear"></i>
                   <span class="fill">Settings</span>
-                </div>
-                <div class="button">
+                </button>
+                <button class="button">
                   <i class="fa-regular fa-user"></i>
                   <span class="fill">Profile</span>
-                </div>
+                </button>
               </div>
             </aside>
             <main class="app-main">
               <aside class="app-rail">
                 <div class="nav-group">
-                  <div class="button">
+                  <button class="button">
                     <i class="fa-regular fa-folder"></i>
                     <span class="fill">Projects</span>
-                  </div>
-                  <div class="button">
+                  </button>
+                  <button class="button">
                     <i class="fa-regular fa-star"></i>
                     <span class="fill">Favorites</span>
-                  </div>
+                  </button>
                 </div>
-                <hr />
+                <hr class="separator" />
                 <div class="nav-group">
-                  <div class="button">
+                  <button class="button">
                     <i class="fa-regular fa-filter"></i>
                     <span class="fill">Filter 1</span>
-                  </div>
-                  <div class="button">
+                  </button>
+                  <button class="button">
                     <i class="fa-regular fa-filter"></i>
                     <span class="fill">Filter 2</span>
-                  </div>
+                  </button>
                 </div>
               </aside>
               <div class="app-document">
                 <div class="stack">
+                  <nav class="breadcrumb inline-links">
+                    <button class="button button-icon"><i class="fa-regular fa-house"></i></button>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a class="button button-link" href="#">Projects</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span style="color: var(--color-half)">Overview</span>
+                  </nav>
                   <h1>Heading 1</h1>
                   <h2>Heading 2</h2>
                   <h3>Heading 3</h3>
                   <p>Body with <a href="#">link</a>, <strong>bold</strong>, <em>italic</em>.</p>
+                  <nav class="tab-bar">
+                    <button class="tab active">Overview</button>
+                    <button class="tab">Analytics</button>
+                    <button class="tab">Settings</button>
+                  </nav>
                   <div class="row">
                     <button class="button">Default</button>
                     <button class="button button-primary">Primary</button>
                     <button class="button button-outline">Outline</button>
                   </div>
                   <div class="row">
+                    <div class="button-group">
+                      <button class="button">List</button>
+                      <button class="button active">Grid</button>
+                    </div>
+                    <div class="toggle-group">
+                      <button class="toggle" aria-pressed="false"><i class="fa-regular fa-bold"></i></button>
+                      <button class="toggle" aria-pressed="true"><i class="fa-regular fa-italic"></i></button>
+                      <button class="toggle" aria-pressed="false"><i class="fa-regular fa-underline"></i></button>
+                    </div>
+                    <button class="toggle" aria-pressed="false"><i class="fa-regular fa-heart"></i></button>
+                  </div>
+                  <div class="row">
                     <span class="badge">New</span>
                     <span class="badge">Beta</span>
                     <span class="badge">Pro</span>
                   </div>
+                  <div class="skeleton" style="height: 2rem; width: 12rem"></div>
                   <div class="user-item">
                     <img src="https://i.pravatar.cc/100" alt="Avatar" />
                     <div>
@@ -150,7 +175,18 @@
                 <div class="app-panel">
                   <h3>Form</h3>
                   <div class="stack">
-                    <input type="text" placeholder="Text input" />
+                    <div class="field" role="group">
+                      <label for="col-name">Name</label>
+                      <input id="col-name" placeholder="shadcn" />
+                    </div>
+                    <div class="otp-group">
+                      <input inputmode="numeric" maxlength="1" size="1" />
+                      <input inputmode="numeric" maxlength="1" size="1" />
+                      <input inputmode="numeric" maxlength="1" size="1" />
+                      <input inputmode="numeric" maxlength="1" size="1" />
+                      <input inputmode="numeric" maxlength="1" size="1" />
+                      <input inputmode="numeric" maxlength="1" size="1" />
+                    </div>
                     <div class="row">
                       <select>
                         <option>Select</option>
@@ -161,6 +197,8 @@
                       <label><input type="radio" name="r" /> Option 1</label>
                       <label><input type="radio" name="r" /> Option 2</label>
                     </div>
+                    <input type="range" min="0" max="100" value="50" />
+                    <textarea placeholder="Notes" rows="2"></textarea>
                     <div class="row">
                       <label>
                         <button class="switch" role="switch" aria-checked="false"></button>

@@ -10,6 +10,9 @@ const s = key => c =>
 fetch('inventory.json')
   .then(r => r.json())
   .then(data => {
+    const mvp = data.filter(c => c.mvp).length
+    const ready = data.filter(c => c.status === 'ready').length
+    g('completion').textContent = `Completion rate: ${Math.round((ready / mvp) * 100)}% (${ready} of ${mvp})`
     document.querySelector('#inventory tbody').innerHTML = data
       .map(
         c => `<tr${c.mvp && !c.minterface ? ' class="mvp"' : ''}>
@@ -20,6 +23,7 @@ fetch('inventory.json')
           <td>${s('shadcn')(c)}</td>
           <td>${c.mvp ? check : ''}</td>
           <td>${c.minterface ? check : ''}</td>
+          <td>${c.status || ''}</td>
         </tr>`,
       )
       .join('')

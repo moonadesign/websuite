@@ -1,0 +1,219 @@
+body {
+  background: #f8f8f8;
+}
+
+#quote {
+  color: var(--color-half);
+}
+
+#events-view {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: fit-content;
+}
+
+#events-toggle {
+  border-radius: 0.5rem;
+  display: flex;
+  width: fit-content;
+}
+
+#events-toggle .button {
+  border-radius: 0;
+  color: var(--color-half);
+}
+
+#events-toggle .button.active {
+  background: var(--color-lighter);
+  color: var(--color-darkest);
+}
+
+#events-toggle .button:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#events-toggle .button:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.week-heading {
+  font-size: 1rem;
+}
+
+.week-date {
+  color: var(--color-half);
+}
+
+.day,
+.days {
+  display: flex;
+  gap: 1rem;
+}
+
+.day {
+  flex-direction: column;
+}
+
+.cards,
+#future .masonry {
+  gap: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#columns section > p {
+  color: var(--color-half);
+  max-width: 40rem;
+}
+
+#future .masonry {
+  columns: 1;
+}
+
+.future-card,
+.schedule-card {
+  background: var(--color-lightest);
+  box-shadow: 0 2px 0.25rem rgba(0, 0, 17, 0.1);
+}
+
+.card {
+  border: 1px solid var(--color-light);
+  border-radius: 1rem;
+  display: flex;
+  flex: 1 1 20rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1rem, 2vw, 2rem);
+  text-align: left;
+}
+
+.future-card {
+  align-items: flex-start;
+  break-inside: avoid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.future-card p {
+  color: var(--color-half);
+}
+
+.future-date {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.future-number {
+  color: var(--color-darkest);
+  font:
+    400 clamp(2rem, 6vw, 4rem) / 0.9 'DM Serif Text',
+    serif;
+  letter-spacing: -0.05em;
+}
+
+.schedule-card strong {
+  color: var(--color-darkest);
+}
+
+.schedule-slot {
+  color: var(--color-half);
+}
+
+.future-card:hover,
+.schedule-card:hover {
+  box-shadow: 0 2px 1rem rgba(0, 0, 17, 0.1);
+}
+
+[data-rendered='events'] .layer-inset {
+  gap: 1rem;
+  min-height: 70vh;
+}
+
+#today .layer-inset > * {
+  flex: 1;
+}
+
+#columns .layer-inset {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#columns .stack {
+  flex: 1 1 20rem;
+}
+
+#today-card {
+  background: var(--color-lightest);
+  border-radius: 0.5rem;
+  color: var(--color-darkest);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 50vh;
+  padding: 1rem;
+}
+
+.today-date {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: flex-end;
+}
+
+.today-number {
+  color: var(--color-always-white);
+  font:
+    400 clamp(3rem, 8vw, 6rem) / 1 'DM Serif Text',
+    serif;
+  letter-spacing: -0.05em;
+}
+
+.today-bottom,
+.today-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.today-bottom {
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+#today-card .stack {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.today-bottom > p {
+  color: var(--color-half);
+}
+
+#today-card strong {
+  color: var(--color-always-white);
+}
+
+@media (min-width: 48rem) {
+  #future .masonry {
+    columns: 3;
+  }
+
+  #today .layer-inset {
+    flex-direction: row;
+  }
+
+  #week .day {
+    flex: 1 1 0;
+  }
+
+  #week .days {
+    flex-direction: row;
+  }
+}

@@ -1,12 +1,10 @@
-document.querySelectorAll('[data-page]').forEach(btn =>
+q('[data-page]').forEach(btn =>
   btn.addEventListener('click', () => {
-    document.querySelectorAll('[data-page]').forEach(b => b.classList.remove('active'))
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'))
+    q('[data-page]').forEach(b => b.classList.remove('active'))
+    q('.page').forEach(p => p.classList.remove('active'))
     btn.classList.add('active')
-    document.getElementById(btn.dataset.page)?.classList.add('active')
+    g(btn.dataset.page)?.classList.add('active')
   }),
 )
 
-document
-  .getElementById('sidebar-toggle')
-  ?.addEventListener('click', () => document.getElementById('side').classList.toggle('collapsed'))
+g('sidebar-toggle')?.addEventListener('click', () => g('side').classList.toggle('collapsed'))

@@ -1,0 +1,15 @@
+.row {
+  gap: 2rem;
+}
+
+#button .row {
+  gap: 0.5rem;
+}
+
+h3 {
+  margin-top: 3rem;
+}
+
+#slider input {
+  width: 12rem;
+}

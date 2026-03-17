@@ -12,9 +12,9 @@ header .layer-inset {
 }
 
 header nav {
+  align-items: center;
   display: flex;
   gap: 1.5rem;
-  flex: 1;
 }
 
 header nav a {

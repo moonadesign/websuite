@@ -3,7 +3,7 @@
 ## Scope
 
 - Work `when: now` first, then `when: next`.
-- Reuse existing repo patterns only.
+- Start from an existing repo pattern and exhaust deletion and small property/line edits before adding selectors or markup.
 - Run a pre-intake context sweep (item name + sponsors) across `src/page/todo/todo.json`, `src/content.json`, `src/updates/bank.md`, and local ref repos before asking questions.
 - Do intake before each item edit.
 - No code or content edits until intake is complete (or explicitly waived by you).
@@ -21,14 +21,14 @@
 
 1. Pre-intake context sweep (required): gather known refs/inspo/prompt/source notes and prefill answers when there is existing project data.
 2. Intake interview (required): ask only unresolved questions after prefill.
-3. Matt-grade reasoning gate (required).
+3. Matt-grade reasoning gate (required): best reuse target, smallest fix, deletion target, and any additions if truly needed.
 4. Capture source intelligence first (raw notes/notebook section) before distilling.
 5. Add timestamped interview transcript entries for each major intake message.
 6. Keep transcript and FAQ content expanded (no collapsed UI) while Matt is the sole reviewer.
 7. Save context in `src/content.json` with real keys only (`description`, `inspo`, `prompt`, `ref`, etc.).
 8. Scaffold route/component only if missing.
 9. Validate against the existing dev server flow (`npm run dev` already running).
-10. Log AGENTS compliance summary.
+10. Log AGENTS compliance summary only when HTML or CSS changed.
 
 ## Intake questions
 

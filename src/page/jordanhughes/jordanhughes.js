@@ -8,7 +8,7 @@ const make = (tag, className, text) => {
 fetch('projects.json')
   .then(res => res.json())
   .then(projects => {
-    const grid = document.getElementById('project-grid')
+    const grid = g('project-grid')
     if (!grid) return
     projects.forEach(p => {
       const card = make('a', 'project-card')

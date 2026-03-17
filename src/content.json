@@ -54,6 +54,7 @@
   {
     "description": "Planned events-focused homepage direction for Matt Born.",
     "name": "Events",
+    "route": "/page/events/",
     "sponsors": ["mattborn.github.io"],
     "type": "page"
   },
@@ -545,12 +546,6 @@
     "type": "layer"
   },
   {
-    "description": "Button groups, icon buttons, toggles, toolbars, and keyboard shortcuts.",
-    "name": "Action",
-    "route": "/component/action/",
-    "type": "component"
-  },
-  {
     "description": "Simplified browser chrome for product screens and interactive previews.",
     "name": "Browser",
     "route": "/component/browser/",
@@ -585,6 +580,12 @@
     "description": "Buttons, inputs, selects, checkboxes, switches, sliders, and all form controls.",
     "name": "Field",
     "route": "/component/field/",
+    "type": "component"
+  },
+  {
+    "description": "Accordions, breadcrumbs, menus, pagination, and tabs.",
+    "name": "Hierarchy",
+    "route": "/component/hierarchy/",
     "type": "component"
   },
   {
@@ -630,12 +631,6 @@
     "type": "component"
   },
   {
-    "description": "Accordions, breadcrumbs, menus, pagination, and tabs.",
-    "name": "Nav",
-    "route": "/component/nav/",
-    "type": "component"
-  },
-  {
     "description": "Dialogs, drawers, sheets, dropdowns, popovers, tooltips, toasts, and commands.",
     "name": "Overlay",
     "route": "/component/overlay/",
@@ -657,6 +652,12 @@
     "name": "Table",
     "route": "/component/table/",
     "thumb": "url(https://res.cloudinary.com/moona/image/upload/v1772639503/Websuite/juu1hugpovfhq8uh4lg9.png)",
+    "type": "component"
+  },
+  {
+    "description": "Button groups, toggles, and toolbars.",
+    "name": "Toolbar",
+    "route": "/component/toolbar/",
     "type": "component"
   }
 ]

@@ -15,6 +15,10 @@
     "og-url": "https://doublebook.me",
     "title": "Doublebook"
   },
+  "page/events": {
+    "description": "Schedule-first homepage prototype for MapBorn with themed day, week, and future views.",
+    "title": "MapBorn Events"
+  },
   "page/groupie": {
     "bodyClass": "glass",
     "description": "Private AI-written updates for trusted people following along.",
@@ -27,6 +31,9 @@
   },
   "page/revalize": {
     "bodyClass": "glass"
+  },
+  "page/shadcn": {
+    "bodyClass": "app"
   },
   "page/thirteen": {
     "description": "Prototype the most common layers of a marketing site as one complete story.",

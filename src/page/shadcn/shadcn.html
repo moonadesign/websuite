@@ -1,8 +1,16 @@
+<header id="shadcn-top">
+  <a class="brand" href="/">shadcn/ui</a>
+  <div class="fill"></div>
+  <label for="compact-toggle">Compact</label>
+  <button class="switch" role="switch" aria-checked="false" id="compact-toggle"></button>
+  <button class="button button-icon" id="mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+</header>
+
 <section id="hero">
   <h1>Build your component library.</h1>
   <p>Beautifully designed components rebuilt with minterface. Copy and paste into your apps. Open source.</p>
   <div class="row">
-    <a class="button button-primary" href="/page/inventory/">Get Started</a>
+    <a class="button button-primary large" href="/page/inventory/">Get Started</a>
     <a class="button button-outline" href="/colophon/">View Components</a>
   </div>
 </section>
@@ -10,15 +18,16 @@
 <section id="examples" class="layer">
   <div class="layer-inset">
     <nav id="example-tabs">
-      <button class="tab" data-tab="examples">Examples</button>
-      <button class="tab active" data-tab="mail">Mail</button>
-      <button class="tab" data-tab="dashboard">Dashboard</button>
-      <button class="tab" data-tab="cards">Cards</button>
-      <button class="tab" data-tab="tasks">Tasks</button>
-      <button class="tab" data-tab="playground">Playground</button>
-      <button class="tab" data-tab="forms">Forms</button>
-      <button class="tab" data-tab="music">Music</button>
-      <button class="tab" data-tab="authentication">Authentication</button>
+      <button class="button" data-tab="examples">Examples</button>
+      <button class="button active" data-tab="mail">Mail</button>
+      <button class="button" data-tab="dashboard">Dashboard</button>
+      <button class="button" data-tab="cards">Cards</button>
+      <button class="button" data-tab="tasks">Tasks</button>
+      <button class="button" data-tab="playground">Playground</button>
+      <button class="button" data-tab="forms">Forms</button>
+      <button class="button" data-tab="music">Music</button>
+      <button class="button" data-tab="authentication">Authentication</button>
+      <button class="button" data-tab="more">More</button>
     </nav>
 
     <div class="tab-panel" data-panel="examples">
@@ -127,7 +136,7 @@
             <button class="button button-outline icon-button"><i class="fa-solid fa-plus"></i></button>
             <div class="input-group fill">
               <input placeholder="Send a message..." />
-              <button class="button icon-button"><i class="fa-solid fa-waveform-lines"></i></button>
+              <button class="button button-icon"><i class="fa-solid fa-waveform-lines"></i></button>
             </div>
           </div>
           <div class="stack">
@@ -144,7 +153,7 @@
             <div class="input-group">
               <span class="input-prefix">https://</span>
               <input placeholder="example.com" />
-              <button class="button icon-button"><i class="fa-regular fa-circle-info"></i></button>
+              <button class="button button-icon"><i class="fa-regular fa-circle-info"></i></button>
             </div>
             <div class="chat-input">
               <textarea placeholder="Ask, Search or Chat..."></textarea>
@@ -169,7 +178,7 @@
             <button class="button button-secondary icon-button"><i class="fa-regular fa-circle-info"></i></button>
             <span class="input-prefix">https://</span>
             <input />
-            <button class="button icon-button"><i class="fa-regular fa-star"></i></button>
+            <button class="button button-icon"><i class="fa-regular fa-star"></i></button>
           </div>
           <div class="stack">
             <div class="list-item">
@@ -244,7 +253,7 @@
             </div>
             <textarea placeholder="Ask, search, or make anything..."></textarea>
             <div class="chat-toolbar">
-              <button class="button icon-button"><i class="fa-regular fa-paperclip"></i></button>
+              <button class="button button-icon"><i class="fa-regular fa-paperclip"></i></button>
               <button class="button">Auto</button>
               <button class="button"><i class="fa-regular fa-globe"></i> All Sources</button>
               <div class="fill"></div>
@@ -326,8 +335,8 @@
             <h3>Inbox</h3>
             <div class="fill"></div>
             <div class="tab-bar">
-              <div class="tab active">All mail</div>
-              <div class="tab">Unread</div>
+              <button class="button tab active">All mail</button>
+              <button class="button tab">Unread</button>
             </div>
           </div>
           <div class="inset">
@@ -340,15 +349,15 @@
         </div>
         <div id="shadcn-mail-main">
           <div class="top">
-            <button class="button icon-button"><i class="fa-regular fa-archive"></i></button>
-            <button class="button icon-button"><i class="fa-regular fa-folder-xmark"></i></button>
-            <button class="button icon-button"><i class="fa-regular fa-trash-alt"></i></button>
-            <div class="toolbar-divider"></div>
-            <button class="button icon-button"><i class="fa-regular fa-clock"></i></button>
+            <button class="button button-icon"><i class="fa-regular fa-archive"></i></button>
+            <button class="button button-icon"><i class="fa-regular fa-folder-xmark"></i></button>
+            <button class="button button-icon"><i class="fa-regular fa-trash-alt"></i></button>
+            <hr class="separator" />
+            <button class="button button-icon"><i class="fa-regular fa-clock"></i></button>
             <div class="fill"></div>
-            <button class="button icon-button"><i class="fa-regular fa-reply"></i></button>
-            <button class="button icon-button"><i class="fa-regular fa-reply-all"></i></button>
-            <button class="button icon-button"><i class="fa-regular fa-share"></i></button>
+            <button class="button button-icon"><i class="fa-regular fa-reply"></i></button>
+            <button class="button button-icon"><i class="fa-regular fa-reply-all"></i></button>
+            <button class="button button-icon"><i class="fa-regular fa-share"></i></button>
           </div>
           <div class="email-header">
             <div></div>
@@ -388,10 +397,10 @@
           </div>
         </div>
         <nav class="tab-bar">
-          <button class="tab active">Overview</button>
-          <button class="tab">Analytics</button>
-          <button class="tab">Reports</button>
-          <button class="tab">Notifications</button>
+          <button class="button tab active">Overview</button>
+          <button class="button tab">Analytics</button>
+          <button class="button tab">Reports</button>
+          <button class="button tab">Notifications</button>
         </nav>
         <div class="row dashboard-stats">
           <div class="card fill">
@@ -766,7 +775,7 @@
               <td><span class="badge">In Progress</span></td>
               <td><i class="fa-regular fa-arrow-up"></i> High</td>
               <td>
-                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+                <button class="button button-icon"><i class="fa-regular fa-ellipsis"></i></button>
               </td>
             </tr>
             <tr>
@@ -776,7 +785,7 @@
               <td><span class="badge">Backlog</span></td>
               <td><i class="fa-regular fa-arrow-right"></i> Medium</td>
               <td>
-                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+                <button class="button button-icon"><i class="fa-regular fa-ellipsis"></i></button>
               </td>
             </tr>
             <tr>
@@ -786,7 +795,7 @@
               <td><span class="badge">Todo</span></td>
               <td><i class="fa-regular fa-arrow-up"></i> High</td>
               <td>
-                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+                <button class="button button-icon"><i class="fa-regular fa-ellipsis"></i></button>
               </td>
             </tr>
             <tr>
@@ -796,7 +805,7 @@
               <td><span class="badge">Backlog</span></td>
               <td><i class="fa-regular fa-arrow-right"></i> Medium</td>
               <td>
-                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+                <button class="button button-icon"><i class="fa-regular fa-ellipsis"></i></button>
               </td>
             </tr>
             <tr>
@@ -806,7 +815,7 @@
               <td><span class="badge">Canceled</span></td>
               <td><i class="fa-regular fa-arrow-down"></i> Low</td>
               <td>
-                <button class="button"><i class="fa-regular fa-ellipsis"></i></button>
+                <button class="button button-icon"><i class="fa-regular fa-ellipsis"></i></button>
               </td>
             </tr>
           </tbody>
@@ -840,9 +849,9 @@
         <div class="app-body">
           <div class="app-panel fill playground-editor">
             <nav class="tab-bar">
-              <button class="tab active">Complete</button>
-              <button class="tab">Insert</button>
-              <button class="tab">Edit</button>
+              <button class="button tab active">Complete</button>
+              <button class="button tab">Insert</button>
+              <button class="button tab">Edit</button>
             </nav>
             <textarea class="fill" placeholder="Write a tagline for an ice cream shop."></textarea>
             <div class="button button-primary playground-submit">Submit</div>
@@ -924,11 +933,11 @@
     <div class="tab-panel" data-panel="music">
       <div class="app app-shell app-shell-flush">
         <div class="menubar">
-          <button class="menu-trigger">Music</button>
-          <button class="menu-trigger">File</button>
-          <button class="menu-trigger">Edit</button>
-          <button class="menu-trigger">View</button>
-          <button class="menu-trigger">Account</button>
+          <button class="button menu-trigger">Music</button>
+          <button class="button menu-trigger">File</button>
+          <button class="button menu-trigger">Edit</button>
+          <button class="button menu-trigger">View</button>
+          <button class="button menu-trigger">Account</button>
         </div>
         <div class="app-body">
           <div class="app-panel music-sidebar">
@@ -951,9 +960,9 @@
           </div>
           <div class="app-panel music-main">
             <nav class="tab-bar">
-              <button class="tab active">Music</button>
-              <button class="tab">Podcasts</button>
-              <button class="tab">Live</button>
+              <button class="button tab active">Music</button>
+              <button class="button tab">Podcasts</button>
+              <button class="button tab">Live</button>
             </nav>
             <div class="row music-header">
               <h4>Listen Now</h4>
@@ -1041,6 +1050,205 @@
         </div>
       </div>
     </div>
+    <div class="tab-panel" data-panel="more">
+      <h3>Component Showcase</h3>
+      <p class="muted">Standalone examples for components not fully exercised in the examples above.</p>
+
+      <h4>Form Controls</h4>
+      <div class="showcase-grid">
+        <div class="showcase">
+          <small class="muted">Input OTP</small>
+          <div class="otp-group">
+            <input inputmode="numeric" maxlength="1" size="1" />
+            <input inputmode="numeric" maxlength="1" size="1" />
+            <input inputmode="numeric" maxlength="1" size="1" />
+            <input inputmode="numeric" maxlength="1" size="1" />
+            <input inputmode="numeric" maxlength="1" size="1" />
+            <input inputmode="numeric" maxlength="1" size="1" />
+          </div>
+        </div>
+        <div class="showcase">
+          <small class="muted">Combobox</small>
+          <div class="search">
+            <i class="fa-regular fa-search"></i>
+            <input placeholder="Search framework…" list="frameworks" />
+          </div>
+          <datalist id="frameworks">
+            <option value="Next.js"></option>
+            <option value="Remix"></option>
+            <option value="Astro"></option>
+          </datalist>
+        </div>
+      </div>
+
+      <h4>Selection & Toggle</h4>
+      <div class="showcase-grid">
+        <div class="showcase">
+          <small class="muted">Accordion</small>
+          <div class="stack accordion-list">
+            <div class="nav-section">
+              <div class="nav-section-header">Is it accessible? <i class="fa-solid fa-chevron-right"></i></div>
+              <div class="nav-section-content">
+                <p class="accordion-body">Yes. It adheres to the WAI-ARIA design pattern.</p>
+              </div>
+            </div>
+            <div class="nav-section collapsed">
+              <div class="nav-section-header">Is it styled? <i class="fa-solid fa-chevron-right"></i></div>
+              <div class="nav-section-content">
+                <p class="accordion-body">Yes. It comes with default styles matching the other components.</p>
+              </div>
+            </div>
+            <div class="nav-section collapsed">
+              <div class="nav-section-header">Is it animated? <i class="fa-solid fa-chevron-right"></i></div>
+              <div class="nav-section-content">
+                <p class="accordion-body">Yes. It's animated by default with CSS transitions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="showcase">
+          <small class="muted">Toggle</small>
+          <button class="button toggle" aria-pressed="false"><i class="fa-regular fa-heart"></i> Favorite</button>
+        </div>
+        <div class="showcase">
+          <small class="muted">Toggle Group</small>
+          <div class="toggle-group">
+            <button class="button toggle" aria-pressed="false"><i class="fa-regular fa-bold"></i></button>
+            <button class="button toggle" aria-pressed="true"><i class="fa-regular fa-italic"></i></button>
+            <button class="button toggle" aria-pressed="false"><i class="fa-regular fa-underline"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <h4>Overlays</h4>
+      <div class="showcase-grid">
+        <div class="showcase">
+          <small class="muted">Alert Dialog</small>
+          <button class="button button-outline" data-open="demo-alert">Open Alert</button>
+          <dialog id="demo-alert" class="dialog">
+            <div class="card">
+              <div class="card-header">
+                <h4>Are you absolutely sure?</h4>
+                <p class="muted">This action cannot be undone.</p>
+              </div>
+              <div class="card-footer row">
+                <button class="button button-outline" data-close="demo-alert">Cancel</button>
+                <button class="button button-primary" data-close="demo-alert">Continue</button>
+              </div>
+            </div>
+          </dialog>
+        </div>
+        <div class="showcase">
+          <small class="muted">Sheet</small>
+          <button class="button button-outline" data-open="demo-sheet">Open Sheet</button>
+          <dialog id="demo-sheet" class="sheet">
+            <div class="card sheet-panel">
+              <div class="card-header">
+                <h4>Edit profile</h4>
+                <p class="muted">Make changes to your profile.</p>
+              </div>
+              <div class="card-section fill">
+                <div class="field"><label>Name</label><input value="Pedro Duarte" /></div>
+                <div class="field"><label>Username</label><input value="@peduarte" /></div>
+              </div>
+              <div class="card-footer row">
+                <button class="button button-primary" data-close="demo-sheet">Save changes</button>
+              </div>
+            </div>
+          </dialog>
+        </div>
+        <div class="showcase">
+          <small class="muted">Drawer</small>
+          <button class="button button-outline" data-open="demo-drawer">Open Drawer</button>
+          <dialog id="demo-drawer" class="drawer">
+            <div class="card drawer-panel">
+              <div class="drawer-handle"></div>
+              <div class="card-header center">
+                <h4>Move Goal</h4>
+                <p class="muted">Set your daily activity goal.</p>
+              </div>
+              <div class="card-section center">
+                <div class="row drawer-goal">
+                  <button class="button button-outline">-</button>
+                  <div class="stack center drawer-counter">
+                    <span class="display">350</span><small class="muted">CALORIES/DAY</small>
+                  </div>
+                  <button class="button button-outline">+</button>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="button button-primary" data-close="demo-drawer">Submit</button>
+              </div>
+            </div>
+          </dialog>
+        </div>
+        <div class="showcase">
+          <small class="muted">Hover Card</small>
+          <span class="hover-trigger"
+            >@nextjs
+            <div class="hover-card card">
+              <div class="card-section">
+                <b>nextjs</b>
+                <p class="muted">The React Framework – created and maintained by @vercel.</p>
+                <small class="muted">Joined December 2021</small>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="showcase">
+          <small class="muted">Toast</small>
+          <button class="button button-outline" id="toast-trigger">Show Toast</button>
+          <div id="toast-container"></div>
+        </div>
+      </div>
+
+      <h4>Content & Display</h4>
+      <div class="showcase-grid">
+        <div class="showcase">
+          <small class="muted">Breadcrumb</small>
+          <nav class="breadcrumb">
+            <a href="#">Home</a><i class="fa-regular fa-angle-right"></i> <a href="#">Components</a
+            ><i class="fa-regular fa-angle-right"></i>
+            <span class="muted">Breadcrumb</span>
+          </nav>
+        </div>
+        <div class="showcase">
+          <small class="muted">Alert</small>
+          <div class="alert">
+            <i class="fa-regular fa-terminal"></i>
+            <div class="stack"><b>Heads up!</b><small class="muted">You can add components using the CLI.</small></div>
+          </div>
+          <div class="alert alert-destructive">
+            <i class="fa-regular fa-circle-exclamation"></i>
+            <div class="stack"><b>Error</b><small>Your session has expired.</small></div>
+          </div>
+        </div>
+        <div class="showcase">
+          <small class="muted">Progress</small>
+          <progress value="60" max="100">60%</progress>
+        </div>
+        <div class="showcase">
+          <small class="muted">Kbd</small>
+          <div class="row kbd-demo"><kbd>Ctrl</kbd> + <kbd>K</kbd></div>
+        </div>
+        <div class="showcase">
+          <small class="muted">Aspect Ratio</small>
+          <div class="aspect-ratio"></div>
+        </div>
+        <div class="showcase">
+          <small class="muted">Carousel</small>
+          <div class="carousel">
+            <button class="button button-outline carousel-prev"><i class="fa-regular fa-angle-left"></i></button>
+            <div class="carousel-track">
+              <div class="carousel-slide card center">Slide 1</div>
+              <div class="carousel-slide card center">Slide 2</div>
+              <div class="carousel-slide card center">Slide 3</div>
+            </div>
+            <button class="button button-outline carousel-next"><i class="fa-regular fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1068,466 +1276,5 @@
       </thead>
       <tbody id="audit-body"></tbody>
     </table>
-  </div>
-</section>
-
-<section id="components" class="layer">
-  <div class="layer-inset">
-    <h3>Component Showcase</h3>
-    <p class="muted">Standalone examples for components not fully exercised in the examples above.</p>
-
-    <h4>Form Controls</h4>
-    <div class="showcase-grid">
-      <div class="showcase">
-        <small class="muted">Slider</small>
-        <input type="range" min="0" max="100" value="50" />
-      </div>
-      <div class="showcase">
-        <small class="muted">Input OTP</small>
-        <div class="otp-group">
-          <input class="otp-input" maxlength="1" /><input class="otp-input" maxlength="1" /><input
-            class="otp-input"
-            maxlength="1"
-          />
-          <span class="muted">-</span>
-          <input class="otp-input" maxlength="1" /><input class="otp-input" maxlength="1" /><input
-            class="otp-input"
-            maxlength="1"
-          />
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Checkbox Group</small>
-        <div class="stack">
-          <label><input type="checkbox" checked /> Use animations</label>
-          <label><input type="checkbox" /> Send notifications</label>
-          <label><input type="checkbox" checked /> Enable sounds</label>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Radio Cards</small>
-        <div class="stack">
-          <label class="radio-card"
-            ><input type="radio" name="plan" checked />
-            <div class="stack"><b>Startup</b><small class="muted">$29/mo</small></div></label
-          >
-          <label class="radio-card"
-            ><input type="radio" name="plan" />
-            <div class="stack"><b>Business</b><small class="muted">$99/mo</small></div></label
-          >
-          <label class="radio-card"
-            ><input type="radio" name="plan" />
-            <div class="stack"><b>Enterprise</b><small class="muted">$249/mo</small></div></label
-          >
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Combobox</small>
-        <div class="search">
-          <i class="fa-regular fa-search"></i>
-          <input placeholder="Search framework…" list="frameworks" />
-        </div>
-        <datalist id="frameworks">
-          <option value="Next.js"></option>
-          <option value="Remix"></option>
-          <option value="Astro"></option>
-        </datalist>
-      </div>
-      <div class="showcase">
-        <small class="muted">Meter</small>
-        <meter min="0" max="100" value="65">65%</meter>
-      </div>
-      <div class="showcase">
-        <small class="muted">Number Field</small>
-        <div class="row">
-          <button class="button button-outline">-</button>
-          <input type="number" value="3" class="number-input" />
-          <button class="button button-outline">+</button>
-        </div>
-      </div>
-    </div>
-
-    <h4>Selection & Toggle</h4>
-    <div class="showcase-grid">
-      <div class="showcase">
-        <small class="muted">Accordion</small>
-        <div class="stack accordion-list">
-          <div class="nav-section">
-            <div class="nav-section-header">Is it accessible? <i class="fa-solid fa-chevron-right"></i></div>
-            <div class="nav-section-content">
-              <p class="accordion-body">Yes. It adheres to the WAI-ARIA design pattern.</p>
-            </div>
-          </div>
-          <div class="nav-section collapsed">
-            <div class="nav-section-header">Is it styled? <i class="fa-solid fa-chevron-right"></i></div>
-            <div class="nav-section-content">
-              <p class="accordion-body">Yes. It comes with default styles matching the other components.</p>
-            </div>
-          </div>
-          <div class="nav-section collapsed">
-            <div class="nav-section-header">Is it animated? <i class="fa-solid fa-chevron-right"></i></div>
-            <div class="nav-section-content">
-              <p class="accordion-body">Yes. It's animated by default with CSS transitions.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Toggle</small>
-        <div class="row">
-          <button class="toggle" aria-pressed="false"><i class="fa-regular fa-bold"></i></button>
-          <button class="toggle" aria-pressed="true"><i class="fa-regular fa-italic"></i></button>
-          <button class="toggle" aria-pressed="false"><i class="fa-regular fa-underline"></i></button>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Toggle Group</small>
-        <div class="toggle-group">
-          <button class="toggle active"><i class="fa-regular fa-align-left"></i></button>
-          <button class="toggle"><i class="fa-regular fa-align-center"></i></button>
-          <button class="toggle"><i class="fa-regular fa-align-right"></i></button>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Calendar</small>
-        <div class="calendar card">
-          <div class="row calendar-header">
-            <button class="button"><i class="fa-regular fa-angle-left"></i></button>
-            <b>March 2026</b>
-            <button class="button"><i class="fa-regular fa-angle-right"></i></button>
-          </div>
-          <div class="calendar-grid">
-            <small class="muted">Su</small><small class="muted">Mo</small><small class="muted">Tu</small
-            ><small class="muted">We</small><small class="muted">Th</small><small class="muted">Fr</small
-            ><small class="muted">Sa</small> <span></span><span></span><span></span><span></span><span></span
-            ><span></span><span>1</span> <span>2</span><span>3</span><span>4</span><span>5</span><span>6</span
-            ><span>7</span><span>8</span> <span class="active">9</span><span>10</span><span>11</span><span>12</span
-            ><span>13</span><span>14</span><span>15</span> <span>16</span><span>17</span><span>18</span><span>19</span
-            ><span>20</span><span>21</span><span>22</span> <span>23</span><span>24</span><span>25</span><span>26</span
-            ><span>27</span><span>28</span><span>29</span> <span>30</span><span>31</span><span></span><span></span
-            ><span></span><span></span><span></span>
-          </div>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Date Picker</small>
-        <div class="button button-outline"><i class="fa-regular fa-calendar"></i> Pick a date</div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Checkbox Cards</small>
-        <div class="stack">
-          <label class="radio-card"
-            ><input type="checkbox" checked />
-            <div class="stack"><b>Recents</b><small class="muted">Last 7 days</small></div></label
-          >
-          <label class="radio-card"
-            ><input type="checkbox" />
-            <div class="stack"><b>Favorites</b><small class="muted">Starred items</small></div></label
-          >
-        </div>
-      </div>
-    </div>
-
-    <h4>Overlays</h4>
-    <div class="showcase-grid">
-      <div class="showcase">
-        <small class="muted">Dialog</small>
-        <button class="button button-outline" data-open="demo-dialog">Open Dialog</button>
-        <dialog id="demo-dialog" class="dialog">
-          <div class="card">
-            <div class="card-header">
-              <h4>Edit profile</h4>
-              <p class="muted">Make changes to your profile here.</p>
-            </div>
-            <div class="card-section">
-              <div class="field"><label>Name</label><input value="Pedro Duarte" /></div>
-              <div class="field"><label>Username</label><input value="@peduarte" /></div>
-            </div>
-            <div class="card-footer row">
-              <button class="button button-primary" data-close="demo-dialog">Save changes</button>
-            </div>
-          </div>
-        </dialog>
-      </div>
-      <div class="showcase">
-        <small class="muted">Alert Dialog</small>
-        <button class="button button-outline" data-open="demo-alert">Open Alert</button>
-        <dialog id="demo-alert" class="dialog">
-          <div class="card">
-            <div class="card-header">
-              <h4>Are you absolutely sure?</h4>
-              <p class="muted">This action cannot be undone.</p>
-            </div>
-            <div class="card-footer row">
-              <button class="button button-outline" data-close="demo-alert">Cancel</button>
-              <button class="button button-primary" data-close="demo-alert">Continue</button>
-            </div>
-          </div>
-        </dialog>
-      </div>
-      <div class="showcase">
-        <small class="muted">Sheet</small>
-        <button class="button button-outline" data-open="demo-sheet">Open Sheet</button>
-        <dialog id="demo-sheet" class="sheet">
-          <div class="card sheet-panel">
-            <div class="card-header">
-              <h4>Edit profile</h4>
-              <p class="muted">Make changes to your profile.</p>
-            </div>
-            <div class="card-section fill">
-              <div class="field"><label>Name</label><input value="Pedro Duarte" /></div>
-              <div class="field"><label>Username</label><input value="@peduarte" /></div>
-            </div>
-            <div class="card-footer row">
-              <button class="button button-primary" data-close="demo-sheet">Save changes</button>
-            </div>
-          </div>
-        </dialog>
-      </div>
-      <div class="showcase">
-        <small class="muted">Drawer</small>
-        <button class="button button-outline" data-open="demo-drawer">Open Drawer</button>
-        <dialog id="demo-drawer" class="drawer">
-          <div class="card drawer-panel">
-            <div class="drawer-handle"></div>
-            <div class="card-header center">
-              <h4>Move Goal</h4>
-              <p class="muted">Set your daily activity goal.</p>
-            </div>
-            <div class="card-section center">
-              <div class="row drawer-goal">
-                <button class="button button-outline">-</button>
-                <div class="stack center drawer-counter">
-                  <span class="display">350</span><small class="muted">CALORIES/DAY</small>
-                </div>
-                <button class="button button-outline">+</button>
-              </div>
-            </div>
-            <div class="card-footer">
-              <button class="button button-primary" data-close="demo-drawer">Submit</button>
-            </div>
-          </div>
-        </dialog>
-      </div>
-      <div class="showcase">
-        <small class="muted">Dropdown Menu</small>
-        <div class="dropdown">
-          <button class="button button-outline dropdown-trigger">Open <i class="fa-solid fa-angle-down"></i></button>
-          <div class="dropdown-content">
-            <div class="nav-button">Profile</div>
-            <div class="nav-button">Billing</div>
-            <div class="nav-button">Settings</div>
-            <hr />
-            <div class="nav-button">Log out</div>
-          </div>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Popover</small>
-        <div class="dropdown">
-          <button class="button button-outline dropdown-trigger">Open popover</button>
-          <div class="dropdown-content dropdown-wide">
-            <div class="stack">
-              <div class="field"><label>Width</label><input value="100%" /></div>
-              <div class="field"><label>Height</label><input value="25px" /></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Hover Card</small>
-        <span class="hover-trigger"
-          >@nextjs
-          <div class="hover-card card">
-            <div class="card-section">
-              <b>nextjs</b>
-              <p class="muted">The React Framework – created and maintained by @vercel.</p>
-              <small class="muted">Joined December 2021</small>
-            </div>
-          </div>
-        </span>
-      </div>
-      <div class="showcase">
-        <small class="muted">Tooltip</small>
-        <span class="tooltip-trigger">
-          <button class="button button-outline">Hover me</button>
-          <span class="tooltip">Add to library</span>
-        </span>
-      </div>
-      <div class="showcase">
-        <small class="muted">Context Menu</small>
-        <div class="context-area">
-          <span class="muted">Right click here</span>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Toast</small>
-        <button class="button button-outline" id="toast-trigger">Show Toast</button>
-        <div id="toast-container"></div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Command</small>
-        <div class="card command-card">
-          <div class="search search-flush">
-            <i class="fa-regular fa-search"></i>
-            <input placeholder="Type a command or search…" />
-          </div>
-          <div class="stack">
-            <small class="muted command-label">Suggestions</small>
-            <div class="nav-button"><i class="fa-regular fa-calendar"></i> Calendar</div>
-            <div class="nav-button"><i class="fa-regular fa-face-smile"></i> Search Emoji</div>
-            <div class="nav-button"><i class="fa-regular fa-calculator"></i> Calculator</div>
-            <small class="muted command-label">Settings</small>
-            <div class="nav-button"><i class="fa-regular fa-user"></i> Profile</div>
-            <div class="nav-button"><i class="fa-regular fa-credit-card"></i> Billing</div>
-            <div class="nav-button"><i class="fa-regular fa-gear"></i> Settings</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h4>Navigation & Layout</h4>
-    <div class="showcase-grid">
-      <div class="showcase">
-        <small class="muted">Breadcrumb</small>
-        <nav class="breadcrumb">
-          <a href="#">Home</a><i class="fa-regular fa-angle-right"></i> <a href="#">Components</a
-          ><i class="fa-regular fa-angle-right"></i>
-          <span class="muted">Breadcrumb</span>
-        </nav>
-      </div>
-      <div class="showcase">
-        <small class="muted">Pagination</small>
-        <nav class="row pagination">
-          <button class="button button-outline"><i class="fa-regular fa-angle-left"></i> Previous</button>
-          <button class="button button-outline">1</button>
-          <button class="button button-primary">2</button>
-          <button class="button button-outline">3</button>
-          <button class="button button-outline">Next <i class="fa-regular fa-angle-right"></i></button>
-        </nav>
-      </div>
-      <div class="showcase">
-        <small class="muted">Spinner</small>
-        <div class="row spinner-demo">
-          <div class="spinner"></div>
-          <div class="spinner spinner-lg"></div>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Toolbar</small>
-        <div class="toolbar">
-          <button class="toggle" aria-pressed="true"><i class="fa-regular fa-bold"></i></button>
-          <button class="toggle"><i class="fa-regular fa-italic"></i></button>
-          <button class="toggle"><i class="fa-regular fa-strikethrough"></i></button>
-          <hr class="toolbar-divider" />
-          <button class="toggle active"><i class="fa-regular fa-align-left"></i></button>
-          <button class="toggle"><i class="fa-regular fa-align-center"></i></button>
-          <button class="toggle"><i class="fa-regular fa-align-right"></i></button>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Scroll Area</small>
-        <div class="scroll-area">
-          <div class="nav-button">v4.6.0</div>
-          <div class="nav-button">v4.5.0</div>
-          <div class="nav-button">v4.4.0</div>
-          <div class="nav-button">v4.3.0</div>
-          <div class="nav-button">v4.2.0</div>
-          <div class="nav-button">v4.1.0</div>
-          <div class="nav-button">v4.0.0</div>
-          <div class="nav-button">v3.9.0</div>
-          <div class="nav-button">v3.8.0</div>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Resizable</small>
-        <div class="card row resizable-demo">
-          <div class="fill center">One</div>
-          <div style="width: 2px; background: var(--color-light); cursor: col-resize"></div>
-          <div class="stack fill">
-            <div class="fill center">Two</div>
-            <div style="height: 2px; background: var(--color-light); cursor: row-resize"></div>
-            <div class="fill center">Three</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <h4>Content & Display</h4>
-    <div class="showcase-grid">
-      <div class="showcase">
-        <small class="muted">Alert</small>
-        <div class="alert">
-          <i class="fa-regular fa-terminal"></i>
-          <div class="stack"><b>Heads up!</b><small class="muted">You can add components using the CLI.</small></div>
-        </div>
-        <div class="alert alert-destructive">
-          <i class="fa-regular fa-circle-exclamation"></i>
-          <div class="stack"><b>Error</b><small>Your session has expired.</small></div>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Progress</small>
-        <progress value="60" max="100">60%</progress>
-      </div>
-      <div class="showcase">
-        <small class="muted">Kbd</small>
-        <div class="row kbd-demo"><kbd>Ctrl</kbd> + <kbd>K</kbd></div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Button Group</small>
-        <div class="button-group">
-          <button class="button button-outline">Day</button>
-          <button class="button button-primary">Month</button>
-          <button class="button button-outline">Year</button>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Aspect Ratio</small>
-        <div class="aspect-ratio"></div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Icon Button</small>
-        <div class="row">
-          <button class="button button-outline icon-button"><i class="fa-regular fa-bold"></i></button>
-          <button class="button button-outline icon-button"><i class="fa-regular fa-italic"></i></button>
-          <button class="button button-outline icon-button"><i class="fa-regular fa-underline"></i></button>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Data List</small>
-        <dl class="data-list">
-          <dt class="muted">Status</dt>
-          <dd>Active</dd>
-          <dt class="muted">Plan</dt>
-          <dd>Pro</dd>
-          <dt class="muted">Members</dt>
-          <dd>5</dd>
-        </dl>
-      </div>
-      <div class="showcase">
-        <small class="muted">Carousel</small>
-        <div class="carousel">
-          <button class="button button-outline carousel-prev"><i class="fa-regular fa-angle-left"></i></button>
-          <div class="carousel-track">
-            <div class="carousel-slide card center">Slide 1</div>
-            <div class="carousel-slide card center">Slide 2</div>
-            <div class="carousel-slide card center">Slide 3</div>
-          </div>
-          <button class="button button-outline carousel-next"><i class="fa-regular fa-angle-right"></i></button>
-        </div>
-      </div>
-      <div class="showcase">
-        <small class="muted">Chart</small>
-        <div class="chart-bars chart-bars-sm">
-          <div class="chart-bar" style="height: 40%"></div>
-          <div class="chart-bar" style="height: 80%"></div>
-          <div class="chart-bar" style="height: 55%"></div>
-          <div class="chart-bar" style="height: 70%"></div>
-          <div class="chart-bar" style="height: 30%"></div>
-          <div class="chart-bar" style="height: 90%"></div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>

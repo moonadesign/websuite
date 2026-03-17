@@ -1,4 +1,3 @@
-const g = document.getElementById.bind(document)
 const modeIcons = { dark: 'fa-moon', light: 'fa-sun-bright', system: 'fa-display' }
 const modes = ['system', 'light', 'dark']
 
@@ -6,10 +5,10 @@ const setMode = mode => {
   if (mode === 'system') document.documentElement.removeAttribute('data-theme')
   else document.documentElement.setAttribute('data-theme', mode)
   localStorage.theme = mode
-  document.querySelectorAll('[data-mode-icon]').forEach(el => {
+  q('[data-mode-icon]').forEach(el => {
     el.className = `fa-solid ${modeIcons[mode]}`
   })
-  document.querySelectorAll('[data-mode]').forEach(btn => {
+  q('[data-mode]').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.mode === mode)
   })
 }

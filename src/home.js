@@ -1,8 +1,8 @@
 fetch('content.json')
   .then(r => r.json())
   .then(items => {
-    const filters = document.getElementById('filters')
-    const grid = document.getElementById('grid')
+    const filters = g('filters')
+    const grid = g('grid')
     const types = ['page', 'layer', 'component']
 
     const render = filter => {

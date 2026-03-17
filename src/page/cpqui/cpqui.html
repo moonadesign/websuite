@@ -1,17 +1,467 @@
-<header id="cpqui-top">
+<section id="hero" class="layer glass">
+  <div class="layer-inset">
+    <h1>A configurator <em>for</em> your configurator</h1>
+    <p>A modern UI toolkit for CPQ applications.</p>
+    <button class="button button-primary large">Get started</button>
+  </div>
+</section>
+<div id="hero-fade"></div>
+
+<header id="cpqui-top" class="glass">
   <a class="brand" href="/">CPQ UI</a>
   <nav>
-    <a href="#">Features</a>
-    <a href="#">Docs</a>
-    <a href="#">Playground</a>
+    <button class="button">Features</button>
+    <button class="button">Docs</button>
+    <button class="button">Playground</button>
   </nav>
-  <a class="button button-primary" href="#">Get started</a>
+  <div class="fill"></div>
+  <button class="button button-icon" id="mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+  <button class="button button-primary">Get started</button>
 </header>
 
-<section id="hero" class="layer">
+<section id="applit" class="layer">
   <div class="layer-inset">
-    <h1>Configure. Price. Quote.</h1>
-    <p>A modern UI toolkit for CPQ applications.</p>
-    <a class="button button-primary" href="#">Get started</a>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport">
+        <div id="asf" class="app">
+          <nav class="cpq-nav">
+            <div class="cpq-nav-logo">
+              <div class="brand cpq-brand">
+                <i class="fa-solid fa-comet"></i> <b>CPQ</b> <i class="fa-regular fa-rectangle-pro"></i>
+              </div>
+              <small class="cpq-nav-byline">by <i class="fa-regular fa-planet-ringed"></i> Parent Global</small>
+            </div>
+            <button class="button">
+              <i class="fa-regular fa-briefcase"></i><span>North America</span><i class="fa-regular fa-angle-down"></i>
+            </button>
+            <button class="button active"><i class="fa-regular fa-play"></i><span>Preview</span></button>
+            <button class="button"><i class="fa-regular fa-search"></i><span>Search</span></button>
+            <button class="button"><i class="fa-regular fa-table-layout"></i><span>Dashboard</span></button>
+            <button class="button"><i class="fa-regular fa-cube"></i><span>Products</span></button>
+            <button class="button"><i class="fa-regular fa-database"></i><span>Library</span></button>
+            <button class="button"><i class="fa-regular fa-arrow-progress"></i><span>Workflows</span></button>
+            <button class="button"><i class="fa-regular fa-chart-line"></i><span>Reports</span></button>
+            <button class="button"><i class="fa-regular fa-cog"></i><span>Settings</span></button>
+            <button class="button"><i class="fa-regular fa-sidebar"></i><span>Hide Admin</span></button>
+            <div id="asf-user" class="cpq-nav-user">
+              <img class="avatar" src="https://i.pravatar.cc/32" alt="Suzy Topseller" />
+              <div>
+                <b>Suzy Topseller</b><small><i class="fa-regular fa-crown"></i> Sales</small>
+              </div>
+            </div>
+          </nav>
+          <div id="asf-main">
+            <div id="asf-topbar" class="glass">
+              <button class="button"><i class="fa-regular fa-sliders"></i> Configurator</button>
+              <button class="button"><i class="fa-regular fa-file-magnifying-glass"></i> Spec Finder</button>
+              <button class="button"><i class="fa-regular fa-location-dot"></i> Where to Buy</button>
+              <button class="button button-icon"><i class="fa-regular fa-globe"></i></button>
+            </div>
+            <div id="asf-shopnav">
+              <div id="asf-shopbrand" class="brand">
+                <i class="fa-solid fa-weight-hanging"></i> <b>ACME</b><span class="badge">Unpublished changes</span>
+              </div>
+              <button class="button asf-tab active"><i class="fa-regular fa-grid-2"></i> Products</button>
+              <button class="button asf-tab"><i class="fa-regular fa-folders"></i> Projects</button>
+              <div class="fill"></div>
+              <button class="button"><i class="fa-regular fa-search"></i> Search</button>
+              <button class="button"><i class="fa-regular fa-user"></i> My Account</button>
+              <button class="button button-icon"><i class="fa-regular fa-shopping-cart"></i></button>
+              <button class="button button-primary">Contact Us</button>
+            </div>
+            <div id="asf-page">
+              <div id="asf-pagehead">
+                <nav id="asf-crumb" class="breadcrumb inline-links">
+                  <button class="button button-icon"><i class="fa-regular fa-house"></i></button>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <a class="button button-link" href="#">Products</a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <span style="color: var(--color-half)">All Products</span>
+                </nav>
+                <span id="asf-saved"><i class="fa-regular fa-cloud-check"></i> Saved</span>
+                <h2>All Products</h2>
+              </div>
+              <div id="asf-empty">
+                <i class="fa-light fa-triangle-exclamation"></i>
+                <b>Whoops!</b>
+                <p>No products were found.</p>
+                <p id="asf-note">
+                  <i class="fa-regular fa-circle-info"></i> Our support team has been notified about this issue.
+                </p>
+              </div>
+            </div>
+            <footer class="cpq-foot">
+              <span>© 2026 ACME Corp.</span>
+              <div data-nav="foot"></div>
+              <div class="fill"></div>
+              <div data-nav="foot-corner"></div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="app-shell" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>App shell</h2>
+      <p>
+        All the amenities your customers expect from a modern web application — accounts, localization, notifications,
+        search, support, and more.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div id="as" class="browser-viewport app cpq-shell">
+        <header id="as-topbar" class="cpq-toolbar">
+          <div class="brand cpq-brand">
+            <i class="fa-solid fa-comet"></i> <b>CPQ</b> <i class="fa-regular fa-rectangle-pro"></i>
+          </div>
+          <nav class="tight">
+            <div data-nav="topbar-items"></div>
+            <button class="button" id="as-more-btn" popovertarget="as-topbar-more">
+              <i class="fa-regular fa-ellipsis"></i> More
+            </button>
+            <div id="as-topbar-more" popover class="menu"></div>
+          </nav>
+          <div class="fill"></div>
+          <nav class="tight"><div data-nav="corner"></div></nav>
+          <button popovertarget="as-topbar-user-menu" class="button button-icon">
+            <img class="avatar" src="https://i.pravatar.cc/32" alt="Suzy Topseller" />
+          </button>
+          <div id="as-topbar-user-menu" popover class="menu">
+            <button class="menu-item"><i class="fa-regular fa-user"></i> Profile</button>
+            <button class="menu-item"><i class="fa-regular fa-cog"></i> Settings</button>
+            <hr />
+            <button class="menu-item"><i class="fa-regular fa-right-from-bracket"></i> Sign out</button>
+          </div>
+        </header>
+        <div class="cpq-body">
+          <nav id="as-nav" class="cpq-nav">
+            <div class="cpq-nav-logo">
+              <div class="brand cpq-brand">
+                <i class="fa-solid fa-comet"></i> <b>CPQ</b> <i class="fa-regular fa-rectangle-pro"></i>
+              </div>
+              <small class="cpq-nav-byline">by <i class="fa-regular fa-planet-ringed"></i> Parent Global</small>
+            </div>
+            <button class="button">
+              <i class="fa-regular fa-briefcase"></i><span>North America</span><i class="fa-regular fa-angle-down"></i>
+            </button>
+            <div data-nav="nav-items"></div>
+            <div class="cpq-nav-user" style="anchor-name: --as-nav-user">
+              <img class="avatar" src="https://i.pravatar.cc/32" alt="Suzy Topseller" />
+              <div>
+                <b>Suzy Topseller</b><small><i class="fa-regular fa-crown"></i> Sales</small>
+              </div>
+              <div popover class="menu" style="position-anchor: --as-nav-user">
+                <button class="menu-item"><i class="fa-regular fa-user"></i> Profile</button>
+                <button class="menu-item"><i class="fa-regular fa-cog"></i> Settings</button>
+                <hr />
+                <button class="menu-item"><i class="fa-regular fa-right-from-bracket"></i> Sign out</button>
+              </div>
+            </div>
+          </nav>
+          <div class="cpq-content">
+            <header id="as-toolbar" class="cpq-toolbar">
+              <button class="button button-icon"><i class="fa-regular fa-sidebar"></i></button>
+              <nav class="breadcrumb inline-links">
+                <button class="button button-icon"><i class="fa-regular fa-house"></i></button>
+                <i class="fa-solid fa-angle-right"></i>
+                <a class="button button-link" href="#">Products</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>All Products</span>
+              </nav>
+              <div class="fill"></div>
+              <nav class="tight"><div data-nav="corner"></div></nav>
+            </header>
+            <div id="as-main"></div>
+            <footer class="cpq-foot">
+              <span>© 2026 ACME Corp.</span>
+              <div data-nav="foot"></div>
+              <div class="fill"></div>
+              <div data-nav="foot-corner"></div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="navigation-studio" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>Navigation studio</h2>
+      <p>
+        Flexible navigation primitives — sidebars, topbars, breadcrumbs, and tab bars — that adapt to any CPQ workflow
+        without locking you into a single layout.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div id="ns" class="browser-viewport app cpq-shell">
+        <header id="ns-topbar" class="cpq-toolbar">
+          <div class="brand cpq-brand">
+            <i class="fa-solid fa-comet"></i> <b>CPQ</b> <i class="fa-regular fa-rectangle-pro"></i>
+          </div>
+          <nav class="tight">
+            <div data-nav="topbar-items"></div>
+            <button class="button" id="ns-more-btn" popovertarget="ns-topbar-more">
+              <i class="fa-regular fa-ellipsis"></i> More
+            </button>
+            <div id="ns-topbar-more" popover class="menu"></div>
+          </nav>
+          <div class="fill"></div>
+          <nav class="tight"><div data-nav="corner"></div></nav>
+          <button popovertarget="ns-topbar-user-menu" class="button button-icon">
+            <img class="avatar" src="https://i.pravatar.cc/32" alt="Suzy Topseller" />
+          </button>
+          <div id="ns-topbar-user-menu" popover class="menu">
+            <button class="menu-item"><i class="fa-regular fa-user"></i> Profile</button>
+            <button class="menu-item"><i class="fa-regular fa-cog"></i> Settings</button>
+            <hr />
+            <button class="menu-item"><i class="fa-regular fa-right-from-bracket"></i> Sign out</button>
+          </div>
+        </header>
+        <div class="cpq-body">
+          <nav id="ns-nav" class="cpq-nav">
+            <div class="cpq-nav-logo">
+              <div class="brand cpq-brand">
+                <i class="fa-solid fa-comet"></i> <b>CPQ</b> <i class="fa-regular fa-rectangle-pro"></i>
+              </div>
+              <small class="cpq-nav-byline">by <i class="fa-regular fa-planet-ringed"></i> Parent Global</small>
+            </div>
+            <button class="button">
+              <i class="fa-regular fa-briefcase"></i><span>North America</span><i class="fa-regular fa-angle-down"></i>
+            </button>
+            <div data-nav="nav-items"></div>
+            <div class="cpq-nav-user" style="anchor-name: --ns-nav-user">
+              <img class="avatar" src="https://i.pravatar.cc/32" alt="Suzy Topseller" />
+              <div>
+                <b>Suzy Topseller</b><small><i class="fa-regular fa-crown"></i> Sales</small>
+              </div>
+              <div popover class="menu" style="position-anchor: --ns-nav-user">
+                <button class="menu-item"><i class="fa-regular fa-user"></i> Profile</button>
+                <button class="menu-item"><i class="fa-regular fa-cog"></i> Settings</button>
+                <hr />
+                <button class="menu-item"><i class="fa-regular fa-right-from-bracket"></i> Sign out</button>
+              </div>
+            </div>
+          </nav>
+          <div class="cpq-content">
+            <header id="ns-toolbar" class="cpq-toolbar">
+              <button class="button button-icon"><i class="fa-regular fa-sidebar"></i></button>
+              <nav class="breadcrumb inline-links">
+                <button class="button button-icon"><i class="fa-regular fa-house"></i></button>
+                <i class="fa-solid fa-angle-right"></i>
+                <a class="button button-link" href="#">Products</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>All Products</span>
+              </nav>
+              <div class="fill"></div>
+              <nav class="tight"><div data-nav="corner"></div></nav>
+            </header>
+            <div id="ns-main">
+              <div id="ns-editor">
+                <div class="row">
+                  <button class="button" data-preset="Shell">Shell</button>
+                  <button class="button" data-preset="Demo">Demo</button>
+                  <button class="button" data-preset="Flux">Flux</button>
+                </div>
+                <textarea id="ns-json" spellcheck="false"></textarea>
+              </div>
+              <div id="ns-options">
+                <div class="field" role="group">
+                  <label>Orientation</label>
+                  <div class="stack">
+                    <label
+                      ><input type="radio" name="ns-nav-orientation" value="horizontal" checked /> Horizontal</label
+                    >
+                    <label><input type="radio" name="ns-nav-orientation" value="vertical" /> Vertical</label>
+                  </div>
+                </div>
+                <div class="field" role="group">
+                  <label>Left nav treatment</label>
+                  <div class="stack">
+                    <label><input type="radio" name="ns-nav-style" value="light" checked /> Light</label>
+                    <label><input type="radio" name="ns-nav-style" value="inverted" /> Inverted</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <footer class="cpq-foot">
+              <span>© 2026 ACME Corp.</span>
+              <div data-nav="foot"></div>
+              <div class="fill"></div>
+              <div data-nav="foot-corner"></div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tabular-native" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>Tabular native</h2>
+      <p>
+        Production-ready data tables with sorting, filtering, pagination, and bulk actions — no third-party dependencies
+        required.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport"></div>
+    </div>
+  </div>
+</section>
+
+<section id="precision-workflows" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>Precision workflows</h2>
+      <p>
+        Multi-step configuration flows with validation, branching logic, and progress tracking that guide users from
+        requirement to quote without friction.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport"></div>
+    </div>
+  </div>
+</section>
+
+<section id="elegant-configuration" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>Elegant configuration</h2>
+      <p>
+        Rich form controls purpose-built for product configuration — option selectors, dependency trees, constraint
+        indicators, and live pricing feedback.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport"></div>
+    </div>
+  </div>
+</section>
+
+<section id="ai-admin" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>AI admin</h2>
+      <p>
+        Intelligent catalog management, pricing rule suggestions, and quote analysis — surfaced inline where your team
+        already works.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport"></div>
+    </div>
+  </div>
+</section>
+
+<section id="tool-studios" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>Toolbar studio</h2>
+      <p>
+        High-density visual editors for pricing rules, product catalogs, and approval workflows — designed for power
+        users who need to see everything at once.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport"></div>
+    </div>
+  </div>
+</section>
+
+<section id="whitelabel" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>Easy to whitelabel</h2>
+      <p>
+        Our design system leverages token-driven themes anyone can customize and implement — swap colors, typography,
+        and radius to match your brand in minutes, not months.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport">
+        <div id="wl" class="app">
+          <div id="wl-main">
+            <h2>Tokens</h2>
+            <div id="tokens-grid"></div>
+          </div>
+          <aside id="wl-panel">
+            <div class="field" role="group">
+              <label>Font Family</label>
+              <div class="stack">
+                <label><input type="radio" name="font-family" checked /> DM Sans</label>
+                <label><input type="radio" name="font-family" /> Geist</label>
+                <label><input type="radio" name="font-family" /> Inter</label>
+              </div>
+            </div>
+            <div class="field" role="group">
+              <label>Radius</label>
+              <div class="stack">
+                <label><input type="radio" name="radius" checked /> Round</label>
+                <label><input type="radio" name="radius" /> Softer</label>
+                <label><input type="radio" name="radius" /> Soft</label>
+                <label><input type="radio" name="radius" /> Sharp</label>
+              </div>
+            </div>
+            <div class="field" role="group">
+              <label>Grayscale</label>
+              <div class="stack">
+                <label><input type="radio" name="grayscale" checked /> Neutral</label>
+                <label><input type="radio" name="grayscale" /> Slate</label>
+              </div>
+            </div>
+            <div class="field" role="group">
+              <label>Colorways</label>
+              <div class="stack">
+                <label><input type="radio" name="colorway" checked /> Default</label>
+                <label><input type="radio" name="colorway" /> Ocean</label>
+                <label><input type="radio" name="colorway" /> Forest</label>
+                <label><input type="radio" name="colorway" /> Rose</label>
+              </div>
+            </div>
+            <div class="field" role="group">
+              <label>Icon Library</label>
+              <div class="stack">
+                <label><input type="radio" name="icon-library" checked /> Font Awesome</label>
+                <label><input type="radio" name="icon-library" /> Lucide</label>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="compliance" class="layer">
+  <div class="layer-inset stack">
+    <div class="stack">
+      <h2>Built for compliance & safety</h2>
+      <p>
+        Audit trails, role-based access, approval gates, and export controls built into the component layer — so your
+        team ships features, not compliance scaffolding.
+      </p>
+    </div>
+    <div class="browser">
+      <div class="browser-bar"></div>
+      <div class="browser-viewport"></div>
+    </div>
   </div>
 </section>
