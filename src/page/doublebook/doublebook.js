@@ -1,5 +1,5 @@
-const timeElements = document.querySelectorAll('[data-clock]')
-const relativeTimeElements = document.querySelectorAll('[data-relative-time]')
+const timeElements = q('[data-clock]')
+const relativeTimeElements = q('[data-relative-time]')
 
 if (timeElements.length) {
   const now = new Date()
@@ -19,8 +19,8 @@ if (relativeTimeElements.length) {
   setInterval(setRelativeTime, 60000)
 }
 
-const storyTabs = [...document.querySelectorAll('[data-story-tab]')]
-const storyPanels = [...document.querySelectorAll('[data-story-panel]')]
+const storyTabs = [...q('[data-story-tab]')]
+const storyPanels = [...q('[data-story-panel]')]
 const cycleTabs = storyTabs.filter(tab => ['client', 'search'].includes(tab.dataset.storyTab))
 
 if (cycleTabs.length && storyPanels.length) {

@@ -134,9 +134,10 @@
   },
   {
     "name": "Events",
+    "route": "/page/events/",
+    "sponsored_by": ["mattborn.github.io"],
     "type": "page",
-    "when": "now",
-    "sponsored_by": ["mattborn.github.io"]
+    "when": "now"
   },
   {
     "name": "Quictate",
@@ -194,6 +195,7 @@
   },
   {
     "name": "Hiro",
+    "route": "/layer/hiro/",
     "type": "layer",
     "when": "now",
     "sponsored_by": ["thirteen"]
@@ -228,20 +230,21 @@
   },
   {
     "items": [
+      "Button",
       "Checkbox",
-      "Combobox",
-      "Form",
+      "Input",
       "Input OTP",
-      "Meter",
-      "Number Field",
-      "Radio",
-      "Radio Cards",
+      "Label",
       "Radio Group",
-      "Slider"
+      "Select",
+      "Slider",
+      "Switch",
+      "Textarea"
     ],
-    "name": "Form Controls",
+    "name": "Fields",
+    "route": "/component/field/",
     "type": "component",
-    "when": "next",
+    "when": "past",
     "sponsored_by": ["shadcn"]
   },
   {

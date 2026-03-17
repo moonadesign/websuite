@@ -16,30 +16,30 @@
   <div id="variants" class="layer-inset">
     <div class="example">
       <h4>Toggle</h4>
-      <button class="button" id="mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+      <button class="button button-icon" id="mode-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
     </div>
     <div class="example">
       <h4>Cycle</h4>
-      <button class="button" id="mode-cycle"><i class="fa-solid fa-display" data-mode-icon></i></button>
+      <button class="button button-icon" id="mode-cycle"><i class="fa-solid fa-display" data-mode-icon></i></button>
     </div>
     <div class="example">
       <h4>Group</h4>
       <div class="button-group">
-        <button class="button" data-mode="system"><i class="fa-solid fa-display"></i></button>
-        <button class="button active" data-mode="light"><i class="fa-solid fa-sun-bright"></i></button>
-        <button class="button" data-mode="dark"><i class="fa-solid fa-moon"></i></button>
+        <button class="button button-icon" data-mode="system"><i class="fa-solid fa-display"></i></button>
+        <button class="button button-icon active" data-mode="light"><i class="fa-solid fa-sun-bright"></i></button>
+        <button class="button button-icon" data-mode="dark"><i class="fa-solid fa-moon"></i></button>
       </div>
     </div>
     <div class="example">
       <h4>Select</h4>
       <div class="mode-select">
-        <button class="button" id="mode-select-trigger">
+        <button class="button button-icon" id="mode-select-trigger">
           <i class="fa-solid fa-display" data-mode-icon></i> <i class="fa-solid fa-angle-down"></i>
         </button>
         <div class="mode-menu">
-          <button data-mode="system"><i class="fa-solid fa-display"></i> System</button>
-          <button data-mode="light"><i class="fa-solid fa-sun-bright"></i> Light</button>
-          <button data-mode="dark"><i class="fa-solid fa-moon"></i> Dark</button>
+          <button class="button" data-mode="system"><i class="fa-solid fa-display"></i> System</button>
+          <button class="button" data-mode="light"><i class="fa-solid fa-sun-bright"></i> Light</button>
+          <button class="button" data-mode="dark"><i class="fa-solid fa-moon"></i> Dark</button>
         </div>
       </div>
     </div>
@@ -57,30 +57,32 @@
   <div id="glass-variants" class="layer-inset">
     <div class="example">
       <h4>Toggle</h4>
-      <button class="button" id="glass-toggle" disabled><i class="fa-solid fa-glass-half"></i></button>
+      <button class="button button-icon" id="glass-toggle" disabled><i class="fa-solid fa-glass-half"></i></button>
     </div>
     <div class="example">
       <h4>Cycle</h4>
-      <button class="button" id="glass-cycle" disabled><i class="fa-solid fa-xmark" data-glass-icon></i></button>
+      <button class="button button-icon" id="glass-cycle" disabled>
+        <i class="fa-solid fa-xmark" data-glass-icon></i>
+      </button>
     </div>
     <div class="example">
       <h4>Group</h4>
       <div class="button-group" id="glass-group">
-        <button class="button active" data-glass="off" disabled><i class="fa-solid fa-xmark"></i></button>
-        <button class="button" data-glass="image" disabled><i class="fa-solid fa-image"></i></button>
-        <button class="button" data-glass="video" disabled><i class="fa-solid fa-video"></i></button>
+        <button class="button button-icon active" data-glass="off" disabled><i class="fa-solid fa-xmark"></i></button>
+        <button class="button button-icon" data-glass="image" disabled><i class="fa-solid fa-image"></i></button>
+        <button class="button button-icon" data-glass="video" disabled><i class="fa-solid fa-video"></i></button>
       </div>
     </div>
     <div class="example">
       <h4>Select</h4>
       <div class="glass-select">
-        <button class="button" id="glass-select-trigger" disabled>
+        <button class="button button-icon" id="glass-select-trigger" disabled>
           <i class="fa-solid fa-xmark" data-glass-icon></i> <i class="fa-solid fa-angle-down"></i>
         </button>
         <div class="glass-menu">
-          <button data-glass="off"><i class="fa-solid fa-xmark"></i> Off</button>
-          <button data-glass="image"><i class="fa-solid fa-image"></i> Image</button>
-          <button data-glass="video"><i class="fa-solid fa-video"></i> Video</button>
+          <button class="button" data-glass="off"><i class="fa-solid fa-xmark"></i> Off</button>
+          <button class="button" data-glass="image"><i class="fa-solid fa-image"></i> Image</button>
+          <button class="button" data-glass="video"><i class="fa-solid fa-video"></i> Video</button>
         </div>
       </div>
     </div>

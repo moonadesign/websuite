@@ -105,10 +105,46 @@ em {
   min-height: 80vh;
 }
 
+#moona .button {
+  mix-blend-mode: screen;
+}
+
+#moona h1 em {
+  display: block;
+}
+
+#moona .badge {
+  backdrop-filter: blur(8px);
+  background: var(--color-lighter);
+  border-radius: 1.25rem;
+  padding: 0.75rem 1rem;
+}
+
+#moona .brand {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  left: var(--space-clamp);
+  position: absolute;
+  top: var(--space-clamp);
+}
+
+#moona .brand svg {
+  fill: currentColor;
+  height: 2rem;
+  width: 2rem;
+}
+
 #moona .hero-content {
   align-items: center;
   justify-content: center;
+  min-height: inherit;
+  position: relative;
   text-align: center;
+}
+
+#moona p {
+  max-width: 36rem;
 }
 
 #whimsical .browser {

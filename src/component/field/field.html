@@ -1,24 +1,17 @@
 <section class="layer">
   <div class="layer-inset">
     <h1>Field</h1>
-    <p>Buttons, inputs, selects, checkboxes, switches, sliders, and all form controls.</p>
+    <p>Native and basic form fields without advanced controllers.</p>
   </div>
 </section>
 
-<section class="layer example">
-  <div class="layer-inset">
-    <h2>Autocomplete</h2>
-    <p>Autocomplete will go here.</p>
-  </div>
-</section>
-
-<section class="layer example">
+<section id="button" class="layer example">
   <div class="layer-inset">
     <h2>Button</h2>
     <p>Styled after shadcn’s New York preset — 40px height & 6px radius</p>
     <div class="row">
       <a class="button button-primary">Primary</a>
-      <button class="button-secondary">Secondary</button>
+      <button class="button button-secondary">Secondary</button>
       <div class="button button-outline">Outline</div>
       <a class="button">Ghost</a>
       <button class="button button-destructive">Destructive</button>
@@ -27,67 +20,71 @@
       <button class="button button-primary button-icon"><i class="fa-regular fa-plus"></i></button>
       <div class="button button-primary button-icon round"><i class="fa-regular fa-plus"></i></div>
       <a class="button button-primary round">Round</a>
-      <button class="button-outline round">Round</button>
+      <button class="button button-outline round">Round</button>
     </div>
     <div class="row">
-      <a class="button button-primary button-large">Large</a>
-      <button class="button-secondary button-large">Secondary</button>
-      <div class="button button-outline button-large">Outline</div>
-      <a class="button button-large">Ghost</a>
-      <button class="button button-destructive button-large">Destructive</button>
-      <div class="button button-large" disabled>Disabled</div>
-      <a class="button button-link button-large">Link</a>
-      <button class="button button-primary button-icon button-large"><i class="fa-regular fa-plus"></i></button>
-      <div class="button button-primary button-icon button-large round"><i class="fa-regular fa-plus"></i></div>
-      <a class="button button-primary button-large round">Round</a>
-      <button class="button-outline button-large round">Round</button>
+      <a class="button button-primary large">Large</a>
+      <button class="button button-secondary large">Secondary</button>
+      <div class="button button-outline large">Outline</div>
+      <a class="button large">Ghost</a>
+      <button class="button button-destructive large">Destructive</button>
+      <div class="button large" disabled>Disabled</div>
+      <a class="button button-link large">Link</a>
+      <button class="button button-primary button-icon large"><i class="fa-regular fa-plus"></i></button>
+      <div class="button button-primary button-icon large round"><i class="fa-regular fa-plus"></i></div>
+      <a class="button button-primary large round">Round</a>
+      <button class="button button-outline large round">Round</button>
+    </div>
+    <div class="row">
+      <a class="button button-primary compact">Compact</a>
+      <button class="button button-secondary compact">Secondary</button>
+      <div class="button button-outline compact">Outline</div>
+      <a class="button compact">Ghost</a>
+      <button class="button button-destructive compact">Destructive</button>
+      <div class="button compact" disabled>Disabled</div>
+      <a class="button button-link compact">Link</a>
+      <button class="button button-primary button-icon compact"><i class="fa-regular fa-plus"></i></button>
+      <div class="button button-primary button-icon compact round"><i class="fa-regular fa-plus"></i></div>
+      <a class="button button-primary compact round">Round</a>
+      <button class="button button-outline compact round">Round</button>
+    </div>
+    <h3>Inline Links</h3>
+    <div class="row inline-links">
+      <a class="button button-link" href="#">Privacy Policy</a>
+      <a class="button button-link" href="#">Terms of Service</a>
+      <a class="button button-link" href="#">support@acme.com</a>
+      <a class="button button-link" href="#">Chat with support</a>
     </div>
   </div>
 </section>
 
-<section class="layer example">
+<section id="checkbox" class="layer example">
   <div class="layer-inset">
     <h2>Checkbox</h2>
     <div class="row">
       <label><input type="checkbox" /> Unchecked</label>
       <label><input type="checkbox" checked /> Checked</label>
       <label><input type="checkbox" disabled /> Disabled</label>
-      <label><input type="checkbox" checked disabled /> Checked disabled</label>
+      <label><input type="checkbox" checked disabled /> Disabled</label>
+    </div>
+    <div class="row">
+      <label><input type="checkbox" class="large" /> Unchecked</label>
+      <label><input type="checkbox" class="large" checked /> Checked</label>
+      <label><input type="checkbox" class="large" disabled /> Disabled</label>
+      <label><input type="checkbox" class="large" checked disabled /> Disabled</label>
     </div>
   </div>
 </section>
 
-<section class="layer example">
-  <div class="layer-inset">
-    <h2>Checkbox Group</h2>
-    <p>Checkbox Group will go here.</p>
-  </div>
-</section>
-
-<section class="layer example">
-  <div class="layer-inset">
-    <h2>Combobox</h2>
-    <p>Combobox will go here.</p>
-  </div>
-</section>
-
-<section class="layer example">
-  <div class="layer-inset">
-    <h2>Form</h2>
-    <p>Form will go here.</p>
-  </div>
-</section>
-
-<section class="layer example">
+<section id="input" class="layer example">
   <div class="layer-inset">
     <h2>Input</h2>
-    <div class="stack">
+    <div class="row">
       <input placeholder="Placeholder" />
       <input value="With value" />
-      <input placeholder="Disabled" disabled />
-      <input type="password" placeholder="Password" />
-      <input type="email" placeholder="Email" />
-      <input type="number" placeholder="Number" />
+      <input autofocus placeholder="Focus" />
+      <input disabled placeholder="Disabled" />
+      <input aria-invalid value="Invalid" />
     </div>
   </div>
 </section>
@@ -95,63 +92,51 @@
 <section class="layer example">
   <div class="layer-inset">
     <h2>Input OTP</h2>
-    <p>Input OTP will go here.</p>
+    <div class="otp-group">
+      <input inputmode="numeric" maxlength="1" size="1" />
+      <input inputmode="numeric" maxlength="1" size="1" />
+      <input inputmode="numeric" maxlength="1" size="1" />
+      <input inputmode="numeric" maxlength="1" size="1" />
+      <input inputmode="numeric" maxlength="1" size="1" />
+      <input inputmode="numeric" maxlength="1" size="1" />
+    </div>
   </div>
 </section>
 
 <section class="layer example">
   <div class="layer-inset">
     <h2>Label</h2>
-    <div class="field">
+    <div class="field" role="group">
       <label for="label-demo">Username</label>
       <input id="label-demo" placeholder="shadcn" />
     </div>
   </div>
 </section>
 
-<section class="layer example">
-  <div class="layer-inset">
-    <h2>Meter</h2>
-    <div class="stack">
-      <meter min="0" max="100" value="25">25%</meter>
-      <meter min="0" max="100" value="50">50%</meter>
-      <meter min="0" max="100" value="75">75%</meter>
-    </div>
-  </div>
-</section>
-
-<section class="layer example">
-  <div class="layer-inset">
-    <h2>Number Field</h2>
-    <p>Number Field will go here.</p>
-  </div>
-</section>
-
-<section class="layer example">
-  <div class="layer-inset">
-    <h2>Radio</h2>
-    <div class="stack">
-      <label><input type="radio" name="radio-demo" checked /> Option A</label>
-      <label><input type="radio" name="radio-demo" /> Option B</label>
-      <label><input type="radio" name="radio-demo" /> Option C</label>
-      <label><input type="radio" name="radio-demo" disabled /> Disabled</label>
-    </div>
-  </div>
-</section>
-
-<section class="layer example">
+<section id="radio-group" class="layer example">
   <div class="layer-inset">
     <h2>Radio Group</h2>
-    <p>Radio Group will go here.</p>
+    <div class="row">
+      <label><input type="radio" name="radio-demo" checked /> Checked</label>
+      <label><input type="radio" name="radio-demo" /> Unchecked</label>
+      <label><input type="radio" name="radio-disabled" disabled /> Disabled</label>
+      <label><input type="radio" name="radio-disabled" checked disabled /> Disabled</label>
+    </div>
+    <div class="row">
+      <label><input class="large" type="radio" name="radio-demo-large" checked /> Checked</label>
+      <label><input class="large" type="radio" name="radio-demo-large" /> Unchecked</label>
+      <label><input class="large" type="radio" name="radio-disabled-large" disabled /> Disabled</label>
+      <label><input class="large" type="radio" name="radio-disabled-large" checked disabled /> Disabled</label>
+    </div>
   </div>
 </section>
 
-<section class="layer example">
+<section id="select" class="layer example">
   <div class="layer-inset">
     <h2>Select</h2>
-    <div class="stack">
+    <div class="row">
       <select>
-        <option value="">Select an option</option>
+        <option value="">Placeholder</option>
         <option>Option A</option>
         <option>Option B</option>
         <option>Option C</option>
@@ -159,22 +144,24 @@
       <select disabled>
         <option>Disabled</option>
       </select>
+      <select aria-invalid>
+        <option>Invalid</option>
+      </select>
     </div>
   </div>
 </section>
 
-<section class="layer example">
+<section id="slider" class="layer example">
   <div class="layer-inset">
     <h2>Slider</h2>
-    <div class="stack">
-      <input type="range" min="0" max="100" value="33" />
-      <input type="range" min="0" max="100" value="66" />
-      <input type="range" min="0" max="100" value="100" disabled />
+    <div class="row">
+      <input type="range" min="0" max="100" value="50" />
+      <input disabled min="0" max="100" type="range" value="50" />
     </div>
   </div>
 </section>
 
-<section class="layer example">
+<section id="switch" class="layer example">
   <div class="layer-inset">
     <h2>Switch</h2>
     <div class="row">
@@ -185,13 +172,15 @@
   </div>
 </section>
 
-<section class="layer example">
+<section id="textarea" class="layer example">
   <div class="layer-inset">
     <h2>Textarea</h2>
-    <div class="stack">
+    <div class="row">
       <textarea placeholder="Placeholder"></textarea>
       <textarea>With value</textarea>
-      <textarea placeholder="Disabled" disabled></textarea>
+      <textarea autofocus placeholder="Focus"></textarea>
+      <textarea disabled placeholder="Disabled"></textarea>
+      <textarea aria-invalid>Invalid</textarea>
     </div>
   </div>
 </section>

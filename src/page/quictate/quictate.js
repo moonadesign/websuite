@@ -1,5 +1,5 @@
-const timeElements = document.querySelectorAll('[data-clock]')
-const callTimers = document.querySelectorAll('[data-call-timer]')
+const timeElements = q('[data-clock]')
+const callTimers = q('[data-call-timer]')
 
 if (timeElements.length) {
   const setTime = () => {

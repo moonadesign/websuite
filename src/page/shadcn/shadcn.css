@@ -1,3 +1,14 @@
+.layer-inset {
+  max-width: 90rem;
+}
+
+#shadcn-top {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
 /* Layout */
 .app-shell {
   height: 36rem;
@@ -12,10 +23,6 @@
 .app-shell-padded {
   gap: 1rem;
   padding: 1.5rem;
-}
-
-#examples {
-  padding: 0 var(--space-clamp) var(--space-clamp);
 }
 
 #example-tabs {
@@ -38,29 +45,7 @@
   max-width: 36rem;
 }
 
-/* Tabs */
-.tab {
-  background: none;
-  border: none;
-  border-radius: 0.5rem;
-  color: var(--color-half);
-  cursor: pointer;
-  font-size: 0.875rem;
-  padding: 0.5rem 0.75rem;
-  white-space: nowrap;
-}
-.tab:hover {
-  color: var(--color-darkest);
-}
-.tab.active {
-  background: var(--color-lighter);
-  color: var(--color-darkest);
-  font-weight: 700;
-}
-.tab-bar {
-  display: flex;
-  gap: 0.25rem;
-}
+/* Tab Panels */
 .tab-panel {
   display: none;
 }
@@ -132,11 +117,6 @@
 .spinner-lg {
   height: 2rem;
   width: 2rem;
-}
-.toolbar-divider {
-  height: 1.5rem;
-  margin: 0;
-  width: 1px;
 }
 
 /* Contextual overrides */
@@ -230,7 +210,7 @@
 .examples-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 18rem);
+  grid-template-columns: repeat(4, 1fr);
 }
 .examples-col {
   display: flex;
@@ -499,22 +479,6 @@ a.list-item:hover {
   gap: 0.25rem;
   padding: 0.5rem;
 }
-.top .tab-bar {
-  background: var(--color-lighter);
-  border-radius: 0.5rem;
-  gap: 0.25rem;
-  padding: 0.25rem;
-}
-.top .tab-bar .tab {
-  background: none;
-  padding: 0.375rem 0.75rem;
-}
-.top .tab-bar .tab.active {
-  background: var(--color-lightest);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  color: var(--color-darkest);
-  font-weight: 500;
-}
 .mail-item {
   border: 1px solid var(--color-light);
   border-radius: 0.5rem;
@@ -578,15 +542,6 @@ a.list-item:hover {
 }
 
 /* Field */
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-.field label {
-  font-size: 0.875rem;
-  font-weight: 700;
-}
 
 /* Auth */
 .auth-split {
@@ -745,46 +700,6 @@ a.list-item:hover {
   margin-bottom: 1.5rem;
 }
 
-/* Toggle */
-.toggle {
-  align-items: center;
-  background: none;
-  border: 1px solid var(--color-light);
-  border-radius: 0.375rem;
-  color: var(--color-half);
-  cursor: pointer;
-  display: flex;
-  font: inherit;
-  height: 2.5rem;
-  justify-content: center;
-  width: 2.5rem;
-}
-.toggle:hover {
-  background: var(--color-lighter);
-  color: var(--color-darkest);
-}
-.toggle.active,
-.toggle[aria-pressed='true'] {
-  background: var(--color-lighter);
-  border-color: var(--color-darkest);
-  color: var(--color-darkest);
-}
-.toggle-group {
-  display: flex;
-}
-.toggle-group .toggle {
-  border-radius: 0;
-}
-.toggle-group .toggle:first-child {
-  border-radius: 0.375rem 0 0 0.375rem;
-}
-.toggle-group .toggle:last-child {
-  border-radius: 0 0.375rem 0.375rem 0;
-}
-.toggle-group .toggle + .toggle {
-  margin-left: -1px;
-}
-
 .calendar-header {
   align-items: center;
   justify-content: space-between;
@@ -830,22 +745,6 @@ a.list-item:hover {
 }
 .radio-card:has(:checked) {
   border-color: var(--color-darkest);
-}
-
-/* OTP */
-.otp-group {
-  align-items: center;
-  display: flex;
-  gap: 0.25rem;
-}
-.otp-input {
-  border: 1px solid var(--color-light);
-  border-radius: 0.375rem;
-  font: inherit;
-  font-size: 1.5rem;
-  height: 2.5rem;
-  text-align: center;
-  width: 2.5rem;
 }
 
 /* Dialog / Sheet / Drawer */
@@ -971,17 +870,6 @@ dialog::backdrop {
   display: block;
 }
 
-/* Breadcrumb */
-.breadcrumb {
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-}
-.breadcrumb i {
-  color: var(--color-half);
-  font-size: 0.75rem;
-}
-
 /* Spinner */
 .spinner {
   animation: spin 1s linear infinite;
@@ -1019,23 +907,6 @@ dialog::backdrop {
   padding: 0.25rem;
 }
 
-/* Button Group */
-.button-group {
-  display: flex;
-}
-.button-group .button {
-  border-radius: 0;
-}
-.button-group .button:first-child {
-  border-radius: 0.375rem 0 0 0.375rem;
-}
-.button-group .button:last-child {
-  border-radius: 0 0.375rem 0.375rem 0;
-}
-.button-group .button + .button {
-  margin-left: -1px;
-}
-
 /* Alert */
 .alert {
   align-items: flex-start;
@@ -1058,11 +929,6 @@ kbd {
   font-family: inherit;
   font-size: 0.75rem;
   padding: 0.125rem 0.375rem;
-}
-
-/* Icon Button */
-.icon-button {
-  padding: 0.625rem;
 }
 
 /* Aspect Ratio */

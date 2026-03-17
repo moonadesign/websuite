@@ -1,6 +1,6 @@
-const btn = document.getElementById('download')
-const codeInput = document.getElementById('code')
-const error = document.getElementById('error')
+const btn = g('download')
+const codeInput = g('code')
+const error = g('error')
 const label = 'Download lab repo'
 
 btn.textContent = label
@@ -13,36 +13,28 @@ const setRunning = running => {
 }
 
 btn.addEventListener('click', async () => {
-  const code = document.getElementById('code').value.trim()
+  const code = codeInput.value.trim()
   if (!code) return
   error.textContent = ''
   btn.textContent = 'Checking code…'
   setRunning(true)
 
-  await new Promise(r => setTimeout(r, 2000))
-
-  if (code === 'test') {
-    btn.textContent = 'Downloading repo…'
-    await new Promise(r => setTimeout(r, 2000))
-    // window.location.href = 'DOWNLOAD_URL'
-  } else {
-    try {
-      const res = await fetch('CLOUD_FUNCTION_URL', {
-        body: JSON.stringify({ code }),
-        headers: { 'Content-Type': 'application/json' },
-        method: 'POST',
-      })
-      const { url, message } = await res.json()
-      if (url) {
-        btn.textContent = 'Downloading repo…'
-        await new Promise(r => setTimeout(r, 2000))
-        window.location.href = url
-      } else {
-        error.textContent = message || 'Invalid access code.'
-      }
-    } catch {
-      error.textContent = 'Something went wrong. Try again.'
+  try {
+    const res = await fetch('https://us-central1-samantha-374622.cloudfunctions.net/revalize', {
+      body: JSON.stringify({ password: code, version: '0.26.2.200' }),
+      headers: { 'Content-Type': 'application/json' },
+      method: 'POST',
+    })
+    if (res.ok) {
+      const { url } = await res.json()
+      btn.textContent = 'Downloading repo…'
+      await new Promise(r => setTimeout(r, 2000))
+      window.location.href = url
+    } else {
+      error.textContent = 'Invalid access code.'
     }
+  } catch {
+    error.textContent = 'Something went wrong. Try again.'
   }
 
   btn.textContent = label

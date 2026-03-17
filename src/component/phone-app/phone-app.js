@@ -1,6 +1,6 @@
-const sizeButtons = document.querySelectorAll('#phone-sizes [data-phone-size]')
-const callTimers = document.querySelectorAll('[data-call-timer]')
-const timeElements = document.querySelectorAll('[data-clock]')
+const sizeButtons = q('#phone-sizes [data-phone-size]')
+const callTimers = q('[data-call-timer]')
+const timeElements = q('[data-clock]')
 
 if (sizeButtons.length) {
   // Size decisions:

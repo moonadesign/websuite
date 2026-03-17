@@ -272,16 +272,17 @@ h2 {
 
 .story-panel {
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 1rem;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .story-ui {
   align-items: start;
-  display: grid;
   font-size: 14px;
   gap: 1.5rem;
-  height: 100%;
   line-height: 20px;
 }
 
@@ -464,17 +465,12 @@ h2 {
 }
 
 @media (max-width: 48rem) {
-  .schedule-item {
+  .story-ui {
+    aspect-ratio: unset;
     flex-direction: column;
   }
 
   .schedule-meta {
     white-space: normal;
-  }
-}
-
-@media (min-width: 48rem) {
-  .story-ui {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }

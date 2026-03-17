@@ -7,10 +7,8 @@
   color: var(--color-half);
 }
 
-.browser,
 .mac-app {
   margin: 0 auto;
-  width: 100%;
 }
 
 .mac-app {

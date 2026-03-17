@@ -40,52 +40,13 @@
   color: var(--color-darkest);
 }
 
-.mode-select {
-  position: relative;
-  width: fit-content;
-}
-
-.mode-menu {
-  background: var(--color-lightest);
-  border: 1px solid var(--color-light);
-  border-radius: 0.5rem;
-  display: none;
-  flex-direction: column;
-  left: 0;
-  position: absolute;
-  top: 100%;
-  z-index: 1;
-}
-
-.mode-menu.open {
-  display: flex;
-}
-
-.mode-menu button {
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-  padding: 0.5rem 0.75rem;
-  white-space: nowrap;
-}
-
-.mode-menu button:hover {
-  background: var(--color-lighter);
-}
-
-.mode-menu button:first-child {
-  border-radius: 0.5rem 0.5rem 0 0;
-}
-
-.mode-menu button:last-child {
-  border-radius: 0 0 0.5rem 0.5rem;
-}
-
+.mode-select,
 .glass-select {
   position: relative;
   width: fit-content;
 }
 
+.mode-menu,
 .glass-menu {
   background: var(--color-lightest);
   border: 1px solid var(--color-light);
@@ -98,26 +59,32 @@
   z-index: 1;
 }
 
+.mode-menu.open,
 .glass-menu.open {
   display: flex;
 }
 
+.mode-menu button,
 .glass-menu button {
   align-items: center;
   display: flex;
   gap: 0.5rem;
+  justify-content: flex-start;
   padding: 0.5rem 0.75rem;
   white-space: nowrap;
 }
 
+.mode-menu button:hover,
 .glass-menu button:hover {
   background: var(--color-lighter);
 }
 
+.mode-menu button:first-child,
 .glass-menu button:first-child {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
+.mode-menu button:last-child,
 .glass-menu button:last-child {
   border-radius: 0 0 0.5rem 0.5rem;
 }

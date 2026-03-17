@@ -1,0 +1,9 @@
+.pagination {
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.row {
+  align-items: flex-start;
+  gap: 2rem;
+}

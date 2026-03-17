@@ -21,7 +21,7 @@
 }
 
 .phone-island {
-  background: var(--color-fixed-black);
+  background: var(--color-always-black);
   border-radius: 18px;
   height: 36px;
   width: 124px;

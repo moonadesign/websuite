@@ -1,0 +1,252 @@
+{
+  "days": [
+    {
+      "id": "2026-03-16",
+      "sections": [
+        {
+          "id": "today",
+          "items": [
+            {
+              "current": true,
+              "date": "16",
+              "label": "Monday",
+              "month": "March"
+            },
+            {
+              "date": "10a",
+              "label": "10:00 AM",
+              "name": "MapBorn homepage pass"
+            },
+            {
+              "date": "6p",
+              "label": "Evening",
+              "name": "Leave room for people"
+            }
+          ],
+          "name": "Today"
+        },
+        {
+          "id": "week",
+          "items": [
+            {
+              "date": "17",
+              "label": "Tuesday",
+              "name": "Review the event shell"
+            },
+            {
+              "date": "18",
+              "label": "Wednesday",
+              "name": "Move the current homepage to About"
+            },
+            {
+              "date": "19",
+              "label": "Thursday",
+              "name": "Lock the event structure"
+            },
+            {
+              "date": "20",
+              "label": "Friday",
+              "name": "Publish the first public schedule"
+            },
+            {
+              "date": "21",
+              "label": "Saturday",
+              "name": "Hold the weekend open"
+            }
+          ],
+          "name": "This week"
+        },
+        {
+          "id": "future",
+          "items": [
+            {
+              "date": "24",
+              "label": "Next week",
+              "month": "Mar",
+              "name": "Private view"
+            },
+            {
+              "date": "04",
+              "label": "This month",
+              "month": "Apr",
+              "name": "Live event data"
+            },
+            {
+              "date": "21",
+              "label": "Spring",
+              "month": "Jun",
+              "name": "A standing rhythm"
+            }
+          ],
+          "name": "Future"
+        }
+      ]
+    },
+    {
+      "id": "2026-03-17",
+      "sections": [
+        {
+          "id": "today",
+          "items": [
+            {
+              "current": true,
+              "date": "17",
+              "label": "Tuesday",
+              "month": "March",
+              "name": "🍀 St. Patrick's Day"
+            },
+            {
+              "date": "2p",
+              "label": "2:00 PM",
+              "name": "MapBorn homepage pass"
+            },
+            {
+              "date": "7p",
+              "label": "Evening",
+              "name": "Leave room for people"
+            }
+          ],
+          "name": "Today"
+        },
+        {
+          "id": "week",
+          "items": [
+            {
+              "date": "18",
+              "label": "Wednesday",
+              "name": "Move the current homepage to About"
+            },
+            {
+              "date": "19",
+              "label": "Thursday",
+              "name": "Lock the event structure"
+            },
+            {
+              "date": "20",
+              "label": "Friday",
+              "name": "Publish the first public schedule"
+            },
+            {
+              "date": "21",
+              "label": "Saturday",
+              "name": "Invite one good conversation"
+            },
+            {
+              "date": "22",
+              "label": "Sunday",
+              "name": "Keep Sunday unscheduled"
+            }
+          ],
+          "name": "This week"
+        },
+        {
+          "id": "future",
+          "items": [
+            {
+              "date": "24",
+              "label": "Next week",
+              "month": "Mar",
+              "name": "Private view"
+            },
+            {
+              "date": "04",
+              "label": "This month",
+              "month": "Apr",
+              "name": "Live event data"
+            },
+            {
+              "date": "21",
+              "label": "Spring",
+              "month": "Jun",
+              "name": "A standing rhythm"
+            }
+          ],
+          "name": "Future"
+        }
+      ]
+    },
+    {
+      "id": "2026-03-18",
+      "sections": [
+        {
+          "id": "today",
+          "items": [
+            {
+              "current": true,
+              "date": "18",
+              "label": "Wednesday",
+              "month": "March"
+            },
+            {
+              "date": "9a",
+              "label": "9:00 AM",
+              "name": "Tighten the card system"
+            },
+            {
+              "date": "3p",
+              "label": "3:00 PM",
+              "name": "Sort the private data split"
+            }
+          ],
+          "name": "Today"
+        },
+        {
+          "id": "week",
+          "items": [
+            {
+              "date": "19",
+              "label": "Thursday",
+              "name": "Move the current homepage to About"
+            },
+            {
+              "date": "20",
+              "label": "Friday",
+              "name": "Lock the event structure"
+            },
+            {
+              "date": "21",
+              "label": "Saturday",
+              "name": "Publish the first public schedule"
+            },
+            {
+              "date": "22",
+              "label": "Sunday",
+              "name": "Keep Sunday unscheduled"
+            },
+            {
+              "date": "23",
+              "label": "Monday",
+              "name": "Start the next pass"
+            }
+          ],
+          "name": "This week"
+        },
+        {
+          "id": "future",
+          "items": [
+            {
+              "date": "24",
+              "label": "Next week",
+              "month": "Mar",
+              "name": "Private view"
+            },
+            {
+              "date": "04",
+              "label": "This month",
+              "month": "Apr",
+              "name": "Live event data"
+            },
+            {
+              "date": "21",
+              "label": "Spring",
+              "month": "Jun",
+              "name": "A standing rhythm"
+            }
+          ],
+          "name": "Future"
+        }
+      ]
+    }
+  ],
+  "views": ["editorial", "columns"]
+}
